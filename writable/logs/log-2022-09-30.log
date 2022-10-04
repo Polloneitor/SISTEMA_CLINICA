@@ -1,0 +1,71 @@
+CRITICAL - 2022-09-30 14:22:24 --> syntax error, unexpected token "echo"
+in APPPATH\Views\template\navbar.php on line 14.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/navbar', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('template/navbar')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-30 14:22:24 --> syntax error, unexpected token "echo"
+in APPPATH\Views\template\navbar.php on line 14.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/navbar', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('template/navbar')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-30 14:35:35 --> syntax error, unexpected token "echo"
+in APPPATH\Views\template\navbar.php on line 15.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/navbar', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('template/navbar')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-30 14:55:30 --> Invalid file: signup.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('signup.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('signup', [], true)
+ 3 APPPATH\Controllers\SignupController.php(12): view('signup', [])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-30 15:45:03 --> Object of class App\Models\T_Personal could not be converted to string
+in APPPATH\Controllers\SignupController.php on line 20.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-30 15:52:05 --> Undefined variable $data
+in APPPATH\Controllers\SignupController.php on line 41.
+ 1 APPPATH\Controllers\SignupController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Controllers\\SignupController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-30 15:52:41 --> Object of class App\Controllers\SignupController could not be converted to string
+in APPPATH\Controllers\SignupController.php on line 41.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-30 15:54:15 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\SignupController.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-30 15:54:23 --> Undefined array key "Per_cod"
+in APPPATH\Controllers\SignupController.php on line 41.
+ 1 APPPATH\Controllers\SignupController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_cod"', 'APPPATH\\Controllers\\SignupController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

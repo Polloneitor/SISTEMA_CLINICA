@@ -1,0 +1,509 @@
+CRITICAL - 2022-10-02 07:50:33 --> Undefined array key "Per_cod"
+in APPPATH\Controllers\SignupController.php on line 21.
+ 1 APPPATH\Controllers\SignupController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_cod"', 'APPPATH\\Controllers\\SignupController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:52:03 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 21.
+ 1 APPPATH\Controllers\SignupController.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:55:09 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\SignupController.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:55:15 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\SignupController.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:55:19 --> Undefined array key "Per_cod"
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_cod"', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:13 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:15 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:15 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:16 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:17 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:17 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:17 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:18 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:19 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:19 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:57:49 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 27.
+ 1 APPPATH\Controllers\SignupController.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:58:00 --> Object of class CodeIgniter\Database\MySQLi\Result could not be converted to string
+in APPPATH\Controllers\SignupController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:58:08 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Controllers\SignupController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:58:52 --> Call to undefined method App\Models\T_Personal::getRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\SignupController.php(21): CodeIgniter\Model->__call('getRow', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:58:56 --> Call to undefined method App\Models\T_Personal::getRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\SignupController.php(21): CodeIgniter\Model->__call('getRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:59:29 --> Call to undefined method App\Models\T_Personal::getRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\SignupController.php(21): CodeIgniter\Model->__call('getRow', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:59:50 --> Undefined array key 1
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 1', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 07:59:59 --> Array to string conversion
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:00:21 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\SignupController.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:01:06 --> Array to string conversion
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:02:21 --> Attempt to read property "Per_cod" on array
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Per_cod" on array', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:02:34 --> syntax error, unexpected integer "0", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:02:46 --> Attempt to read property "Per_cod" on array
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Per_cod" on array', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:05:17 --> Attempt to read property "Per_cod" on array
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Per_cod" on array', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:05:29 --> syntax error, unexpected double-quoted string "Per_cod", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:05:37 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:05:51 --> syntax error, unexpected token "[", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:05:55 --> Attempt to read property "Per_cod" on array
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "Per_cod" on array', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:06:46 --> Undefined array key "Per_cod"
+in APPPATH\Controllers\SignupController.php on line 26.
+ 1 APPPATH\Controllers\SignupController.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_cod"', 'APPPATH\\Controllers\\SignupController.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:13:34 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\SignupController.php on line 33.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\SignupController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SignupController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SignupController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\SignupController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:25:38 --> The route for "/signin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/signin')
+ 2 APPPATH\Controllers\SignupController.php(44): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:46:44 --> The route for "USUARIO" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('USUARIO')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\SignupController.php(44): redirect('USUARIO')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:47:02 --> The route for "/signin" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/signin')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\SignupController.php(44): redirect('/signin')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 08:50:25 --> The route for "SigninController/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('SigninController/index')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\SignupController.php(44): redirect('SigninController/index')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 09:27:13 --> Undefined variable $tamanio
+in APPPATH\Controllers\SignupController.php on line 47.
+ 1 APPPATH\Controllers\SignupController.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tamanio', 'APPPATH\\Controllers\\SignupController.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 09:27:24 --> The route for "SigninController/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('SigninController/index')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\SignupController.php(56): redirect('SigninController/index')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 09:28:16 --> The route for "SigninController/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('SigninController/index')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\SignupController.php(56): redirect('SigninController/index')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 09:45:07 --> The route for "http://localhost:8080/SISTEMA_CLINICA/SignupController/index" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('http://localhost:8080/SISTEMA_CLINICA/SignupController/index')
+ 2 SYSTEMPATH\Common.php(869): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\SignupController.php(56): redirect('http://localhost:8080/SISTEMA_CLINICA/SignupController/index')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 09:45:33 --> Unclosed '(' on line 56 does not match '}'
+in APPPATH\Controllers\SignupController.php on line 57.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('SignupController/index')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('SignupController/index')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('SignupController/index')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 09:45:37 --> Unclosed '(' on line 56 does not match '}'
+in APPPATH\Controllers\SignupController.php on line 57.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('SignupController/index')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('SignupController/index')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('SignupController/index')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-02 10:02:17 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\SignupController.php(57): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-02 10:02:38 --> mysqli_sql_exception: Duplicate entry '1' for key 'PRIMARY' in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\SignupController.php(57): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-02 10:32:51 --> mysqli_sql_exception: Duplicate entry '2' for key 'PRIMARY' in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `cu...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `cu...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `cu...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `cu...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\SignupController.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\SignupController->store()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-02 10:49:06 --> Array to string conversion
+in APPPATH\Controllers\SigninController.php on line 11.
+ 1 APPPATH\Controllers\SigninController.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\SigninController.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SigninController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:29:41 --> Undefined variable $session
+in APPPATH\Views\template\navbar.php on line 43.
+ 1 APPPATH\Views\template\navbar.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\template\\navbar.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/navbar', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('template/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:29:44 --> Undefined variable $session
+in APPPATH\Views\template\navbar.php on line 43.
+ 1 APPPATH\Views\template\navbar.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\template\\navbar.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/navbar', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('template/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:30:10 --> Undefined variable $session
+in APPPATH\Views\template\navbar.php on line 43.
+ 1 APPPATH\Views\template\navbar.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\template\\navbar.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/navbar', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('template/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:34:40 --> syntax error, unexpected token "}"
+in APPPATH\Controllers\ProfileController.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\ProfileController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\ProfileController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\ProfileController')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\ProfileController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:37:15 --> Undefined variable $session
+in APPPATH\Views\template\navbar.php on line 43.
+ 1 APPPATH\Views\template\navbar.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH\\Views\\template\\navbar.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/navbar', [], true)
+ 5 APPPATH\Controllers\Home.php(13): view('template/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:44:52 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php on line 19
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Home.php(19): view('template/navbar', 'Pablo5')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:46:10 --> Undefined property: App\Controllers\Home::$session
+in APPPATH\Controllers\Home.php on line 17.
+ 1 APPPATH\Controllers\Home.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$session', 'APPPATH\\Controllers\\Home.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:46:30 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php on line 19
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\Home.php(19): view('template/navbar', 'Pablo5')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 11:52:32 --> Undefined variable $nom_cuenta
+in APPPATH\Views\template\navbar.php on line 43.
+ 1 APPPATH\Views\template\navbar.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom_cuenta', 'APPPATH\\Views\\template\\navbar.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/navbar', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(44): view('template/navbar')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPer()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:02:17 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\FormaControlador.php on line 36.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('FormaControlador/InPer')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('FormaControlador/InPer')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('FormaControlador/InPer')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:14:35 --> view(): Argument #2 ($data) must be of type array, CodeIgniter\Session\Session given, called in C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php on line 25
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\FormaControlador.php(25): view('template/navbar', Object(CodeIgniter\Session\Session))
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:18:27 --> syntax error, unexpected end of file
+in APPPATH\Views\template\navbar.php on line 52.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/navbar', [], true)
+ 3 APPPATH\Controllers\Home.php(18): view('template/navbar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:57:48 --> Undefined property: App\Controllers\FormaControlador::$session
+in APPPATH\Controllers\FormaControlador.php on line 21.
+ 1 APPPATH\Controllers\FormaControlador.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\FormaControlador::$session', 'APPPATH\\Controllers\\FormaControlador.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-02 12:58:50 --> Call to undefined method CodeIgniter\Session\Session::userdata()
+in APPPATH\Controllers\FormaControlador.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

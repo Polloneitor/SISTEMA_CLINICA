@@ -1,0 +1,439 @@
+CRITICAL - 2022-09-16 08:42:57 --> syntax error, unexpected token "if", expecting "," or ";"
+in APPPATH\Controllers\FormaControlador.php on line 50.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('FormaControlador/InPac')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('FormaControlador/InPac')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('FormaControlador/InPac')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 08:49:00 --> Array to string conversion
+in APPPATH\Controllers\FormaControlador.php on line 39.
+ 1 APPPATH\Controllers\FormaControlador.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\FormaControlador.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:08:56 --> CodeIgniter\Validation\Rules::is_unique(): Argument #2 ($field) must be of type string, null given, called in C:\xampp\htdocs\SISTEMA_CLINICA\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\Rules.php on line 126.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->is_unique('1251251', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('rut_pk', 'rut_pk', '1251251', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\FormaControlador.php(35): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:11:51 --> CodeIgniter\Validation\Rules::is_unique(): Argument #2 ($field) must be of type string, null given, called in C:\xampp\htdocs\SISTEMA_CLINICA\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\Rules.php on line 126.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->is_unique('125', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('rut_pk', 'rut_pk', '125', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\FormaControlador.php(35): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:12:22 --> CodeIgniter\Validation\Rules::is_unique(): Argument #2 ($field) must be of type string, null given, called in C:\xampp\htdocs\SISTEMA_CLINICA\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\Rules.php on line 126.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->is_unique('203828165', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('rut_pk', 'rut_pk', '203828165', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\FormaControlador.php(35): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:12:32 --> CodeIgniter\Validation\Rules::is_unique(): Argument #2 ($field) must be of type string, null given, called in C:\xampp\htdocs\SISTEMA_CLINICA\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\Rules.php on line 126.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->is_unique('203828165', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('rut_pk', 'rut_pk', '203828165', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\FormaControlador.php(35): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:16:35 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\FormaControlador.php on line 37.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('FormaControlador/InPac')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('FormaControlador/InPac')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('FormaControlador/InPac')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:16:52 --> strpos(): Argument #3 ($offset) must be contained in argument #1 ($haystack)
+in SYSTEMPATH\Validation\Validation.php on line 779.
+ 1 SYSTEMPATH\Validation\Validation.php(779): strpos('Required|is_unique[tbl.T_Paciente,id,{id}', '|', 42)
+ 2 SYSTEMPATH\Validation\Validation.php(145): CodeIgniter\Validation\Validation->splitRules([...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\FormaControlador.php(35): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-16 09:17:17 --> mysqli_sql_exception: Table 'clinica.tbl' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\system\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('25', 'T_Paciente', Array, NULL)
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('rut_pk', 'rut_pk', '25', Array, Array)
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(35): CodeIgniter\Controller->validate(Array)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+#10 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#11 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-09-16 09:17:17 --> Call to a member function getRow() on bool
+in SYSTEMPATH\Validation\Rules.php on line 142.
+ 1 SYSTEMPATH\Validation\Validation.php(315): CodeIgniter\Validation\Rules->is_unique('25', 'T_Paciente', [...], null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('rut_pk', 'rut_pk', '25', [...], [...])
+ 3 SYSTEMPATH\Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\FormaControlador.php(35): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:22:24 --> syntax error, unexpected token "return"
+in APPPATH\Controllers\FormaControlador.php on line 50.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('FormaControlador/InPac')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('FormaControlador/InPac')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('FormaControlador/InPac')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:34:44 --> Call to a member function insert() on array
+in APPPATH\Controllers\FormaControlador.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-16 09:36:51 --> mysqli_sql_exception: Table 'clinica.t_paciente' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `T_...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `T_...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `T_...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `T_...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(50): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-16 09:38:07 --> syntax error, unexpected identifier "print_r"
+in APPPATH\Controllers\FormaControlador.php on line 22.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('FormaControlador/InPac')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('FormaControlador/InPac')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('FormaControlador/InPac')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:38:16 --> syntax error, unexpected variable "$data"
+in APPPATH\Controllers\FormaControlador.php on line 22.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('FormaControlador/InPac')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('FormaControlador/InPac')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('FormaControlador/InPac')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-16 09:38:25 --> mysqli_sql_exception: Table 'clinica.t_paciente' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 09:38:30 --> mysqli_sql_exception: Table 'clinica.t_paciente' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 09:38:36 --> mysqli_sql_exception: Table 'clinica.t_paciente' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 09:39:54 --> mysqli_sql_exception: Table 'clinica.t_paciente' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(20): CodeIgniter\Database\BaseBuilder->get(10, 20)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 09:40:01 --> mysqli_sql_exception: Table 'clinica.t_paciente' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-16 09:41:28 --> Undefined variable $Pac_nom
+in APPPATH\Controllers\FormaControlador.php on line 20.
+ 1 APPPATH\Controllers\FormaControlador.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Pac_nom', 'APPPATH\\Controllers\\FormaControlador.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-16 09:41:36 --> Undefined variable $name
+in APPPATH\Controllers\FormaControlador.php on line 20.
+ 1 APPPATH\Controllers\FormaControlador.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'APPPATH\\Controllers\\FormaControlador.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-16 09:51:49 --> mysqli_sql_exception: Table 'clinica.t_paciente' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `T_...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `T_...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `T_...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `T_...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(31): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-16 09:52:29 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\FormaControlador.php on line 34.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('FormaControlador/insertarPaciente')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('FormaControlador/insertarPaciente')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('FormaControlador/insertarPaciente')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-16 09:52:40 --> mysqli_sql_exception: Table 'clinica.t_paciente' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `T_...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `T_...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `T_...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `T_...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(31): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-16 10:00:29 --> Invalid file: IngresoPersonal.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPersonal.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPersonal', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(38): view('IngresoPersonal')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPer()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-16 10:02:27 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(52): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-16 10:04:40 --> syntax error, unexpected single-quoted string "Per_nom", expecting "]"
+in APPPATH\Controllers\FormaControlador.php on line 48.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('FormaControlador/insertarPersonal')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('FormaControlador/insertarPersonal')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('FormaControlador/insertarPersonal')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-16 10:04:49 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:05:05 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:05:46 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:07:15 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:08:10 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(53): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:08:11 --> mysqli_sql_exception: Column 'Per_nom' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(53): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:09:56 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:10:34 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-16 10:10:34 --> Array to string conversion
+in APPPATH\Controllers\FormaControlador.php on line 55.
+ 1 APPPATH\Controllers\FormaControlador.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\FormaControlador.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-16 10:11:31 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:11:42 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:12:43 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:12:54 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-16 10:14:02 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(53): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,71 @@
+ERROR - 2022-09-20 14:23:11 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(54): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-09-20 14:30:58 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-20 14:30:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::errors()
+in APPPATH\Controllers\FormaControlador.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-09-20 14:31:13 --> mysqli_sql_exception: Column 'Per_gen' cannot be null in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(55): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-09-20 14:31:13 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::errors()
+in APPPATH\Controllers\FormaControlador.php on line 57.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-20 16:09:25 --> Call to undefined function App\Controllers\findAll()
+in APPPATH\Controllers\FormaControlador.php on line 43.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPer()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-20 16:12:21 --> Class "App\Controllers\T_TipoPer" not found
+in APPPATH\Controllers\FormaControlador.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPer()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-20 16:12:57 --> Undefined array key "Per_tipo"
+in APPPATH\Views\USUARIO\IngresoPersonal.php on line 51.
+ 1 APPPATH\Views\USUARIO\IngresoPersonal.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_tipo"', 'APPPATH\\Views\\USUARIO\\IngresoPersonal.php', 51)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\IngresoPersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO/IngresoPersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(46): view('USUARIO/IngresoPersonal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPer()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

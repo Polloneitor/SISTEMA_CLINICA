@@ -1,0 +1,276 @@
+CRITICAL - 2022-09-15 11:38:58 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:40:33 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:15 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:40 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:40 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:41 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:41 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:41 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:41 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:41 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:41 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:42 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:42 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:42 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:42 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:43:42 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 11:51:48 --> Undefined property: CodeIgniter\View\View::$load
+in APPPATH\Views\template\header.php on line 16.
+ 1 APPPATH\Views\template\header.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$load', 'APPPATH\\Views\\template\\header.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template/header', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('template/header')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 13:13:02 --> Undefined variable $listaUsuarios
+in APPPATH\Views\USUARIO\viewstaff.php on line 36.
+ 1 APPPATH\Views\USUARIO\viewstaff.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaUsuarios', 'APPPATH\\Views\\USUARIO\\viewstaff.php', 36)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\viewstaff.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\viewstaff', [], true)
+ 5 APPPATH\Controllers\Home.php(30): view('USUARIO\\viewstaff', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->VerStaff()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 13:14:31 --> Undefined array key "Pac_nom"
+in APPPATH\Views\USUARIO\viewstaff.php on line 38.
+ 1 APPPATH\Views\USUARIO\viewstaff.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Pac_nom"', 'APPPATH\\Views\\USUARIO\\viewstaff.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\viewstaff.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\viewstaff', [], true)
+ 5 APPPATH\Controllers\Home.php(30): view('USUARIO\\viewstaff', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->VerStaff()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 13:16:02 --> Undefined array key "Pac_nom"
+in APPPATH\Views\USUARIO\viewstaff.php on line 38.
+ 1 APPPATH\Views\USUARIO\viewstaff.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Pac_nom"', 'APPPATH\\Views\\USUARIO\\viewstaff.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\viewstaff.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\viewstaff', [], true)
+ 5 APPPATH\Controllers\Home.php(30): view('USUARIO\\viewstaff', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->VerStaff()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:14:44 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(39): view('IngresoPaciente')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:19:56 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(45): view('IngresoPaciente')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:19:57 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(45): view('IngresoPaciente')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:19:58 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(45): view('IngresoPaciente')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:26:08 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(47): view('IngresoPaciente')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:26:58 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(45): view('IngresoPaciente', [])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:26:59 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(45): view('IngresoPaciente', [])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:26:59 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(45): view('IngresoPaciente', [])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:26:59 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(45): view('IngresoPaciente', [])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:26:59 --> Invalid file: IngresoPaciente.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('IngresoPaciente.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('IngresoPaciente', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(45): view('IngresoPaciente', [])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->InPac()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:28:52 --> Call to undefined function set_value()
+in APPPATH\Views\USUARIO\IngresoPaciente.php on line 30.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO/IngresoPaciente', [], true)
+ 4 APPPATH\Controllers\Home.php(54): view('USUARIO/IngresoPaciente')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->IngresarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:29:08 --> Call to undefined function set_value()
+in APPPATH\Views\USUARIO\IngresoPaciente.php on line 30.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO/IngresoPaciente', [], true)
+ 4 APPPATH\Controllers\Home.php(54): view('USUARIO/IngresoPaciente')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->IngresarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-15 15:30:04 --> Call to undefined function set_value()
+in APPPATH\Views\USUARIO\IngresoPaciente.php on line 34.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO/IngresoPaciente', [], true)
+ 4 APPPATH\Controllers\Home.php(54): view('USUARIO/IngresoPaciente')
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->IngresarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

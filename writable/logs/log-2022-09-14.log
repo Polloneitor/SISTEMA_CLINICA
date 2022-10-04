@@ -1,0 +1,235 @@
+CRITICAL - 2022-09-14 14:32:59 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:33:46 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:33:47 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:34:02 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:34 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:35 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:35 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:35 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:36 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:36 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:36 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:36 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:36 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:36 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:37 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:37 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:37 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:37 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:37 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:37 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:38 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:38 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:38 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:38 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:39 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:36:39 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 19.
+ 1 APPPATH\Controllers\Home.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:38:09 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:38:44 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:39:03 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:39:03 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:39:04 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 14:39:04 --> Undefined property: App\Controllers\Home::$load
+in APPPATH\Controllers\Home.php on line 13.
+ 1 APPPATH\Controllers\Home.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Home::$load', 'APPPATH\\Controllers\\Home.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-09-14 15:18:19 --> Undefined variable $listaUsuarios
+in APPPATH\Views\USUARIO\index.php on line 63.
+ 1 APPPATH\Views\USUARIO\index.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaUsuarios', 'APPPATH\\Views\\USUARIO\\index.php', 63)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\index', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('USUARIO\\index')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
