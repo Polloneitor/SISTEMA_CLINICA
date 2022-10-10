@@ -9,7 +9,7 @@ class T_Personal extends Model
     protected $table      = 'personal';
     protected $primaryKey = 'Per_cod';
 
-    protected $useAutoIncrement = true;
+    protected $useAutoIncrement = True;
 
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
@@ -30,5 +30,13 @@ class T_Personal extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
+    public function tipoPersonal()
+    {
+        $users = $this->select('*')
+                ->join('tipo_personal', 'tipo_personal.Per_tipo = personal.Per_tipo')
+                ->findAll();
+
+        return $users;
+    }
 }
 

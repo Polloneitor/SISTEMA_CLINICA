@@ -4,8 +4,8 @@ namespace App\Controllers;
 
 use App\Models\T_Paciente;
 use App\Models\T_TipoPer;
-use CodeIgniter\Controller;
 use App\Models\T_Personal;
+use CodeIgniter\Controller;
 
 class FormaControlador extends Controller
 {
@@ -33,7 +33,6 @@ class FormaControlador extends Controller
 
     public function insertarPaciente()
     {
-        $builder = new T_Paciente();
         $session = session();
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
@@ -41,19 +40,18 @@ class FormaControlador extends Controller
         if($verify == null){
             // do something when exist
             return redirect()->to('/index');
-       }
-        $data = [
-            'Pac_rut' => $this->request->getVar('Pac_rut'),
-            'Pac_nom' => $this->request->getVar('Pac_nom'),
-            'Pac_edad' => $this->request->getVar('Pac_edad'),
-            'Pac_gen' => $this->request->getVar('Pac_gen')
-        ];
+        }
+        $db = \Config\Database::connect();
+        $builder = new T_Paciente($db);
+        $data=array(
+            'Pac_rut' => $this->request->getPost('Pac_rut'),
+            'Pac_nom' => $this->request->getPost('Pac_nom'),
+            'Pac_edad' => $this->request->getPost('Pac_edad'),
+            'Pac_gen' => $this->request->getPost('Pac_gen'));
+        print_r($data);
+        if ($builder->insert($data) === false) {
 
-        if ($builder->save($data) === false) {
-
-            echo view('template\navbar',$usuario);
-            echo view('template\errors',['errors' => $builder->errors()]);
-            echo view('USUARIO\IngresoPaciente');
+            var_dump($builder->errors());
         } else {
 
             $session->setFlashdata("success", "Data saved successfully");

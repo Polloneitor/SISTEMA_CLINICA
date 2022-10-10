@@ -24,8 +24,8 @@
   }
 </style>
 
-<body style="background-color:white">
-  <div class="container-fluid">
+<body style="background-image: url('<?php echo base_url() ?>/public/images/imagen_fondo.png');">
+  <div class="container">
     <div class="box">
       <img class="card-img-top" src="..." alt="Card image cap">
       <div class="box-body">

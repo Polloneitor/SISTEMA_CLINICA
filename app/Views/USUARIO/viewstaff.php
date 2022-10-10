@@ -1,7 +1,3 @@
-<?php
-
-use CodeIgniter\Images\Image;
-?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -23,7 +19,7 @@ use CodeIgniter\Images\Image;
     }
   </style>
   <body style="background-color:white">
-    <table class="table table-bordered" style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
+    <table id="tabla" class="table table-bordered" style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
         <thead>
             <tr>
                 <th scope="col" style="background-color:#F3F3F3;">Nombre</th>
@@ -44,14 +40,21 @@ use CodeIgniter\Images\Image;
                               if($item['Per_tipo'] == 3): echo "LIMPIEZA"; endif;?></td>
                     <td><?php echo $item['Per_espec'];?></td>
                 </tr>
+                
             <?php endforeach;?>
         </tbody>
     </table>
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script>
+    $(document).ready( function () {
+      $('#tabla').DataTable();
+    } );
+    </script>
   </body>
 </html>

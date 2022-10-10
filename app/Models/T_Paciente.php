@@ -22,6 +22,7 @@ class T_Paciente extends Model
     protected $deletedField  = 'deleted_at';
 
     protected $validationRules    = [
+                'Pac_rut'   =>  'required',
                 'Pac_nom'   =>  'required|max_length[30]',
                 'Pac_edad'  =>  'required|numeric',
                 'Pac_gen'   =>  'required|exact_length[1]'

@@ -4,8 +4,7 @@
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title></title>
-   <link rel="stylesheet" href="<?php echo base_url('css/bootstrap.min.css'); ?>">
+   <title></title>  
   </head>
   <body>
    <!-- depends on your template design -->
@@ -37,6 +36,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?php ECHO base_url() ?>/FormaControlador/InPer"  tabindex="-1" aria-disabled="true">Ingresar Personal</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php ECHO base_url() ?>/SignupController/index"  tabindex="-1" aria-disabled="true">Crear Cuenta</a>
+                </li>
                 <?php endif?>
                 <li class="nav-item">
                     <a class="nav-link" tabindex="-1" aria-disabled="true">Datos de Cuenta</a>
@@ -47,9 +49,6 @@
                 <?php else : ?>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php ECHO base_url() ?>/SigninController/index"  tabindex="-1" aria-disabled="true">Ingresar Cuenta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php ECHO base_url() ?>/SignupController/index"  tabindex="-1" aria-disabled="true">Crear Cuenta</a>
                 </li>
                 <?php endif?>
                 <li class="nav-item">

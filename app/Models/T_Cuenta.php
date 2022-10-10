@@ -28,5 +28,13 @@ class T_Cuenta extends Model
     protected $validationMessages = [];
     protected $skipValidation     = false;
 
+    public function personal()
+    {
+        $users = $this->select('*')
+                ->join('personal', 'personal.Per_cod = cuenta.Per_cod')
+                ->findAll();
+
+        return $users;
+    }
 }
 
