@@ -9,7 +9,7 @@ class T_Personal extends Model
     protected $table      = 'personal';
     protected $primaryKey = 'Per_cod';
 
-    protected $useAutoIncrement = True;
+    protected $useAutoIncrement = false;
 
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;

@@ -32,7 +32,7 @@ class Home extends BaseController
         $verify = $session->get('nom_cuenta');
         if($verify == null){
             // do something when exist
-            return redirect()->to('/index');
+            return redirect()->to('/unlogged');
        }
         $db = \Config\Database::connect();
         $MiObjeto = new T_Personal($db);
@@ -52,7 +52,7 @@ class Home extends BaseController
         $verify = $session->get('nom_cuenta');
         if($verify == null){
             // do something when exist
-            return redirect()->to('/index');
+            return redirect()->to('/unlogged');
        }
         $db = \Config\Database::connect();
         $MiObjeto = new T_Paciente($db);

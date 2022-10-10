@@ -43,6 +43,8 @@
                       <td><?php echo $item['Pac_edad'];?></td>
                       <td><?php echo $item['Pac_gen'];?></td>
                       <td><?php echo $item['Pac_rut'];?></td>
+                      <td><?php echo 'Cambiar';?></td>
+                      <td><?php echo 'X';?></td>
                       <?php endif?>
                   </tr>
               <?php endforeach;?>

@@ -18,37 +18,37 @@
         <di v id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="<?php ECHO base_url() ?>/Home/index">Indice<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/Home/index">Indice<span class="sr-only">(current)</span></a>
                 </li>
                 <?php 
                 //Revisar si el usuario existe y está conectado
                 if($nom_cuenta != NULL ) : ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php ECHO base_url() ?>/Home/VerPacientes"  tabindex="-1" aria-disabled="true">Lista de Pacientes</a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/Home/VerPacientes"  tabindex="-1" aria-disabled="true">Lista de Pacientes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php ECHO base_url() ?>/FormaControlador/InPac" tabindex="-1" aria-disabled="true">Ingresar Paciente</a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/FormaControlador/InPac" tabindex="-1" aria-disabled="true">Ingresar Paciente</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php ECHO base_url() ?>/Home/VerStaff"  tabindex="-1" aria-disabled="true">Lista de Personal</a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/Home/VerStaff"  tabindex="-1" aria-disabled="true">Lista de Personal</a>
                 </li>
                 <?php if($S_Per_tipo == 2):?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php ECHO base_url() ?>/FormaControlador/InPer"  tabindex="-1" aria-disabled="true">Ingresar Personal</a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/FormaControlador/InPer"  tabindex="-1" aria-disabled="true">Ingresar Personal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php ECHO base_url() ?>/SignupController/index"  tabindex="-1" aria-disabled="true">Crear Cuenta</a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/SignupController/index"  tabindex="-1" aria-disabled="true">Crear Cuenta</a>
                 </li>
                 <?php endif?>
                 <li class="nav-item">
-                    <a class="nav-link" tabindex="-1" aria-disabled="true">Datos de Cuenta</a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/AccountData/index" tabindex="-1" aria-disabled="true">Datos de Cuenta</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php ECHO base_url() ?>/ExitProfile/index"  tabindex="-1" aria-disabled="true">Salir Cuenta</a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/ExitProfile/index"  tabindex="-1" aria-disabled="true">Salir Cuenta</a>
                 </li>
                 <?php else : ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php ECHO base_url() ?>/SigninController/index"  tabindex="-1" aria-disabled="true">Ingresar Cuenta</a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/SigninController/index"  tabindex="-1" aria-disabled="true">Ingresar Cuenta</a>
                 </li>
                 <?php endif?>
                 <li class="nav-item">

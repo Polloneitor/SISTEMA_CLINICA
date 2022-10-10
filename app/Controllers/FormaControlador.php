@@ -25,7 +25,7 @@ class FormaControlador extends Controller
         $verify = $session->get('nom_cuenta');
         if($verify == null){
             // do something when exist
-            return redirect()->to('/index');
+            return redirect()->to('/unlogged');
        }
         echo view('template/navbar', $usuario);
         echo view('USUARIO/IngresoPaciente');
@@ -39,19 +39,22 @@ class FormaControlador extends Controller
         $verify = $session->get('nom_cuenta');
         if($verify == null){
             // do something when exist
-            return redirect()->to('/index');
+            return redirect()->to('/unlogged');
         }
         $db = \Config\Database::connect();
         $builder = new T_Paciente($db);
-        $data=array(
-            'Pac_rut' => $this->request->getPost('Pac_rut'),
-            'Pac_nom' => $this->request->getPost('Pac_nom'),
-            'Pac_edad' => $this->request->getPost('Pac_edad'),
-            'Pac_gen' => $this->request->getPost('Pac_gen'));
+        $data = [
+            'Pac_rut' => $this->request->getVar('Pac_rut'),
+            'Pac_nom' => $this->request->getVar('Pac_nom'),
+            'Pac_edad' => $this->request->getVar('Pac_edad'),
+            'Pac_gen' => $this->request->getVar('Pac_gen')
+        ];
         print_r($data);
         if ($builder->insert($data) === false) {
 
-            var_dump($builder->errors());
+            echo view('template\navbar',$usuario);
+            echo view('template\errors',['errors' => $builder->errors()]);
+            echo view('USUARIO\IngresoPaciente');
         } else {
 
             $session->setFlashdata("success", "Data saved successfully");
@@ -69,7 +72,7 @@ class FormaControlador extends Controller
         $verify_cod = $session->get('Per_tipo');
         if($verify == null || $verify_cod != 2){
             // do something when exist
-            return redirect()->to('/index');
+            return redirect()->to('/unlogged');
        }
         $db = \Config\Database::connect();
         $model = new T_TipoPer($db);
@@ -94,7 +97,7 @@ class FormaControlador extends Controller
         $verify = $session->get('nom_cuenta');
         if($verify == null){
             // do something when exist
-            return redirect()->to('/index');
+            return redirect()->to('/unlogged');
        }
         $db = \Config\Database::connect();
         $table = new T_Personal($db);
@@ -114,7 +117,7 @@ class FormaControlador extends Controller
             'Per_tipo'  => $this->request->getVar('Per_tipo'),
             'Per_espec' => $this->request->getVar('Per_espec')
         ];
-        if ($builder->save($data) === false) {
+        if ($builder->insert($data) === false) {
 
             echo view('template\navbar',$usuario);
             echo view('template\errors',['errors' => $builder->errors()]);

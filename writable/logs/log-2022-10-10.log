@@ -399,3 +399,290 @@ Stack trace:
 #11 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #12 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
 #13 {main}
+ERROR - 2022-10-10 11:48:55 --> mysqli_sql_exception: Unknown column 'Per_cod' in 'field list' in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(125): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-10 11:49:19 --> Undefined variable $listaPersonal
+in APPPATH\Views\USUARIO\IngresoPersonal.php on line 46.
+ 1 APPPATH\Views\USUARIO\IngresoPersonal.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaPersonal', 'APPPATH\\Views\\USUARIO\\IngresoPersonal.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\IngresoPersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\IngresoPersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(133): view('USUARIO\\IngresoPersonal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:49:36 --> Undefined variable $listaPersonal
+in APPPATH\Views\USUARIO\IngresoPersonal.php on line 46.
+ 1 APPPATH\Views\USUARIO\IngresoPersonal.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaPersonal', 'APPPATH\\Views\\USUARIO\\IngresoPersonal.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\IngresoPersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\IngresoPersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(133): view('USUARIO\\IngresoPersonal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:51:03 --> Undefined variable $listaPersonal
+in APPPATH\Views\USUARIO\IngresoPersonal.php on line 46.
+ 1 APPPATH\Views\USUARIO\IngresoPersonal.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaPersonal', 'APPPATH\\Views\\USUARIO\\IngresoPersonal.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\IngresoPersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\IngresoPersonal', [...], true)
+ 5 APPPATH\Controllers\FormaControlador.php(133): view('USUARIO\\IngresoPersonal', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:51:06 --> Undefined variable $listaPersonal
+in APPPATH\Views\USUARIO\IngresoPersonal.php on line 46.
+ 1 APPPATH\Views\USUARIO\IngresoPersonal.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $listaPersonal', 'APPPATH\\Views\\USUARIO\\IngresoPersonal.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\IngresoPersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\IngresoPersonal', [...], true)
+ 5 APPPATH\Controllers\FormaControlador.php(133): view('USUARIO\\IngresoPersonal', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:54:00 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(117): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 11:57:13 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(52): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:01:09 --> Call to undefined method App\Models\T_Paciente::ibeforeInsert
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(52): CodeIgniter\Model->__call('ibeforeInsert', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:01:19 --> Call to undefined method App\Models\T_Paciente::beforeInsert
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(52): CodeIgniter\Model->__call('beforeInsert', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:01:53 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 4 SYSTEMPATH\BaseModel.php(658): CodeIgniter\Model->insert([...], false)
+ 5 APPPATH\Controllers\FormaControlador.php(52): CodeIgniter\BaseModel->save([...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:08:19 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(53): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:08:43 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(54): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:08:47 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(54): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:09:04 --> Call to undefined function App\Controllers\type()
+in APPPATH\Controllers\FormaControlador.php on line 47.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:09:10 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(54): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:11:56 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(54): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:12:17 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(55): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:13:17 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 718.
+ 1 SYSTEMPATH\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\FormaControlador.php(52): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:13:43 --> Undefined array key "Pac_rut"
+in APPPATH\Controllers\FormaControlador.php on line 51.
+ 1 APPPATH\Controllers\FormaControlador.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Pac_rut"', 'APPPATH\\Controllers\\FormaControlador.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:14:13 --> Array to string conversion
+in APPPATH\Controllers\FormaControlador.php on line 51.
+ 1 APPPATH\Controllers\FormaControlador.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\FormaControlador.php', 51)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:14:47 --> There is no data to insert.
+in SYSTEMPATH\BaseModel.php on line 718.
+ 1 SYSTEMPATH\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([], true)
+ 3 APPPATH\Controllers\FormaControlador.php(51): CodeIgniter\Model->insert([...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:15:54 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(53): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:16:54 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(53): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:16:56 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(53): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:50:12 --> Undefined property: App\Controllers\AccountData::$session
+in APPPATH\Controllers\AccountData.php on line 9.
+ 1 APPPATH\Controllers\AccountData.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AccountData::$session', 'APPPATH\\Controllers\\AccountData.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:54:00 --> Undefined property: App\Controllers\AccountData::$session
+in APPPATH\Controllers\AccountData.php on line 12.
+ 1 APPPATH\Controllers\AccountData.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AccountData::$session', 'APPPATH\\Controllers\\AccountData.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:57:04 --> Call to undefined method CodeIgniter\Session\Session::getVar()
+in APPPATH\Controllers\AccountData.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 12:58:15 --> Undefined variable $usuario
+in APPPATH\Views\template\cuenta.php on line 19.
+ 1 APPPATH\Views\template\cuenta.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $usuario', 'APPPATH\\Views\\template\\cuenta.php', 19)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\cuenta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\cuenta', [], true)
+ 5 APPPATH\Controllers\AccountData.php(19): view('template\\cuenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 13:04:09 --> syntax error, unexpected variable "$verify"
+in APPPATH\Controllers\AccountData.php on line 14.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('AccountData/index')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('AccountData/index')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('AccountData/index')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 13:04:16 --> syntax error, unexpected variable "$verify"
+in APPPATH\Controllers\AccountData.php on line 14.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('AccountData/index')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('AccountData/index')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('AccountData/index')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-10 13:04:54 --> Undefined variable $S_per_tipo
+in APPPATH\Views\template\cuenta.php on line 25.
+ 1 APPPATH\Views\template\cuenta.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $S_per_tipo', 'APPPATH\\Views\\template\\cuenta.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\cuenta.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\cuenta', [], true)
+ 5 APPPATH\Controllers\AccountData.php(20): view('template\\cuenta', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

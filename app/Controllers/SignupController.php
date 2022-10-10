@@ -56,7 +56,7 @@ class SignupController extends Controller
             return redirect()->to('/signin');
         }else{
             $data['validation'] = $this->validator;
-            echo view('USUARIO/signup', $data);
+            echo view('USUARIO\signup', $data);
         }
           
     }
