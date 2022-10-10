@@ -48,7 +48,7 @@ class SignupController extends Controller
             $data = [
                 'cod_cuenta'     => 1+$autoincrement,
                 'nom_cuenta'     => $this->request->getVar('nom_cuenta'),
-                'pas_cuenta'     => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
+                'pas_cuenta'     => password_hash('Test', PASSWORD_DEFAULT),
                 'Per_cod'        => $this->request->getVar('Per_cod')
             ];
             $builder = $db->table('cuenta');

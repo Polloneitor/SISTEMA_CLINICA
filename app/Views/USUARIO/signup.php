@@ -24,13 +24,8 @@
                         <input type="number" name="Per_cod" placeholder="Código Personal" value="<?= set_value('Per_cod') ?>" class="form-control" >
                     </div>
                     <div class="form-group mb-3">
-                        <input type="password" name="password" placeholder="Password" class="form-control" >
-                    </div>
-                    <div class="form-group mb-3">
-                        <input type="password" name="confirmpassword" placeholder="Confirm Password" class="form-control" >
-                    </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-dark">Signup</button>
+                        <button type="submit" class="btn btn-dark">Registrar</button>
                     </div>
                 </form>
             </div>

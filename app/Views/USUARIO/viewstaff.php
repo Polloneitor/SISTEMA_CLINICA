@@ -27,6 +27,8 @@
                 <th scope="col" style="background-color:#F3F3F3;">Género</th>
                 <th scope="col" style="background-color:#F3F3F3;">Tipo Personal</th>
                 <th scope="col" style="background-color:#F3F3F3;">Especialidad</th>
+                <th scope="col" style="background-color: #F3F3F3;">Modificar</th>
+                <th scope="col" style="background-color: #F3F3F3;">Borrar</th>
             </tr>
          </thead>
         <tbody class='table-group-divider'>
@@ -39,12 +41,13 @@
                               if($item['Per_tipo'] == 2): echo "TÉCNICO"; endif;
                               if($item['Per_tipo'] == 3): echo "LIMPIEZA"; endif;?></td>
                     <td><?php echo $item['Per_espec'];?></td>
+                    <td><?php echo 'Cambiar';?></td>
+                      <td><a href="<?php echo base_url().'/Home/per_delete?id='.$item['Per_cod']?>">Delete</a></td>
                 </tr>
                 
             <?php endforeach;?>
         </tbody>
-    </table>
-    
+      </table>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

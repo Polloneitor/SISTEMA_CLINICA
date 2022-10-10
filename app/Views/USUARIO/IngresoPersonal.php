@@ -41,7 +41,7 @@
       </div>
       <div class = 'form-group'>
         <label>Tipo</label>
-        <select class="form-select" aria-label="Default select example" name="Per_tipo">
+        <select class="form-select" aria-label="Default select example" name="Per_tipo" id="Per_tipo">
         <option selected>Elegir Tipo de Personal</option>
         <?php foreach($listaPersonal as $item): ?>
         <td>
@@ -50,9 +50,7 @@
         <?php endforeach;?>
         </select>
       </div>
-      <div class = 'form-group'>
-        <label>Especialidad</label>
-        <input type="text" id="tipo_cod" name="Per_espec" class='form-control'>
+      <div id="container">
       </div>
       <div class = 'form-group'>
         <input type="submit" name="ingreso" value=Ingresar class='btn btn-primary'>
@@ -60,34 +58,46 @@
       </form>
     </div>
     <!-- Optional JavaScript -->
-    <script type="text/javascript">
-        $(document).ready(function(){
- 
-            $('#category').change(function(){ 
-                var tipo_cod=$(this).val();
-                $.ajax({
-                    url : "<?php echo site_url('FormaControlador/get_especialidad');?>",
-                    method : "POST",
-                    data : {id: tipo_cod},
-                    async : true,
-                    dataType : 'json',
-                    success: function(data){
-                         
-                        var html = '';
-                        var i;
-                        html += '<option value='+data[0].tipo_cod+'>'+data[0].tipo_nom+'</option>';
-                        $('#tipo_cod').html(html);
- 
-                    }
-                });
-                return false;
-            }); 
-             
-        });
-    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    Element.prototype.remove = function() {
+    this.parentElement.removeChild(this);
+    }
+    NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
+        for(var i = this.length - 1; i >= 0; i--) {
+            if(this[i] && this[i].parentElement) {
+                this[i].parentElement.removeChild(this[i]);
+            }
+        }
+    }
+    var e = document.getElementById("Per_tipo");
+    function onChange() {
+      var text = e.options[e.selectedIndex].text;
+      if(text == "SALUD"){
+        var label = document.createElement("label");
+        label.innerHTML = "Especialidad: "
+        label.htmlFor = "Especialidad";
+        label.id = "text-especialidad"
+        var input = document.createElement("input");
+        input.name = "especialidad";
+        input.id = "Per_espec";
+        document.getElementById("container").appendChild(label).appendChild(input);
+      }else
+      {
+        if((document.getElementById("text-especialidad") != null) && (document.getElementById("Per_espec") != null)){
+          document.getElementById("text-especialidad").remove();
+          document.getElementById("Per_espec").remove();
+        }
+      }
+    }
+    e.onchange = onChange;
+    onChange();
+
+  </script>
+    
+    
   </body>
 </html>

@@ -83,12 +83,6 @@ class FormaControlador extends Controller
         echo view('USUARIO/IngresoPersonal', $listado);
     }
 
-    function get_especialidad(){
-        $tipo_cod = $this->input->post('tipo_cod',TRUE);
-        $data = $this->T_TipoPer->get_especialidad($tipo_cod)->result();
-        echo json_encode($data);
-    }
-
     public function insertarPersonal()
     {
         $session = session();

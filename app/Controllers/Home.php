@@ -76,4 +76,63 @@ class Home extends BaseController
         echo view('template\navbar');
         echo view('USUARIO\index',$data);
     }
+    public function p_delete($id=0){
+
+        $personal = new T_Personal();
+  
+        ## Check record
+        if($personal->find($id)){
+  
+           ## Delete record
+           $personal->delete($id);
+  
+           session()->setFlashdata('message', 'Deleted Successfully!');
+           session()->setFlashdata('alert-class', 'alert-success');
+        }else{
+           session()->setFlashdata('message', 'Record not found!');
+           session()->setFlashdata('alert-class', 'alert-danger');
+        }
+  
+        return redirect()->route('/');
+    }
+
+        public function per_delete($id=0){
+
+        $personal = new T_Personal();
+  
+        ## Check record
+        if($personal->find($id)){
+  
+           ## Delete record
+           $personal->delete($id);
+  
+           session()->setFlashdata('message', 'Deleted Successfully!');
+           session()->setFlashdata('alert-class', 'alert-success');
+        }else{
+           session()->setFlashdata('message', 'Record not found!');
+           session()->setFlashdata('alert-class', 'alert-danger');
+        }
+  
+        return redirect()->route('/');
+  
+     }
+     public function pac_delete($id=0){
+
+        $paciente = new T_Paciente();
+  
+        ## Check record
+        if($paciente->find($id)){
+  
+           ## Delete record
+           $paciente->delete($id);
+  
+           session()->setFlashdata('message', 'Deleted Successfully!');
+           session()->setFlashdata('alert-class', 'alert-success');
+        }else{
+           session()->setFlashdata('message', 'Record not found!');
+           session()->setFlashdata('alert-class', 'alert-danger');
+        }
+  
+        return redirect()->route('/');
+    }
 }

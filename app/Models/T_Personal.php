@@ -23,11 +23,29 @@ class T_Personal extends Model
 
     protected $validationRules    = [
                 'Per_nom'   =>  'required|max_length[30]|string',
-                'Per_edad'  =>  'required|numeric',
+                'Per_edad'  =>  'required|numeric|greater_than[17]',
                 'Per_gen'   =>  'required|exact_length[1]',
                 'Per_tipo'  =>  'required'
     ];
-    protected $validationMessages = [];
+    protected $validationMessages = [
+        'Per_nom'=>[
+            'required'=>'Este campo requiere de un nombre',
+            'max_length'=>'Este campo solo tiene una capacidad de 30 cáracteres',
+            'string'=>'Este campo solo admite letras, no número o carácteres especiales'
+        ],
+        'Per_edad'  =>[
+            'required'=>'Este campo requiere de un valor númerico a completar',
+            'greater_than'  => 'Solo se admiten personas cuyas edades son desde los 18 años.',
+            'numeric' =>'Este campo debe consistir de números.'
+        ],
+        'Per_gen'=>[
+            'required' => 'Este campo requiere de un género a especificar.',
+            'exact_length'  =>'Usar una sola letra para este campo'
+        ],
+        'Per_tipo' => [
+            'required' => 'Se requiere saber el tipo de ocupación que empleará el personal'
+        ]
+    ];
     protected $skipValidation     = false;
 
     public function tipoPersonal()

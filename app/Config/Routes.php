@@ -53,6 +53,7 @@ $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController:
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/unlogged', 'AccountData::unlogged');
+$routes->get('/details', 'AccountData::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
