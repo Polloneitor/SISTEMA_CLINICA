@@ -1,0 +1,22 @@
+CRITICAL - 2022-10-11 14:34:59 --> CodeIgniter\Validation\Rules::is_unique(): Argument #2 ($field) must be of type string, null given, called in C:\xampp\htdocs\SISTEMA_CLINICA\system\Validation\Validation.php on line 314
+in SYSTEMPATH\Validation\Rules.php on line 126.
+ 1 SYSTEMPATH\Validation\Validation.php(314): CodeIgniter\Validation\Rules->is_unique('203828162', null)
+ 2 SYSTEMPATH\Validation\Validation.php(175): CodeIgniter\Validation\Validation->processRules('Pac_rut', 'Pac_rut', '203828162', [...], [...])
+ 3 SYSTEMPATH\BaseModel.php(1350): CodeIgniter\Validation\Validation->run([...], null, null)
+ 4 SYSTEMPATH\BaseModel.php(707): CodeIgniter\BaseModel->validate([...])
+ 5 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\FormaControlador.php(53): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-11 14:36:46 --> There is no primary key defined when trying to make insert.
+in SYSTEMPATH\Model.php on line 269.
+ 1 SYSTEMPATH\Model.php(269): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+ 2 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 3 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], true)
+ 4 APPPATH\Controllers\FormaControlador.php(53): CodeIgniter\Model->insert([...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPaciente()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

@@ -82,7 +82,7 @@
         label.htmlFor = "Especialidad";
         label.id = "text-especialidad"
         var input = document.createElement("input");
-        input.name = "especialidad";
+        input.name = "Per_espec";
         input.id = "Per_espec";
         document.getElementById("container").appendChild(label).appendChild(input);
       }else

@@ -49,7 +49,6 @@ class FormaControlador extends Controller
             'Pac_edad' => $this->request->getVar('Pac_edad'),
             'Pac_gen' => $this->request->getVar('Pac_gen')
         ];
-        print_r($data);
         if ($builder->insert($data) === false) {
 
             echo view('template\navbar',$usuario);

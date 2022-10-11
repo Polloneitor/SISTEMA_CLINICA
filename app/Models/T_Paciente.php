@@ -14,7 +14,7 @@ class T_Paciente extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['Pac_nom','Pac_edad','Pac_gen'];
+    protected $allowedFields = ['Pac_rut','Pac_nom','Pac_edad','Pac_gen'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';
@@ -22,7 +22,7 @@ class T_Paciente extends Model
     protected $deletedField  = 'deleted_at';
 
     protected $validationRules    = [
-                'Pac_rut'   =>  'required|exact_length[9]|is_unique',
+                'Pac_rut'   =>  'required|exact_length[9]|is_unique[paciente.Pac_rut]',
                 'Pac_nom'   =>  'required|max_length[30]|string',
                 'Pac_edad'  =>  'required|numeric',
                 'Pac_gen'   =>  'required|exact_length[1]'

@@ -14,7 +14,7 @@ class T_Personal extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['Per_nom', 'Per_edad', 'Per_gen','Per_tipo','Per_espec'];
+    protected $allowedFields = ['Per_cod','Per_nom', 'Per_edad', 'Per_gen','Per_tipo','Per_espec'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

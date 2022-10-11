@@ -23,9 +23,7 @@ class SignupController extends Controller
         $rules = [
             'nom_cuenta'        => 'required|is_unique[cuenta.nom_cuenta]|min_length[2]|max_length[50]',
             'Per_cod'           => 'required|numeric|is_unique[cuenta.Per_cod]
-                                    |is_unique[cuenta.Per_cod]|matches[personal.Per_cod]',
-            'password'          => 'required|min_length[4]|max_length[50]',
-            'confirmpassword'   => 'matches[password]'
+                                    |is_unique[cuenta.Per_cod]|matches[personal.Per_cod]'
         ];
         foreach ($personal as $cod) {
             if($compare == $cod['Per_cod']){

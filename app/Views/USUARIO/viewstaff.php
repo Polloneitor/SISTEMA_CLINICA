@@ -27,8 +27,10 @@
                 <th scope="col" style="background-color:#F3F3F3;">Género</th>
                 <th scope="col" style="background-color:#F3F3F3;">Tipo Personal</th>
                 <th scope="col" style="background-color:#F3F3F3;">Especialidad</th>
-                <th scope="col" style="background-color: #F3F3F3;">Modificar</th>
-                <th scope="col" style="background-color: #F3F3F3;">Borrar</th>
+                <?php if($S_Per_tipo == 2):?>
+                  <th scope="col" style="background-color: #F3F3F3;">Modificar</th>
+                  <th scope="col" style="background-color: #F3F3F3;">Borrar</th>
+                <?php endif?>
             </tr>
          </thead>
         <tbody class='table-group-divider'>
@@ -41,9 +43,11 @@
                               if($item['Per_tipo'] == 2): echo "TÉCNICO"; endif;
                               if($item['Per_tipo'] == 3): echo "LIMPIEZA"; endif;?></td>
                     <td><?php echo $item['Per_espec'];?></td>
-                    <td><a href="<?php echo base_url().'/Home/per_mod?Per_cod='.$item['Per_cod']?>">Modificar</a></td>
-                    <td><a href="<?php echo base_url().'/Home/per_delete?Per_cod='.$item['Per_cod']?>">Delete</a></td>
-                </tr>
+                    <?php if($S_Per_tipo == 2):?>
+                      <td><a href="<?php echo base_url().'/Home/per_mod?Per_cod='.$item['Per_cod']?>">Modificar</a></td>
+                      <td><a href="<?php echo base_url().'/Home/per_delete?Per_cod='.$item['Per_cod']?>">Delete</a></td>
+                    <?php endif?>
+                  </tr>
                 
             <?php endforeach;?>
         </tbody>
