@@ -41,8 +41,8 @@
                               if($item['Per_tipo'] == 2): echo "TÉCNICO"; endif;
                               if($item['Per_tipo'] == 3): echo "LIMPIEZA"; endif;?></td>
                     <td><?php echo $item['Per_espec'];?></td>
-                    <td><?php echo 'Cambiar';?></td>
-                      <td><a href="<?php echo base_url().'/Home/per_delete?id='.$item['Per_cod']?>">Delete</a></td>
+                    <td><a href="<?php echo base_url().'/Home/per_mod?Per_cod='.$item['Per_cod']?>">Modificar</a></td>
+                    <td><a href="<?php echo base_url().'/Home/per_delete?Per_cod='.$item['Per_cod']?>">Delete</a></td>
                 </tr>
                 
             <?php endforeach;?>

@@ -76,15 +76,15 @@ class Home extends BaseController
         echo view('template\navbar');
         echo view('USUARIO\index',$data);
     }
-    public function p_delete($id=0){
+    public function per_delete($Per_cod=0){
 
         $personal = new T_Personal();
   
         ## Check record
-        if($personal->find($id)){
+        if($personal->find($Per_cod)){
   
            ## Delete record
-           $personal->delete($id);
+           $personal->delete($Per_cod);
   
            session()->setFlashdata('message', 'Deleted Successfully!');
            session()->setFlashdata('alert-class', 'alert-success');
@@ -93,38 +93,18 @@ class Home extends BaseController
            session()->setFlashdata('alert-class', 'alert-danger');
         }
   
-        return redirect()->route('/');
+        return redirect()->to('Home/VerPersonal');
     }
 
-        public function per_delete($id=0){
-
-        $personal = new T_Personal();
-  
-        ## Check record
-        if($personal->find($id)){
-  
-           ## Delete record
-           $personal->delete($id);
-  
-           session()->setFlashdata('message', 'Deleted Successfully!');
-           session()->setFlashdata('alert-class', 'alert-success');
-        }else{
-           session()->setFlashdata('message', 'Record not found!');
-           session()->setFlashdata('alert-class', 'alert-danger');
-        }
-  
-        return redirect()->route('/');
-  
-     }
-     public function pac_delete($id=0){
+        public function pac_delete($Pac_rut=0){
 
         $paciente = new T_Paciente();
   
         ## Check record
-        if($paciente->find($id)){
+        if($paciente->find($Pac_rut)){
   
            ## Delete record
-           $paciente->delete($id);
+           $paciente->delete($Pac_rut);
   
            session()->setFlashdata('message', 'Deleted Successfully!');
            session()->setFlashdata('alert-class', 'alert-success');
@@ -133,6 +113,47 @@ class Home extends BaseController
            session()->setFlashdata('alert-class', 'alert-danger');
         }
   
-        return redirect()->route('/');
+        return redirect()->to('Home/VerPacientes');
+  
+     }
+     public function per_mod($Per_cod=0){
+
+        $personal = new T_Personal();
+  
+        ## Check record
+        if($personal->find($Per_cod)){
+  
+           ## Delete record
+           $personal->update($Per_cod);
+  
+           session()->setFlashdata('message', 'Updated Successfully!');
+           session()->setFlashdata('alert-class', 'alert-success');
+        }else{
+           session()->setFlashdata('message', 'Record not found!');
+           session()->setFlashdata('alert-class', 'alert-danger');
+        }
+  
+        return redirect()->to('Home/VerPersonal');
     }
+
+        public function pac_mod($Pac_rut=0){
+
+        $paciente = new T_Paciente();
+  
+        ## Check record
+        if($paciente->find($Pac_rut)){
+  
+           ## Delete record
+           $paciente->update($Pac_rut);
+  
+           session()->setFlashdata('message', 'Updated Successfully!');
+           session()->setFlashdata('alert-class', 'alert-success');
+        }else{
+           session()->setFlashdata('message', 'Record not found!');
+           session()->setFlashdata('alert-class', 'alert-danger');
+        }
+  
+        return redirect()->to('Home/VerPacientes');
+  
+     }
 }
