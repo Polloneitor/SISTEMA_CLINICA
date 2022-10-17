@@ -1,18 +1,24 @@
-<?php 
-namespace App\Controllers;  
+<?php
+
+namespace App\Controllers;
+
 use CodeIgniter\Controller;
 use App\Models\T_Cuenta;
 use App\Models\T_Personal;
-  
+
 class SignupController extends Controller
 {
     public function index()
     {
         helper(['form']);
         $data = [];
-        echo view('USUARIO/signup', $data);
+        $session = session();
+        $usuario['nom_cuenta'] = $session->get('nom_cuenta');
+        $usuario['S_Per_tipo']   = $session->get('Per_tipo');
+        echo view('template\navbar', $usuario);
+        echo view('USUARIO\signup', $data);
     }
-  
+
     public function store()
     {
         $db = \Config\Database::connect();
@@ -26,37 +32,37 @@ class SignupController extends Controller
                                     |is_unique[cuenta.Per_cod]|matches[personal.Per_cod]'
         ];
         foreach ($personal as $cod) {
-            if($compare == $cod['Per_cod']){
+            if ($compare == $cod['Per_cod']) {
                 $rules['Per_cod'] = 'required|numeric|is_unique[cuenta.Per_cod]
                                     |is_unique[cuenta.Per_cod]';
                 break;
             };
-          }
-        if($this->validate($rules)){
+        }
+        if ($this->validate($rules)) {
             $autoincrement = 1;
             $db = \Config\Database::connect();
             $table = new T_Cuenta($db);
             $cuentas = $table->findAll();
-            if(empty($cuentas)){
-                $autoincrement=0;
-            }else{
+            if (empty($cuentas)) {
+                $autoincrement = 0;
+            } else {
                 $tamanio = sizeof($cuentas);
                 $autoincrement = $tamanio;
             }
             $data = [
-                'cod_cuenta'     => 1+$autoincrement,
+                'cod_cuenta'     => 1 + $autoincrement,
                 'nom_cuenta'     => $this->request->getVar('nom_cuenta'),
                 'pas_cuenta'     => password_hash('Test', PASSWORD_DEFAULT),
-                'Per_cod'        => $this->request->getVar('Per_cod')
+                'Per_cod'        => $this->request->getVar('Per_cod'),
+                'firstlogin_cuenta' => 0
             ];
             $builder = $db->table('cuenta');
             $builder->insert($data);
             return redirect()->to('/signin');
-        }else{
+        } else {
             $data['validation'] = $this->validator;
+            echo view('template\navbar', $data);
             echo view('USUARIO\signup', $data);
         }
-          
     }
-  
 }

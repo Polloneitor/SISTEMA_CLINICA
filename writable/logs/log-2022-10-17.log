@@ -1,0 +1,329 @@
+CRITICAL - 2022-10-17 10:14:15 --> Call to undefined method App\Models\T_Personal::last
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(135): CodeIgniter\Model->__call('last', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:14:58 --> Invalid file: temaplate\navbar.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('temaplate\\navbar.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('temaplate\\navbar', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(138): view('temaplate\\navbar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:15:05 --> view(): Argument #2 ($data) must be of type array, null given, called in C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php on line 139
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\FormaControlador.php(139): view('template\\newpersonal', null)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:17:24 --> Call to undefined method App\Models\T_Personal::order_by
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(135): CodeIgniter\Model->__call('order_by', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 10:20:05 --> mysqli_sql_exception: Unknown column 'id' in 'order clause' in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM p...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM p...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM p...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Personal.php(62): CodeIgniter\Database\BaseConnection->query('SELECT * FROM p...')
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php(135): App\Models\T_Personal->last_record()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-17 10:20:05 --> Call to a member function result_array() on bool
+in APPPATH\Models\T_Personal.php on line 63.
+ 1 APPPATH\Controllers\FormaControlador.php(135): App\Models\T_Personal->last_record()
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:23:34 --> Call to undefined method App\Models\T_Personal::getLastRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(135): CodeIgniter\Model->__call('getLastRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:24:38 --> Call to undefined method App\Models\T_Personal::getLastRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(136): CodeIgniter\Model->__call('getLastRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:24:40 --> Call to undefined method App\Models\T_Personal::getLastRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(136): CodeIgniter\Model->__call('getLastRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:24:54 --> Call to undefined method App\Models\T_Personal::getLastRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(136): CodeIgniter\Model->__call('getLastRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:24:55 --> Call to undefined method App\Models\T_Personal::getLastRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(136): CodeIgniter\Model->__call('getLastRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:24:55 --> Call to undefined method App\Models\T_Personal::getLastRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(136): CodeIgniter\Model->__call('getLastRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:24:55 --> Call to undefined method App\Models\T_Personal::getLastRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(136): CodeIgniter\Model->__call('getLastRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:24:55 --> Call to undefined method App\Models\T_Personal::getLastRow
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\FormaControlador.php(136): CodeIgniter\Model->__call('getLastRow', [])
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:28:12 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php on line 140
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\FormaControlador.php(140): view('template\\newpersonal', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:28:47 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php on line 140
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\FormaControlador.php(140): view('template\\newpersonal', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:29:26 --> Undefined variable $data
+in APPPATH\Views\template\newpersonal.php on line 10.
+ 1 APPPATH\Views\template\newpersonal.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\newpersonal.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\newpersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\newpersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(140): view('template\\newpersonal')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:29:36 --> Undefined variable $data
+in APPPATH\Views\template\newpersonal.php on line 10.
+ 1 APPPATH\Views\template\newpersonal.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\newpersonal.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\newpersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\newpersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(139): view('template\\newpersonal')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:29:37 --> Undefined variable $data
+in APPPATH\Views\template\newpersonal.php on line 10.
+ 1 APPPATH\Views\template\newpersonal.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\newpersonal.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\newpersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\newpersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(139): view('template\\newpersonal')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:29:44 --> Undefined variable $data
+in APPPATH\Views\template\newpersonal.php on line 10.
+ 1 APPPATH\Views\template\newpersonal.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\newpersonal.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\newpersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\newpersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(140): view('template\\newpersonal')
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:29:50 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php on line 140
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\FormaControlador.php(140): view('template\\newpersonal', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:30:02 --> view(): Argument #2 ($data) must be of type array, stdClass given, called in C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\FormaControlador.php on line 141
+in SYSTEMPATH\Common.php on line 1128.
+ 1 APPPATH\Controllers\FormaControlador.php(141): view('template\\newpersonal', Object(stdClass))
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:30:26 --> Undefined variable $data
+in APPPATH\Views\template\newpersonal.php on line 10.
+ 1 APPPATH\Views\template\newpersonal.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\newpersonal.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\newpersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\newpersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(141): view('template\\newpersonal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:30:53 --> Undefined variable $Per_cod
+in APPPATH\Views\template\newpersonal.php on line 10.
+ 1 APPPATH\Views\template\newpersonal.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_cod', 'APPPATH\\Views\\template\\newpersonal.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\newpersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\newpersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(141): view('template\\newpersonal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:31:17 --> Undefined variable $data
+in APPPATH\Views\template\newpersonal.php on line 10.
+ 1 APPPATH\Views\template\newpersonal.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\newpersonal.php', 10)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\newpersonal.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\newpersonal', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(141): view('template\\newpersonal', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:31:48 --> syntax error, unexpected token ";"
+in APPPATH\Views\template\newpersonal.php on line 10.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\newpersonal', [], true)
+ 3 APPPATH\Controllers\FormaControlador.php(141): view('template\\newpersonal', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 10:31:54 --> Undefined constant "yes"
+in APPPATH\Views\template\newpersonal.php on line 10.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\newpersonal', [], true)
+ 4 APPPATH\Controllers\FormaControlador.php(141): view('template\\newpersonal', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->info()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 11:05:25 --> Undefined variable $S_Per_tipo
+in APPPATH\Views\template\navbar.php on line 37.
+ 1 APPPATH\Views\template\navbar.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $S_Per_tipo', 'APPPATH\\Views\\template\\navbar.php', 37)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\navbar', [], true)
+ 5 APPPATH\Controllers\AccountData.php(35): view('template\\navbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->pass_view()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 11:09:52 --> syntax error, unexpected token "/"
+in APPPATH\Controllers\AccountData.php on line 65.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('AccountData/changepass')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('AccountData/changepass')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('AccountData/changepass')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 11:21:38 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\AccountData.php on line 73.
+ 1 SYSTEMPATH\Router\Router.php(499): CodeIgniter\Router\AutoRouter->getRoute('AccountData/changepass')
+ 2 SYSTEMPATH\Router\Router.php(205): CodeIgniter\Router\Router->autoRoute('AccountData/changepass')
+ 3 SYSTEMPATH\CodeIgniter.php(779): CodeIgniter\Router\Router->handle('AccountData/changepass')
+ 4 SYSTEMPATH\CodeIgniter.php(406): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 11:38:19 --> Array to string conversion
+in APPPATH\Controllers\AccountData.php on line 71.
+ 1 APPPATH\Controllers\AccountData.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AccountData.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changepass()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 11:39:08 --> Array to string conversion
+in APPPATH\Controllers\AccountData.php on line 63.
+ 1 APPPATH\Controllers\AccountData.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AccountData.php', 63)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changepass()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 11:39:16 --> Array to string conversion
+in APPPATH\Controllers\AccountData.php on line 62.
+ 1 APPPATH\Controllers\AccountData.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\AccountData.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changepass()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 11:52:13 --> Undefined property: App\Controllers\AccountData::$db
+in APPPATH\Controllers\AccountData.php on line 67.
+ 1 APPPATH\Controllers\AccountData.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\AccountData::$db', 'APPPATH\\Controllers\\AccountData.php', 67)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changepass()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 11:52:34 --> Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+in APPPATH\Controllers\AccountData.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changepass()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-17 11:57:57 --> Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+in APPPATH\Controllers\AccountData.php on line 71.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changepass()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-10-17 11:58:35 --> mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY' in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cuenta`...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cuenta`...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cuenta`...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cuenta`...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\AccountData.php(72): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\AccountData->changepass()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-10-17 11:59:24 --> mysqli_sql_exception: Duplicate entry '4' for key 'PRIMARY' in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `cuenta`...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `cuenta`...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `cuenta`...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `cuenta`...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\AccountData.php(72): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\AccountData->changepass()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-10-17 12:07:15 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 846.
+ 1 SYSTEMPATH\BaseModel.php(846): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(693): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\AccountData.php(67): CodeIgniter\Model->update('4', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changepass()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

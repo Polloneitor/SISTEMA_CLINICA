@@ -50,19 +50,19 @@ abstract class BaseController extends Controller
         // E.g.: $this->session = \Config\Services::session();
     }
 
-    public function image($image=null)
+    public function image($image = null)
     {
         if ($image) {
-            
+
             $path = 'SISTEMA_CLINICA/public/images/' . $image;
-        
+
             $finfo = new \finfo(FILEINFO_MIME);
-            
+
             $type = $finfo->file($path);
-            
+
             header("Content-Type: $type");
             header("Content-Length: " . filesize($path));
-            
+
             readfile($path);
             exit;
         }

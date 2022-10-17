@@ -39,21 +39,26 @@ $routes->setAutoRoute(true);
 
 $routes->get('/', 'Home::index');                                       //Puede que se tenga que comentar esta linea
 $routes->get('/index', 'Home::index');  
-$routes->add('/VerStaff', 'App\Controllers\Home::VerStaff');
-$routes->add('/VerPacientes', 'App\Controllers\Home::VerPacientes');
-$routes->add('/IngresarStaff', 'App\Controllers\Home::IngresarStaff');
-$routes->add('/IngresarPaciente', 'App\Controllers\Home::IngresarPaciente');
+$routes->add('/VerStaff', 'Home::VerStaff');
+$routes->add('/IngresarStaff', 'FormaControlador::InPer');
+$routes->add('/inStaff', 'FormaControlador::insertarPersonal');
+$routes->get('/infoPer', 'FormaControlador::info');
+$routes->add('/VerPacientes', 'Home::VerPacientes');
+$routes->add('/IngresarPaciente', 'FormaControlador::InPac');
+$routes->add('/inPaciente', 'FormaControlador::insertarPaciente');
 $routes->add('/imagen', 'public\images');
 $routes->get('/contact-form', 'Forma::index');
 $routes->match(['get', 'post'], 'FormaControlador/store', 'FormaControlador::store');
 //$routes->get('/', 'SignupController::index');
-$routes->get('/signup', 'App\Controllers\SignupController::index');
+$routes->get('/signup', 'SignupController::index');
 $routes->match(['get', 'post'], 'SignupController/store', 'SignupController::store');
 $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
 $routes->get('/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/unlogged', 'AccountData::unlogged');
 $routes->get('/details', 'AccountData::index');
+$routes->get('/firstlog', 'AccountData::pass_view');
+$routes->get('/changepass', 'AccountData::pass_view');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

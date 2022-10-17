@@ -14,7 +14,7 @@ class T_Turno extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['Turn_hora_entrada','Turn_hora_salida','Turn_fecha','Turn_tipo'];
+    protected $allowedFields = ['Turn_hora_entrada', 'Turn_hora_salida', 'Turn_fecha', 'Turn_tipo'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';
