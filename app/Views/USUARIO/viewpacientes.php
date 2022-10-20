@@ -20,7 +20,7 @@
   }
 </style>
 
-<body style="background-color:white">
+<body style="background-color:white;">
   <table id="tabla2" class="table table-bordered" style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
     <th scope="col" style="background-color: #F3F3F3;">Nombre</th>
     <th scope="col" style="background-color: #F3F3F3;">Edad</th>

@@ -24,37 +24,45 @@
 </style>
 
 <body style="background-image: url('<?php echo base_url() ?>/public/images/imagen_fondo.png');">
-  <div class="container">
-    <div class="box">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="box-body">
-        <h5 class="card-title">Test-01</h5>
-        <p class="card-text">Link to hardzone.</p>
-        <a href="https://hardzone.es/" class="btn btn-primary">hardzone</a>
+  <div class="container w-50  justify-content-center align-items-center">
+    <div class="col-xs-1-12">
+      <div class="row">
+        <div class="box">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="box-body">
+            <h5 class="card-title">Test-01</h5>
+            <p class="card-text">Link to hardzone.</p>
+            <a href="https://hardzone.es/" class="btn btn-primary">hardzone</a>
+          </div>
+        </div>
+        <div class="box">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="box-body">
+            <h5 class="card-tittle">TEST-02</h5>
+            <p class="card-text">Link to xataka</p>
+            <a href="https://www.xataka.com/tablets/lenovo-tab-p11-p11-pro-caracteristicas-precio-especificaciones" class="btn btn-primary">xataka</a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="box">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="box-body">
-        <h5 class="card-tittle">TEST-02</h5>
-        <p class="card-text">Link to xataka</p>
-        <a href="https://www.xataka.com/tablets/lenovo-tab-p11-p11-pro-caracteristicas-precio-especificaciones" class="btn btn-primary">xataka</a>
-      </div>
-    </div>
-    <div class="box">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="box-body">
-        <h5 class="card-title">Test-03</h5>
-        <p class="card-text">Robotitus</p>
-        <a href="https://www.robotitus.com/hallan-mas-evidencia-de-como-dos-virus-se-unen-para-causar-alzheimer" class="btn btn-primary">Seccion:Medicina</a>
-      </div>
-    </div>
-    <div class="box">
-      <img class="card-img-top" src="..." alt="card image cap">
-      <div class="box-body">
-        <h5 class="card-tittle">Test-04</h5>
-        <p class="card-text">Robotitus</p>
-        <a href="https://www.robotitus.com/esta-bacteria-se-esta-volviendo-tan-resistente-a-los-antibioticos-que-no-podremos-detenerla" class="btn btn-primary">Seccion:medicina</a>
+    <div class="col-xs-1-12">
+      <div class="row">
+        <div class="box">
+          <img class="card-img-top" src="..." alt="Card image cap">
+          <div class="box-body">
+            <h5 class="card-title">Test-03</h5>
+            <p class="card-text">Robotitus</p>
+            <a href="https://www.robotitus.com/hallan-mas-evidencia-de-como-dos-virus-se-unen-para-causar-alzheimer" class="btn btn-primary">Seccion:Medicina</a>
+          </div>
+        </div>
+        <div class="box">
+          <img class="card-img-top" src="..." alt="card image cap">
+          <div class="box-body">
+            <h5 class="card-tittle">Test-04</h5>
+            <p class="card-text">Robotitus</p>
+            <a href="https://www.robotitus.com/esta-bacteria-se-esta-volviendo-tan-resistente-a-los-antibioticos-que-no-podremos-detenerla" class="btn btn-primary">Seccion:medicina</a>
+          </div>
+        </div>
       </div>
     </div>
 

@@ -15,8 +15,10 @@ class SigninController extends Controller
         $session = session();
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');
         $usuario['S_Per_tipo']   = $session->get('Per_tipo');
+        echo view('template\header');
         echo view('template\navbar', $usuario);
         echo view('USUARIO\signin');
+        echo view('template\footer');
     }
 
     public function loginAuth()
@@ -47,11 +49,11 @@ class SigninController extends Controller
                 }
                 return redirect()->to('/profile');
             } else {
-                $session->setFlashdata('msg', 'Password is incorrect.');
+                $session->setFlashdata('msg', 'Contraseña Incorrecta.');
                 return redirect()->to('/signin');
             }
         } else {
-            $session->setFlashdata('msg', 'Name does not exist.');
+            $session->setFlashdata('msg', 'Nombre de Usuario incorrecta.');
             return redirect()->to('/signin');
         }
     }

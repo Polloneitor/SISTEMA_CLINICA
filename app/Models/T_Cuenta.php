@@ -48,12 +48,20 @@ class T_Cuenta extends Model
 
         return $users;
     }
-    public function updatePass(int $cod, string $pass) {
+    public function updatePass(int $cod, string $pass)
+    {
         $this->builder->set('pas_cuenta', $pass)
-                        ->where('cod_cuenta', $cod)
-                        ->update();
-        $this->builder->set('firstlogin_cuenta',1)
-                        ->where('cod_cuenta',$cod)
-                        ->update();
-      }
+            ->where('cod_cuenta', $cod)
+            ->update();
+        $this->builder->set('firstlogin_cuenta', 1)
+            ->where('cod_cuenta', $cod)
+            ->update();
+    }
+
+    public function last_record()
+    {
+        $query = $this->db->query("SELECT * FROM cuenta ORDER BY cod_cuenta DESC LIMIT 1");
+        $result = $query->getFirstRow();
+        return $result;
+    }
 }

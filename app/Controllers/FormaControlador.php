@@ -29,6 +29,7 @@ class FormaControlador extends Controller
         }
         echo view('template/navbar', $usuario);
         echo view('USUARIO/IngresoPaciente');
+        echo view('template\footer');
     }
 
     public function insertarPaciente()
@@ -54,6 +55,7 @@ class FormaControlador extends Controller
             echo view('template\navbar', $usuario);
             echo view('template\errors', ['errors' => $builder->errors()]);
             echo view('USUARIO\IngresoPaciente');
+            echo view('template\footer');
         } else {
 
             $session->setFlashdata("success", "Data saved successfully");
@@ -80,6 +82,7 @@ class FormaControlador extends Controller
         $listado['listaPersonal'] = $personal;
         echo view('template/navbar', $usuario);
         echo view('USUARIO/IngresoPersonal', $listado);
+        echo view('template\footer');
     }
 
     public function insertarPersonal()
@@ -93,9 +96,10 @@ class FormaControlador extends Controller
             return redirect()->to('/unlogged');
         }
         $db = \Config\Database::connect();
-        $table = new T_Personal($db);
-        $personal = $table->findAll();
-        $autoincrement = sizeof($personal);
+        $builder = new T_Personal($db);
+        $personal =  $builder->last_record();
+        $array = json_decode(json_encode($personal), true);
+        $autoincrement = sizeof($array['Per_cod']);
         $builder = new T_Personal();
         $model = new T_TipoPer($db);
         $personal = $model->findAll();
@@ -115,6 +119,7 @@ class FormaControlador extends Controller
             echo view('template\navbar', $usuario);
             echo view('template\errors', ['errors' => $builder->errors()]);
             echo view('USUARIO\IngresoPersonal', $listado);
+            echo view('template\footer');
         } else {
 
             $session->setFlashdata("success", "Data saved successfully");
@@ -138,7 +143,9 @@ class FormaControlador extends Controller
         $array = json_decode(json_encode($personal), true);
         $data = $array;
 
+        echo view('template\header');
         echo view('template\navbar', $usuario);
         echo view('template\newpersonal', $data);
+        echo view('template\footer');
     }
 }

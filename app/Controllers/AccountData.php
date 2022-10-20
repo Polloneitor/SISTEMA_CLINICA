@@ -19,8 +19,10 @@ class AccountData extends Controller
             // do something when exist
             return redirect()->to('/unlogged');
         }
+        echo view('template\header');
         echo view('template\navbar', $usuario);
         echo view('template\cuenta', $usuario);
+        echo view('template\footer');
     }
     public function pass_view()
     {
@@ -36,8 +38,10 @@ class AccountData extends Controller
         $userModel = new T_Cuenta();
         $user = $userModel->find($usuario['cod_cuenta']);
         $usuario['firstlogin_cuenta'] = $user['firstlogin_cuenta'];
+        echo view('template\header');
         echo view('template\navbar', $usuario);
         echo view('template\changepass', $usuario);
+        echo view('template\footer');
     }
 
     public function changepass()
@@ -63,7 +67,7 @@ class AccountData extends Controller
             if ($authenticatePassword) {
                 if ($NewPass == $Confirmed) {
                     $changePass = password_hash($Confirmed, PASSWORD_DEFAULT);
-                    $userModel->updatePass($user['cod_cuenta'],$changePass);
+                    $userModel->updatePass($user['cod_cuenta'], $changePass);
                     return redirect()->to('/details');
                 }
             } else {

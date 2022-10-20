@@ -17,8 +17,10 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');
       $usuario['S_Per_tipo']   = $session->get('Per_tipo');
+      echo view('template\header');
       echo view('template\navbar', $usuario);
       echo view('USUARIO\index');
+      echo view('template\footer');
    }
 
    //variable db es database para conectarla con las demás tabals
@@ -41,8 +43,10 @@ class Home extends BaseController
       //print_r($personal);
 
       $data['listaPersonal'] = $personal;
+      echo view('template\header');
       echo view('template\navbar', $usuario);
       echo view('USUARIO\viewstaff', $data, $usuario);
+      echo view('template\footer');
    }
 
    public function VerPacientes()
@@ -60,8 +64,10 @@ class Home extends BaseController
       $pacientes =  $MiObjeto->findAll();
       //print_r($pacientes);
       $data['listaPacientes'] = $pacientes;
+      echo view('template\header');
       echo view('template\navbar', $usuario);
       echo view('USUARIO\viewpacientes', $data, $usuario);
+      echo view('template\footer');
    }
    //  Turno no es tomado en la base de datos, revisar tabla turno XXX
    //  PD: Se está ocupando tipo turno  XXX
@@ -74,8 +80,10 @@ class Home extends BaseController
       //print_r($turnos);
 
       $data['listaTurnos'] = $turnos;
+      echo view('template\header');
       echo view('template\navbar');
       echo view('USUARIO\index', $data);
+      echo view('template\footer');
    }
    public function per_delete($Per_cod = 0)
    {

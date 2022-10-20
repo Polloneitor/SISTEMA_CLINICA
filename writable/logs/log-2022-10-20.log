@@ -1,0 +1,55 @@
+CRITICAL - 2022-10-20 08:04:16 --> Undefined variable $nom_cuenta
+in APPPATH\Views\template\navbar.php on line 27.
+ 1 APPPATH\Views\template\navbar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom_cuenta', 'APPPATH\\Views\\template\\navbar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\navbar', [], true)
+ 5 APPPATH\Controllers\SignupController.php(64): view('template\\navbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 08:04:31 --> Undefined variable $nom_cuenta
+in APPPATH\Views\template\navbar.php on line 27.
+ 1 APPPATH\Views\template\navbar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom_cuenta', 'APPPATH\\Views\\template\\navbar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\navbar', [], true)
+ 5 APPPATH\Controllers\SignupController.php(64): view('template\\navbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 08:07:36 --> Undefined variable $nom_cuenta
+in APPPATH\Views\template\navbar.php on line 27.
+ 1 APPPATH\Views\template\navbar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom_cuenta', 'APPPATH\\Views\\template\\navbar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\navbar', [], true)
+ 5 APPPATH\Controllers\SignupController.php(82): view('template\\navbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 08:07:39 --> Undefined variable $nom_cuenta
+in APPPATH\Views\template\navbar.php on line 27.
+ 1 APPPATH\Views\template\navbar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom_cuenta', 'APPPATH\\Views\\template\\navbar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\navbar', [], true)
+ 5 APPPATH\Controllers\SignupController.php(82): view('template\\navbar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-20 08:08:21 --> Undefined variable $nom_cuenta
+in APPPATH\Views\template\navbar.php on line 27.
+ 1 APPPATH\Views\template\navbar.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom_cuenta', 'APPPATH\\Views\\template\\navbar.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\navbar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\navbar', [...], true)
+ 5 APPPATH\Controllers\SignupController.php(83): view('template\\navbar', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SignupController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
