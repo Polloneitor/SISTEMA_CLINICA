@@ -23,7 +23,7 @@
   }
 </style>
 
-<body style="background-image: url('<?php echo base_url() ?>/public/images/imagen_fondo.png');">
+<body>
   <div class="container w-50  justify-content-center align-items-center">
     <div class="col-xs-1-12">
       <div class="row">

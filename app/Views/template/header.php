@@ -9,11 +9,11 @@
 </head>
 <style>
     #banner {
-        background-color: green;
+        background-image: url("<?php echo base_url() ?>/public/images/clinic.jpg");
         width: 100%;
-        height: 200px;
-        background-size: contain;
-        background-repeat: repeat;
+        height: 125px;
+        background-size:auto;
+        background-repeat:round;
     }
 </style>
 

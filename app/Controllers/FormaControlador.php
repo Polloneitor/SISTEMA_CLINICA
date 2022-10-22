@@ -27,9 +27,11 @@ class FormaControlador extends Controller
             // do something when exist
             return redirect()->to('/unlogged');
         }
-        echo view('template/navbar', $usuario);
-        echo view('USUARIO/IngresoPaciente');
+        echo view('template\header');
+        echo view('template\navbar', $usuario);
+        echo view('USUARIO\IngresoPaciente');
         echo view('template\footer');
+        echo view('template\background');
     }
 
     public function insertarPaciente()
@@ -52,10 +54,12 @@ class FormaControlador extends Controller
         ];
         if ($builder->insert($data) === false) {
 
+            echo view('template\header');
             echo view('template\navbar', $usuario);
             echo view('template\errors', ['errors' => $builder->errors()]);
             echo view('USUARIO\IngresoPaciente');
             echo view('template\footer');
+            echo view('template\background');
         } else {
 
             $session->setFlashdata("success", "Data saved successfully");
@@ -80,9 +84,11 @@ class FormaControlador extends Controller
         $personal = $model->findAll();
 
         $listado['listaPersonal'] = $personal;
-        echo view('template/navbar', $usuario);
-        echo view('USUARIO/IngresoPersonal', $listado);
+        echo view('template\header');
+        echo view('template\navbar', $usuario);
+        echo view('USUARIO\IngresoPersonal', $listado);
         echo view('template\footer');
+        echo view('template\background');
     }
 
     public function insertarPersonal()
@@ -116,10 +122,12 @@ class FormaControlador extends Controller
         ];
         if ($builder->insert($data) === false) {
 
+            echo view('template\header');
             echo view('template\navbar', $usuario);
             echo view('template\errors', ['errors' => $builder->errors()]);
             echo view('USUARIO\IngresoPersonal', $listado);
             echo view('template\footer');
+            echo view('template\background');
         } else {
 
             $session->setFlashdata("success", "Data saved successfully");
@@ -147,5 +155,6 @@ class FormaControlador extends Controller
         echo view('template\navbar', $usuario);
         echo view('template\newpersonal', $data);
         echo view('template\footer');
+        echo view('template\background');
     }
 }

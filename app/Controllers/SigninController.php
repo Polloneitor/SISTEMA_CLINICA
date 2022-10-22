@@ -19,6 +19,7 @@ class SigninController extends Controller
         echo view('template\navbar', $usuario);
         echo view('USUARIO\signin');
         echo view('template\footer');
+        echo view('template\background');
     }
 
     public function loginAuth()

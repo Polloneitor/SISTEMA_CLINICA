@@ -23,6 +23,7 @@ class AccountData extends Controller
         echo view('template\navbar', $usuario);
         echo view('template\cuenta', $usuario);
         echo view('template\footer');
+        echo view('template\background');
     }
     public function pass_view()
     {
@@ -42,6 +43,7 @@ class AccountData extends Controller
         echo view('template\navbar', $usuario);
         echo view('template\changepass', $usuario);
         echo view('template\footer');
+        echo view('template\background');
     }
 
     public function changepass()

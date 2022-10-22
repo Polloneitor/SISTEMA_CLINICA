@@ -20,58 +20,60 @@
   }
 </style>
 
-<body style="background-color:white">
-  <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
-    <h1>Ingresar Personal</h1>
-    <form action='<?php echo base_url() ?>/inStaff' method="post">
-      <div class="row mb-4">
-        <div class="col">
-          <div class='form-group'>
-            <label>Nombre</label>
-            <input type="text" name="Per_nom" class='form-control'>
+<body>
+  <div class="container" style="background: rgba(0, 133, 255, 0.65);">
+    <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
+      <h1>Ingresar Personal</h1>
+      <form action='<?php echo base_url() ?>/inStaff' method="post">
+        <div class="row mb-4">
+          <div class="col">
+            <div class='form-group'>
+              <label>Nombre</label>
+              <input type="text" name="Per_nom" class='form-control'>
+            </div>
+          </div>
+          <div class="col">
+            <div class='form-group'>
+              <label>Edad</label>
+              <input type="text" name="Per_edad" class='form-control'>
+            </div>
           </div>
         </div>
-        <div class="col">
-          <div class='form-group'>
-            <label>Edad</label>
-            <input type="text" name="Per_edad" class='form-control'>
+        <div class="row mb-4">
+          <div class="col">
+            <div class='form-group'>
+              <label>Género</label>
+              <div class="form-group">
+                <select class="form-control form-control-sm" name="Per_gen">
+                  <option selected>Elegir Género</option>
+                  <option value="M">M</option>
+                  <option value="F">F</option>
+                  <option value="O">O</option>
+                </select>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="row mb-4">
-        <div class="col">
-          <div class='form-group'>
-            <label>Género</label>
-            <div class="form-group">
-              <select class="form-control form-control-sm" name="Per_gen">
-                <option selected>Elegir Género</option>
-                <option value="M">M</option>
-                <option value="F">F</option>
-                <option value="O">O</option>
+          <div class="col">
+            <div class='form-group'>
+              <label>Tipo</label>
+              <select class="form-control form-control-sm" name="Per_tipo" id="Per_tipo">
+                <option selected>Elegir Tipo de Personal</option>
+                <?php foreach ($listaPersonal as $item) : ?>
+                  <td>
+                    <option value="<?php echo $item['tipo_cod']; ?>"><?php echo $item['tipo_nom']; ?></option>
+                  </td>
+                <?php endforeach; ?>
               </select>
             </div>
           </div>
         </div>
-        <div class="col">
-        <div class='form-group'>
-        <label>Tipo</label>
-        <select class="form-control form-control-sm" name="Per_tipo" id="Per_tipo">
-          <option selected>Elegir Tipo de Personal</option>
-          <?php foreach ($listaPersonal as $item) : ?>
-            <td>
-              <option value="<?php echo $item['tipo_cod']; ?>"><?php echo $item['tipo_nom']; ?></option>
-            </td>
-          <?php endforeach; ?>
-        </select>
-      </div>
+        <div id="container">
         </div>
-      </div>
-      <div id="container">
-      </div>
-      <div class='form-group'>
-        <input type="submit" name="ingreso" value=Ingresar class='btn btn-primary'>
-      </div>
-    </form>
+        <div class='form-group'>
+          <input type="submit" name="ingreso" value=Ingresar class='btn btn-primary'>
+        </div>
+      </form>
+    </div>
   </div>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -21,6 +21,7 @@ class Home extends BaseController
       echo view('template\navbar', $usuario);
       echo view('USUARIO\index');
       echo view('template\footer');
+      echo view('template\background');
    }
 
    //variable db es database para conectarla con las demás tabals
@@ -47,6 +48,7 @@ class Home extends BaseController
       echo view('template\navbar', $usuario);
       echo view('USUARIO\viewstaff', $data, $usuario);
       echo view('template\footer');
+      echo view('template\background');
    }
 
    public function VerPacientes()
@@ -68,6 +70,7 @@ class Home extends BaseController
       echo view('template\navbar', $usuario);
       echo view('USUARIO\viewpacientes', $data, $usuario);
       echo view('template\footer');
+      echo view('template\background');
    }
    //  Turno no es tomado en la base de datos, revisar tabla turno XXX
    //  PD: Se está ocupando tipo turno  XXX
@@ -84,6 +87,7 @@ class Home extends BaseController
       echo view('template\navbar');
       echo view('USUARIO\index', $data);
       echo view('template\footer');
+      echo view('template\background');
    }
    public function per_delete($Per_cod = 0)
    {

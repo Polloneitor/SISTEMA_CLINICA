@@ -27,6 +27,7 @@ class SignupController extends Controller
         echo view('template\navbar', $usuario);
         echo view('USUARIO\signup', $data);
         echo view('template\footer');
+        echo view('template\background');
     }
 
     public function store()
@@ -88,6 +89,7 @@ class SignupController extends Controller
             echo view('template\navbar', $data);
             echo view('USUARIO\signup', $data);
             echo view('template\footer');
+            echo view('template\background');
         }
     }
 }

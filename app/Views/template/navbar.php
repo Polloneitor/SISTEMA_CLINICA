@@ -12,14 +12,14 @@
     <!-- depends on your template design -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <a class="navbar-brand">
-            <img src="<?php echo base_url() ?>/public/images/logo.png" alt="logo" width="250px" height="125px" name="image" id="image">
+            <img src="<?php echo base_url() ?>/public/images/logo.png" alt="logo" width="250px" height="100px" name="image" id="image">
         </a>
         <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <di v id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url() ?>/index">Indice<span class="sr-only">(current)</span></a>
                 </li>
                 <?php
@@ -53,17 +53,29 @@
                         <a class="nav-link" href="<?php echo base_url() ?>/signin" tabindex="-1" aria-disabled="true">Ingresar Cuenta</a>
                     </li>
                 <?php endif ?>
-                <li class="nav-item">
+                <li>
                     <?php echo $nom_cuenta ?>
                 </li>
                 <?php if ($S_Per_tipo == 1) : ?>
                     <li class="nav-item">
                         <?php echo "CUENTA: SALUD" ?>
                     </li>
+                    <li class="nav-item">
+                    <img src="<?php echo base_url() ?>/public/images/medical.png" style="width:50px;height:50px;">
+                    </li>
                 <?php endif ?>
                 <?php if ($S_Per_tipo == 2) : ?>
                     <li class="nav-item">
                         <?php echo "CUENTA: TÉCNICO" ?>
+                    </li>
+                    <li class="nav-item">
+                    <img src="<?php echo base_url() ?>/public/images/admin.png" style="width:50px;height:50px;">
+                    </li>
+                <?php endif ?>
+                <?php if ($S_Per_tipo == 3) : ?>
+                    <li class="nav-item">
+                        <?php echo "CUENTA: LIMPIEZA" ?>
+                        <img src="<?php echo base_url() ?>/public/images/lindolimpiador.png" style="width:50px;height:50px;">
                     </li>
                 <?php endif ?>
             </ul>

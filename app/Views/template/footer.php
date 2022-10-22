@@ -10,8 +10,9 @@
 <style>
   #footer{
     width: 100%;
-    height: 50px;
+    height: 75px;
     float: left;
+    margin-top:3.5%;
     background: #308aff;
     
   }
@@ -19,6 +20,7 @@
     font-size: 1.2em;
     text-align: center;
     color: black;
+    margin:1.95%;
   }
 </style>
 <body>
