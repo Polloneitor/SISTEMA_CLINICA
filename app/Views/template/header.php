@@ -9,10 +9,10 @@
 </head>
 <style>
     #banner {
-        background-image: url("<?php echo base_url() ?>/public/images/clinic.jpg");
+        background-image: url("<?php echo base_url() ?>/public/images/banner.jfif");
         width: 100%;
         height: 125px;
-        background-size:auto;
+        background-size:cover;
         background-repeat:round;
     }
 </style>

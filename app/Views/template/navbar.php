@@ -20,7 +20,7 @@
         <di v id="my-nav" class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo base_url() ?>/index">Indice<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="<?php echo base_url() ?>/index">Indice</a>
                 </li>
                 <?php
                 //Revisar si el usuario existe y está conectado

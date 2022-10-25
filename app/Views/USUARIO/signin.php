@@ -13,7 +13,7 @@
         <div class="row justify-content-md-center" style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
             <div class="col-5">
 
-                <h2>Login in</h2>
+                <h2>Conectarse</h2>
 
                 <?php if (session()->getFlashdata('msg')) : ?>
                     <div class="alert alert-warning">
@@ -25,11 +25,11 @@
                         <input type="name" name="nom_cuenta" placeholder="Nombre" value="<?= set_value('nom_cuenta') ?>" class="form-control">
                     </div>
                     <div class="form-group mb-3">
-                        <input type="password" name="pas_cuenta" placeholder="Password" class="form-control">
+                        <input type="password" name="pas_cuenta" placeholder="Contraseña" class="form-control">
                     </div>
 
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-success">Signin</button>
+                        <button type="submit" class="btn btn-success">Conectar a Base de Datos</button>
                     </div>
                 </form>
             </div>
