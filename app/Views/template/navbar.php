@@ -25,15 +25,17 @@
                 <?php
                 //Revisar si el usuario existe y está conectado
                 if ($nom_cuenta != NULL) : ?>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url() ?>/VerPacientes" tabindex="-1" aria-disabled="true">Lista de Pacientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url() ?>/IngresarPaciente" tabindex="-1" aria-disabled="true">Ingresar Paciente</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="<?php echo base_url() ?>/VerStaff" tabindex="-1" aria-disabled="true">Lista de Personal</a>
-                    </li>
+                    <?php if ($S_Per_tipo == 1 or 2) : ?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url() ?>/VerPacientes" tabindex="-1" aria-disabled="true">Lista de Pacientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url() ?>/IngresarPaciente" tabindex="-1" aria-disabled="true">Ingresar Paciente</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo base_url() ?>/VerStaff" tabindex="-1" aria-disabled="true">Lista de Personal</a>
+                        </li>
+                    <?php endif ?>
                     <?php if ($S_Per_tipo == 2) : ?>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url() ?>/IngresarStaff" tabindex="-1" aria-disabled="true">Ingresar Personal</a>
@@ -61,7 +63,7 @@
                         <?php echo "CUENTA: SALUD" ?>
                     </li>
                     <li class="nav-item">
-                    <img src="<?php echo base_url() ?>/public/images/medical.png" style="width:50px;height:50px;">
+                        <img src="<?php echo base_url() ?>/public/images/medical.png" style="width:50px;height:50px;">
                     </li>
                 <?php endif ?>
                 <?php if ($S_Per_tipo == 2) : ?>
@@ -69,7 +71,7 @@
                         <?php echo "CUENTA: TÉCNICO" ?>
                     </li>
                     <li class="nav-item">
-                    <img src="<?php echo base_url() ?>/public/images/admin.png" style="width:50px;height:50px;">
+                        <img src="<?php echo base_url() ?>/public/images/admin.png" style="width:50px;height:50px;">
                     </li>
                 <?php endif ?>
                 <?php if ($S_Per_tipo == 3) : ?>

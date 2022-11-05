@@ -29,6 +29,7 @@
         <?php endif ?>
         <a href='<?php echo base_url() ?>/index'>
             <h1>--->Ir a indice<---</h1>
+            <img src="<?php echo base_url() ?>/public/images/jarjar.gif" alt="bailajarjar" name="image" id="image">
         </a>
     </div>
 </body>

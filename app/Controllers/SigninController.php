@@ -31,9 +31,9 @@ class SigninController extends Controller
         $password = $this->request->getVar('pas_cuenta');
 
         $data = $userModel->where('nom_cuenta', $nombre)->first();
-        $query = $personal->where('Per_cod', $data['Per_cod'])->first();
         if ($data) {
             $pass = $data['pas_cuenta'];
+            $query = $personal->where('Per_cod', $data['Per_cod'])->first();
             $per_cod = $query['Per_tipo'];
             $authenticatePassword = password_verify($password, $pass);
             if ($authenticatePassword) {

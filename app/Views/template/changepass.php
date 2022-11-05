@@ -8,14 +8,18 @@
   <title>Document</title>
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    /* Style the close button (span) */
 
+.close:hover {background: #bbb;}
+</style>
 <body>
   <?php
   if ($firstlogin_cuenta == 0) :
   ?>
     <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <strong>Ha iniciado por primera vez, por favor cambie su contraseña.</strong>
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <strong>No ha cambiado a la contraseña desde la creación de su cuenta.</strong>
+      <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">&times;</button>
     </div>
   <?php endif ?>
   <div class="container" style="background: rgba(0, 133, 255, 0.65);">
@@ -46,5 +50,16 @@
     </div>
   </div>
 </body>
+<script>
+    // Get all elements with class="close"
+var closebtns = document.getElementsByClassName("close");
+var i;
 
+// Loop through the elements, and hide the parent, when clicked on
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+</script>
 </html>

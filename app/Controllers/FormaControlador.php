@@ -30,7 +30,7 @@ class FormaControlador extends Controller
         echo view('template\header');
         echo view('template\navbar', $usuario);
         echo view('USUARIO\IngresoPaciente');
-        echo view('template\footer');
+        echo view('template\footer');   
         echo view('template\background');
     }
 
@@ -103,17 +103,12 @@ class FormaControlador extends Controller
         }
         $db = \Config\Database::connect();
         $builder = new T_Personal($db);
-        $personal =  $builder->last_record();
-        $array = json_decode(json_encode($personal), true);
-        $autoincrement = sizeof($array['Per_cod']);
-        $builder = new T_Personal();
         $model = new T_TipoPer($db);
         $personal = $model->findAll();
 
         $listado['listaPersonal'] = $personal;
         $listado['errors'] = $builder->errors();
         $data = [
-            'Per_cod'   => $autoincrement + 1,
             'Per_nom'   => $this->request->getVar('Per_nom'),
             'Per_edad'  => $this->request->getVar('Per_edad'),
             'Per_gen'   => $this->request->getVar('Per_gen'),

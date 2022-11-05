@@ -1,0 +1,28 @@
+CRITICAL - 2022-10-25 14:15:14 --> sizeof(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\FormaControlador.php on line 108.
+ 1 APPPATH\Controllers\FormaControlador.php(108): sizeof('5')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:15:44 --> sizeof(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\FormaControlador.php on line 108.
+ 1 APPPATH\Controllers\FormaControlador.php(108): sizeof('5')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:16:13 --> sizeof(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Controllers\FormaControlador.php on line 108.
+ 1 APPPATH\Controllers\FormaControlador.php(108): sizeof('5')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-10-25 14:20:46 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\SigninController.php on line 34.
+ 1 APPPATH\Controllers\SigninController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\SigninController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SigninController->loginAuth()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
