@@ -7,37 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<body>
-    <div class="container">
-        <container>
-            <table id="tabla2" class="table table-bordered" style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
-                <th scope="col" style="background-color: #F3F3F3;">Código de Cuenta</th>
-                <th scope="col" style="background-color: #F3F3F3;">Nombre Cuenta</th>
-                <th scope="col" style="background-color: #F3F3F3;">Código Personal</th>
-                <th scope="col" style="background-color: #F3F3F3;">Tipo de Personal</th>
-                </tr>
-                </thead>
-                <tbody class='table-group-divider'>
-                    <td style="background-color: #FFFFFF;"><?php echo $cod_cuenta ?></td>
-                    <td style="background-color: #FFFFFF;"><?php echo $nom_cuenta ?></td>
-                    <td style="background-color: #FFFFFF;"><?php echo $Per_cod ?></td>
-                    <td style="background-color: #FFFFFF;"><?php switch ($S_Per_tipo) {
-                            case 1:
-                                echo "SALUD";
-                                break;
-                            case 2:
-                                echo "TÉCNICO";
-                                break;
-                            case 3:
-                                echo "LIMPIEZA";
-                                break;
-                        } ?></td>
-                </tbody>
-            </table>
-            <a href="<?php echo base_url() ?>/changepass" tabindex="-1" aria-disabled="true"> <button type="button" name="login" id="login" class="btn btn-primary btn-lg">Cambiar Contraseña</button></a>
-        </container>
+<section class="vh-50">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-lg-6 mb-4 mb-lg-0">
+                <div class="card mb-3" style="border-radius: .5rem;">
+                    <div class="row g-0">
+                        <div class="col-md-4 gradient-custom text-center text-white" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+                            <img src="<?php echo base_url()?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;" />
+                            <i class="far fa-edit mb-5"></i>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body p-4">
+                                <h6>Información</h6>
+                                <hr class="mt-0 mb-4">
+                                <div class="row pt-1">
+                                    <div class="col-6 mb-3">
+                                        <h6>Código de Cuenta</h6>
+                                        <p class="text-muted"><?php echo $cod_cuenta ?></p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <h6>Código Personal</h6>
+                                        <p class="text-muted"><?php echo $Per_cod ?></p>
+                                    </div>
+                                </div>
+                                <div class="row pt-1">
+                                    <div class="col-6 mb-3">
+                                        <h6>Área Laboral</h6>
+                                        <p class="text-muted"><?php switch ($S_Per_tipo) {
+                                                                    case 1:
+                                                                        echo "SALUD";
+                                                                        break;
+                                                                    case 2:
+                                                                        echo "TÉCNICO";
+                                                                        break;
+                                                                    case 3:
+                                                                        echo "LIMPIEZA";
+                                                                        break;
+                                                                } ?></p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <h6>Nombre</h6>
+                                        <p class="text-muted"><?php echo $nom_cuenta ?></p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start">
+                                    <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
+                                    <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
+                                    <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a style="float:right;"href="<?php echo base_url() ?>/changepass" tabindex="-1" aria-disabled="true"> <button type="button" name="login" id="login" class="btn btn-primary btn-lg">Cambiar Contraseña</button></a>
     </div>
+</section>
+</container>
+</div>
 </body>
 
 </html>

@@ -893,3 +893,14 @@ in APPPATH\Controllers\Home.php on line 207.
  3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-07 20:31:10 --> Undefined variable $S_Per_tipo
+in APPPATH\Views\USUARIO\viewpacientes.php on line 30.
+ 1 APPPATH\Views\USUARIO\viewpacientes.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $S_Per_tipo', 'APPPATH\\Views\\USUARIO\\viewpacientes.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\viewpacientes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\viewpacientes', [...], true)
+ 5 APPPATH\Controllers\Home.php(90): view('USUARIO\\viewpacientes', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->VerPacientes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

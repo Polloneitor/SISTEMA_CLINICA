@@ -76,16 +76,6 @@ class Home extends BaseController
       $MiObjeto = new T_Paciente($db);
       $pacientes =  $MiObjeto->findAll();
       //print_r($pacientes);
-      $in = $session->getFlashdata('in');
-      switch ($in) {
-         case 1:
-            session()->setFlashdata('message', 'Paciente Eliminado.');
-            session()->setFlashdata('alert-class', 'alert-success');
-            break;
-         case 2:
-            session()->setFlashdata('message', 'Paciente no encontrado, llamar técnico si es un error informativo.');
-            session()->setFlashdata('alert-class', 'alert-danger');
-      }
       $data['listaPacientes'] = $pacientes;
       echo view('template\header');
       echo view('template\navbar', $usuario);
