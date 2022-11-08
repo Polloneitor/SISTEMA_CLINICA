@@ -48,6 +48,10 @@ class T_Personal extends Model
     ];
     protected $skipValidation     = false;
 
+    function updatedata($data, $id){
+        $this->db->table('personal')->set($data)->where('Per_cod', $id)->update();
+     }
+
     public function tipoPersonal()
     {
         $users = $this->select('*')

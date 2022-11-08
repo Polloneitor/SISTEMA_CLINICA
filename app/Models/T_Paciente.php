@@ -48,4 +48,8 @@ class T_Paciente extends Model
         ]
     ];
     protected $skipValidation     = false;
+
+    function updatedata($data, $id){
+        $this->db->table('paciente')->set($data)->where('Pac_rut', $id)->update();
+     }
 }

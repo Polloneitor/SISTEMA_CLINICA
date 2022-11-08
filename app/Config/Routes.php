@@ -59,6 +59,14 @@ $routes->get('/unlogged', 'AccountData::unlogged');
 $routes->get('/details', 'AccountData::index');
 $routes->get('/firstlog', 'AccountData::pass_view');
 $routes->get('/changepass', 'AccountData::pass_view');
+$routes->get('VerPacientes/eliminar/(:num)','Home::pac_delete/$1');
+$routes->get('VerPacientes/editar/(:num)','Home::pac_mod/$1');
+$routes->add('VerPacientes/editar/post','Home::pac_post');
+$routes->get('VerPacientes/editar/proceso/(:num)','Home::pac_modify/$1');
+$routes->get('VerStaff/eliminar/(:num)','Home::per_delete/$1');
+$routes->get('VerStaff/editar/(:num)','Home::per_mod/$1');
+$routes->add('VerStaff/editar/post','Home::per_post');
+$routes->get('VerStaff/editar/proceso/(:num)','Home::per_modify/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

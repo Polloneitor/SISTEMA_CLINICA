@@ -29,7 +29,7 @@
                     </div>
 
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-success">Conectar a Base de Datos</button>
+                        <button type="submit" class="btn btn-success">Ingresar</button>
                     </div>
                 </form>
             </div>

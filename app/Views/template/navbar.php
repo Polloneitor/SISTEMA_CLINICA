@@ -56,7 +56,7 @@
                     </li>
                 <?php endif ?>
                 <li>
-                    <?php echo $nom_cuenta ?>
+                    <?php echo $nom_cuenta?>
                 </li>
                 <?php if ($S_Per_tipo == 1) : ?>
                     <li class="nav-item">

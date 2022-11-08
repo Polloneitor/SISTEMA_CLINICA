@@ -50,8 +50,8 @@
                 endif; ?></td>
             <td><?php echo $item['Per_espec']; ?></td>
             <?php if ($S_Per_tipo == 2) : ?>
-              <td><a href="<?php echo base_url() . '/Home/per_mod?Per_cod=' . $item['Per_cod'] ?>">Modificar</a></td>
-              <td><a href="<?php echo base_url() . '/Home/per_delete?Per_cod=' . $item['Per_cod'] ?>">Borrar</a></td>
+              <td><a href="<?php echo base_url() . '/VerStaff/editar/' . $item['Per_cod'] ?>">Modificar</a></td>
+              <td><a href="<?php echo base_url() . '/VerStaff/eliminar/' . $item['Per_cod'] ?>">Borrar</a></td>
             <?php endif ?>
           </tr>
 
@@ -67,8 +67,12 @@
   <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
   <script>
     $(document).ready(function() {
-      $('#tabla').DataTable();
-    });
+    $('#tabla').DataTable( {
+        language: {
+            url: 'dataTables.german.json'
+        }
+    } );
+} );
   </script>
 </body>
 

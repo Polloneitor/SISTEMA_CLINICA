@@ -39,8 +39,8 @@
               <td><?php echo $item['Pac_edad']; ?></td>
               <td><?php echo $item['Pac_gen']; ?></td>
               <td><?php echo $item['Pac_rut']; ?></td>
-              <td><a href="<?php echo base_url() . '/Home/pac_mod?Pac_rut=' . $item['Pac_rut'] ?>">Modificar</a></td>
-              <td><a href="<?php echo base_url() . '/Home/pac_delete?Pac_rut=' . $item['Pac_rut'] ?>">Borrar</a></td>
+              <td><a href="<?php echo base_url() . '/VerPacientes/editar/' . $item['Pac_rut'] ?>">Modificar</a></td>
+              <td><a href="<?php echo base_url() . '/VerPacientes/eliminar/' . $item['Pac_rut'] ?>">Borrar</a></td>
             <?php else : ?>
               <td><?php echo $item['Pac_nom']; ?></td>
               <td><?php echo $item['Pac_edad']; ?></td>

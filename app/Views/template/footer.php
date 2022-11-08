@@ -30,6 +30,7 @@
     float:left;
     padding: 1%;
   }
+  
 </style>
 
 <body>
