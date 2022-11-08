@@ -21,7 +21,7 @@
 </style>
 
 <body>
-  <div class="container w-70 h-70" style="margin-top:1%;background-color:#7f88eb;">
+  <div class="container w-70 h-70" style="margin-top:1%;background: rgba(0, 133, 255, 0.65);">
     <table id="tabla" class="table table-bordered" style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
       <thead>
         <tr>

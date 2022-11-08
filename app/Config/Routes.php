@@ -67,6 +67,8 @@ $routes->get('VerStaff/eliminar/(:num)','Home::per_delete/$1');
 $routes->get('VerStaff/editar/(:num)','Home::per_mod/$1');
 $routes->add('VerStaff/editar/post','Home::per_post');
 $routes->get('VerStaff/editar/proceso/(:num)','Home::per_modify/$1');
+$routes->setDefaultController('DiagramaGraph');
+$routes->match(['get','post'],'/DiagramaGraph/initChart','DiagramaGraph::initChart');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

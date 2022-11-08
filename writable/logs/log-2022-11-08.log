@@ -1,0 +1,195 @@
+CRITICAL - 2022-11-08 06:11:40 --> Undefined variable $item
+in APPPATH\Views\USUARIO\viewpacientes.php on line 32.
+ 1 APPPATH\Views\USUARIO\viewpacientes.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\USUARIO\\viewpacientes.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\viewpacientes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\viewpacientes', [...], true)
+ 5 APPPATH\Controllers\Home.php(82): view('USUARIO\\viewpacientes', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->VerPacientes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 06:11:56 --> Undefined variable $item
+in APPPATH\Views\USUARIO\viewpacientes.php on line 32.
+ 1 APPPATH\Views\USUARIO\viewpacientes.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\USUARIO\\viewpacientes.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\viewpacientes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\viewpacientes', [...], true)
+ 5 APPPATH\Controllers\Home.php(82): view('USUARIO\\viewpacientes', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->VerPacientes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 06:12:22 --> Undefined variable $item
+in APPPATH\Views\USUARIO\viewpacientes.php on line 32.
+ 1 APPPATH\Views\USUARIO\viewpacientes.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $item', 'APPPATH\\Views\\USUARIO\\viewpacientes.php', 32)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\USUARIO\\viewpacientes.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('USUARIO\\viewpacientes', [...], true)
+ 5 APPPATH\Controllers\Home.php(82): view('USUARIO\\viewpacientes', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->VerPacientes()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:26:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY Per_tipo' at line 3 in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(Pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(Pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(Pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(Pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\DiagramaGraph.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 06:26:13 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\DiagramaGraph.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:26:54 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY Per_tipo' at line 3 in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(Pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(Pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(Pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(Pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\DiagramaGraph.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 06:26:54 --> Call to a member function fetch_array() on bool
+in APPPATH\Controllers\DiagramaGraph.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:26:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY Per_tipo' at line 3 in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(Pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(Pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(Pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(Pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\DiagramaGraph.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 06:26:57 --> Call to a member function fetch_array() on bool
+in APPPATH\Controllers\DiagramaGraph.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:27:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY Per_tipo' at line 3 in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(Pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(Pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(Pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(Pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\DiagramaGraph.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 06:27:01 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\DiagramaGraph.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:27:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY Per_tipo' at line 3 in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(Pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(Pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(Pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(Pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\DiagramaGraph.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 06:27:23 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\DiagramaGraph.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:27:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY Per_tipo' at line 3 in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(Pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(Pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(Pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(Pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\DiagramaGraph.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 06:27:34 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\DiagramaGraph.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:28:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY Per_tipo' at line 3 in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(Pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(Pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(Pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(Pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\DiagramaGraph.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 06:28:10 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\DiagramaGraph.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:36:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY Per_tipo' at line 3 in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(Pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(Pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(Pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(Pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\DiagramaGraph.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 06:36:17 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\DiagramaGraph.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 06:36:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'GROUP BY Per_tipo' at line 3 in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(Pe...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(Pe...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(Pe...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(Pe...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\DiagramaGraph.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 06:36:27 --> Call to a member function getResult() on bool
+in APPPATH\Controllers\DiagramaGraph.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\DiagramaGraph->initChart()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DiagramaGraph))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

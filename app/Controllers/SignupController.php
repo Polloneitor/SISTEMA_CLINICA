@@ -52,6 +52,24 @@ class SignupController extends Controller
             'Per_cod'           => 'required|numeric|is_unique[cuenta.Per_cod]
                                     |matches[personal.Per_cod]'
         ];
+        //$rules->setRules( [
+        //    'nom_cuenta'        => 'required|is_unique[cuenta.nom_cuenta]|min_length[2]|max_length[50]',
+        //    'Per_cod'           => 'required|numeric|is_unique[cuenta.Per_cod]
+        //                            |matches[personal.Per_cod]'
+        //],
+        //[   // Errors
+        //    'nom_cuenta' => [
+        //        'required' => 'All accounts must have usernames provided',
+        //        'is_unique'=>'',
+        //        'min_length'=>'',
+        //        'max_length'=>'',
+        //    ],
+        //    'Per_cod' => [
+        //        'required' => 'Your password is too short. You want to get hacked?',
+        //        'numeric'=>'',
+        //        'matches'=>'',
+        //    ],
+        //]);
         foreach ($personal as $cod) {
             if ($compare == $cod['Per_cod']) {
                 $rules['Per_cod'] = 'required|numeric|is_unique[cuenta.Per_cod]';
@@ -87,6 +105,7 @@ class SignupController extends Controller
             $data['validation'] = $this->validator;
             echo view('template\header');
             echo view('template\navbar', $data);
+            echo view('template\errors');
             echo view('USUARIO\signup', $data);
             echo view('template\footer');
             echo view('template\background');

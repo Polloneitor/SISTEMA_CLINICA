@@ -9,7 +9,7 @@
 </head>
 <style>
     #banner {
-        background-image: url("<?php echo base_url() ?>/public/images/banner.jfif");
+        background-image: url("<?php echo base_url() ?>/public/images/background2.png");
         width: 100%;
         height: 125px;
         background-size:cover;
