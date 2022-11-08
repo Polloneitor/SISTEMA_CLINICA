@@ -25,18 +25,23 @@
                 <?php
                 //Revisar si el usuario existe y está conectado
                 if ($nom_cuenta != NULL) : ?>
-                    <?php if ($S_Per_tipo == 1 or 2) : ?>
+                    <?php 
+                    //Si Cuenta es Salud o Técnico
+                    $prio = [1,2];
+                    if (in_array($S_Per_tipo,$prio)) : ?>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url() ?>/VerPacientes" tabindex="-1" aria-disabled="true">Lista de Pacientes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url() ?>/IngresarPaciente" tabindex="-1" aria-disabled="true">Ingresar Paciente</a>
                         </li>
-                        <li class="nav-item">
+                    <?php endif ?>
+                    <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url() ?>/VerStaff" tabindex="-1" aria-disabled="true">Lista de Personal</a>
                         </li>
-                    <?php endif ?>
-                    <?php if ($S_Per_tipo == 2) : ?>
+                    <?php
+                    //Si Cuenta es solo Técnico 
+                    if ($S_Per_tipo == 2) : ?>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url() ?>/IngresarStaff" tabindex="-1" aria-disabled="true">Ingresar Personal</a>
                         </li>

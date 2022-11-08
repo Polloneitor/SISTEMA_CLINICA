@@ -23,7 +23,7 @@ class FormaControlador extends Controller
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
         $verify = $session->get('isLoggedIn');
-        if ($verify == null || $verify == false) {
+        if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=1 || $usuario['S_Per_tipo']!=2) {
             // do something when exist
             return redirect()->to('/unlogged');
         }
@@ -40,7 +40,7 @@ class FormaControlador extends Controller
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
         $verify = $session->get('isLoggedIn');
-        if ($verify == null || $verify == false) {
+        if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=1 || $usuario['S_Per_tipo']!=2) {
             // do something when exist
             return redirect()->to('/unlogged');
         }
@@ -97,7 +97,7 @@ class FormaControlador extends Controller
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
         $verify = $session->get('isLoggedIn');
-        if ($verify == null || $verify == false) {
+        if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=2) {
             // do something when exist
             return redirect()->to('/unlogged');
         }
@@ -136,7 +136,7 @@ class FormaControlador extends Controller
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
         $verify = $session->get('isLoggedIn');
-        if ($verify == null || $verify == false) {
+        if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=2) {
             // do something when exist
             return redirect()->to('/unlogged');
         }
