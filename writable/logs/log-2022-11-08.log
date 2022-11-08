@@ -242,3 +242,153 @@ in APPPATH\Views\template\changepass.php on line 18.
  7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:37:19 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+in APPPATH\Controllers\Home.php on line 73.
+ 1 APPPATH\Controllers\Home.php(73): in_array([...], '3')
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->VerPacientes()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:50:59 --> Call to a member function getWhere() on null
+in APPPATH\Models\T_Cuenta.php on line 65.
+ 1 APPPATH\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(110)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_delete('110')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:53:28 --> Call to a member function where() on null
+in APPPATH\Models\T_Cuenta.php on line 65.
+ 1 APPPATH\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(110)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_delete('110')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-08 10:57:11 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::row()
+in APPPATH\Models\T_Cuenta.php on line 66.
+ 1 APPPATH\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(110)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_delete('110')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 10:59:12 --> mysqli_sql_exception: Table 'clinica.cuentas' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Model.php(768): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Cuenta.php(65): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(110)
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\Home->per_delete('110')
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 10:59:12 --> Call to a member function row() on bool
+in APPPATH\Models\T_Cuenta.php on line 66.
+ 1 APPPATH\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(110)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_delete('110')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-08 10:59:22 --> mysqli_sql_exception: Table 'clinica.cuentas' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Model.php(768): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Cuenta.php(65): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(110)
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\Home->per_delete('110')
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-08 10:59:57 --> mysqli_sql_exception: Table 'clinica.cuentas' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Model.php(768): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Cuenta.php(65): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(108)
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\Home->per_delete('108')
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-08 11:00:25 --> mysqli_sql_exception: Table 'clinica.cuentas' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Model.php(768): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Cuenta.php(65): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(106)
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\Home->per_delete('106')
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-08 11:00:46 --> mysqli_sql_exception: Table 'clinica.cuentas' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Model.php(768): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Cuenta.php(65): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(107)
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\Home->per_delete('107')
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-08 11:00:49 --> mysqli_sql_exception: Table 'clinica.cuentas' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Model.php(768): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Cuenta.php(65): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(104)
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\Home->per_delete('104')
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-08 11:01:21 --> mysqli_sql_exception: Table 'clinica.cuentas' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Model.php(768): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Cuenta.php(65): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(105)
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\Home->per_delete('105')
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-08 11:01:23 --> mysqli_sql_exception: Table 'clinica.cuentas' doesn't exist in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM c...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM c...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM c...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Model.php(768): CodeIgniter\Database\BaseConnection->query('SELECT * FROM c...')
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Cuenta.php(65): CodeIgniter\Model->__call('query', Array)
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php(132): App\Models\T_Cuenta->buscarCuenta(103)
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\Home->per_delete('103')
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-08 11:10:56 --> Undefined array key "Per_cod"
+in APPPATH\Views\template\editper.php on line 33.
+ 1 APPPATH\Views\template\editper.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_cod"', 'APPPATH\\Views\\template\\editper.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\editper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\editper', [], true)
+ 5 APPPATH\Controllers\Home.php(260): view('template\\editper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_post()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

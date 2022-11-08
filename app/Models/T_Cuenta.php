@@ -60,7 +60,16 @@ class T_Cuenta extends Model
             ->where('cod_cuenta', $cod)
             ->update();
     }
-
+    public function buscarCuenta(int $per_cod = NULL)
+    {
+        $query = $this->query("SELECT * FROM cuentas WHERE Per_cod = $per_cod");
+        return $query;
+    }
+    public function borrarCuenta(int $per_cod)
+    {
+        $this->builder->where($per_cod)
+            ->delete();
+    }
     public function last_record()
     {
         $query = $this->db->query("SELECT * FROM cuenta ORDER BY cod_cuenta DESC LIMIT 1");

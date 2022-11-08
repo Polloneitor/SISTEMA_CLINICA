@@ -29,14 +29,14 @@
           <div class="col">
             <div class='form-group'>
               <label>Nombre</label>
-              <input type="text" name="Per_nom" class='form-control'>
+              <input type="text" name="Per_nom" class='form-control' value = <?php ECHO $data['Per_nom']?>>
               <input name="Per_cod" type="hidden" value="<?php echo $data['Per_cod']?>">
             </div>
           </div>
           <div class="col">
             <div class='form-group'>
               <label>Edad</label>
-              <input type="text" name="Per_edad" class='form-control'>
+              <input type="text" name="Per_edad" class='form-control' value = <?php ECHO $data['Per_edad']?>>
             </div>
           </div>
         </div>

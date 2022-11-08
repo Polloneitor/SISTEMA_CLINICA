@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\T_Cuenta;
 use App\Models\T_Paciente;      //Variable: $MiObjeto = new T_Paciente($db);
 use App\Models\T_Personal;      //Variable: $MiObjeto = new T_Personal($db);
 use App\Models\T_TipoPer;
@@ -35,7 +36,7 @@ class Home extends BaseController
       $usuario['nom_cuenta']  = $session->get('nom_cuenta');
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');
       $verify = $session->get('isLoggedIn');
-      if ($verify == null || $verify == false ) {
+      if ($verify == null || $verify == false) {
          // do something when exist
          return redirect()->to('/unlogged');
       }
@@ -67,10 +68,15 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');
       $usuario['S_Per_tipo']   = $session->get('Per_tipo');
-      $verify = $session->get('isLoggedIn');
-      if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=1 || $usuario['S_Per_tipo']!=2) {
-         // do something when exist
-         return redirect()->to('/unlogged');
+      $S_Per_cod = $session->get('Per_tipo');
+      switch ($S_Per_cod) {
+         case 1:
+            break;
+         case 2:
+            break;
+         case 3:
+            return redirect()->to('/unlogged');
+            break;
       }
       $db = \Config\Database::connect();
       $MiObjeto = new T_Paciente($db);
@@ -107,8 +113,8 @@ class Home extends BaseController
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
       $S_Per_cod  = $session->get('Per_cod');
-      $verify = $session->get('isLoggedIn');
-      if ($verify == null || $verify == false ||  $usuario['S_Per_tipo'] != 1 || $usuario['S_Per_tipo'] != 2) {
+      $prior = [1, 2];
+      if (in_array($S_Per_cod, $prior)) {
          // do something when exist
          return redirect()->to('/unlogged');
       }
@@ -122,6 +128,11 @@ class Home extends BaseController
             return redirect()->to('/index');
          } else {
             ## Delete record
+            $cuenta = new T_Cuenta();
+            $resultado = $cuenta->buscarCuenta($Per_cod);
+            if($resultado != NULL){
+               $cuenta->borrarCuenta($Per_cod);
+            }
             $personal->delete($Per_cod);
 
             session()->setFlashdata('message', 'Deleted Successfully!');
@@ -139,11 +150,15 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
-      $S_Per_cod  = $session->get('Per_cod');
-      $verify = $session->get('isLoggedIn');
-      if ($verify == null || $verify == false || $usuario['S_Per_tipo'] != 2) {
-         // do something when exist
-         return redirect()->to('/unlogged');
+      $S_Per_cod = $session->get('Per_tipo');
+      switch ($S_Per_cod) {
+         case 1:
+            break;
+         case 2:
+            break;
+         case 3:
+            return redirect()->to('/unlogged');
+            break;
       }
       $paciente = new T_Paciente();
 
@@ -173,7 +188,7 @@ class Home extends BaseController
       }
       $personal = new T_Personal();
       if ($personal->find($Per_cod)) {
-         if ($S_Per_cod == $Per_cod || $Per_cod == 100) {
+         if ($Per_cod == 100) {
             return redirect()->to('/VerStaff');
          } else {
             $db = \Config\Database::connect();
@@ -231,7 +246,7 @@ class Home extends BaseController
          $model = new T_TipoPer($db);
          $listaPersonal = $model->findAll();
          $data = [
-            'Per_rut'   => $this->request->getVar('Per_cod'),
+            'Per_cod'   => $this->request->getVar('Per_cod'),
             'Per_nom'   => $this->request->getVar('Per_nom'),
             'Per_edad'  => $this->request->getVar('Per_edad'),
             'Per_gen'   => $this->request->getVar('Per_gen')
@@ -253,10 +268,15 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
-      $verify = $session->get('isLoggedIn');
-      if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=1 || $usuario['S_Per_tipo']!=2) {
-         // do something when exist
-         return redirect()->to('/unlogged');
+      $S_Per_cod = $session->get('Per_tipo');
+      switch ($S_Per_cod) {
+         case 1:
+            break;
+         case 2:
+            break;
+         case 3:
+            return redirect()->to('/unlogged');
+            break;
       }
       $paciente = new T_Paciente();
       if ($paciente->find($Pac_rut)) {
@@ -277,10 +297,15 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
-      $verify = $session->get('isLoggedIn');
-      if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=1 || $usuario['S_Per_tipo']!=2) {
-         // do something when exist
-         return redirect()->to('/unlogged');
+      $S_Per_cod = $session->get('Per_tipo');
+      switch ($S_Per_cod) {
+         case 1:
+            break;
+         case 2:
+            break;
+         case 3:
+            return redirect()->to('/unlogged');
+            break;
       }
       $lista = [];
       $db = \Config\Database::connect();

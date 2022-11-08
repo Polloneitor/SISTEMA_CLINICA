@@ -22,15 +22,20 @@ class FormaControlador extends Controller
         $session = session();
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
-        $verify = $session->get('isLoggedIn');
-        if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=1 || $usuario['S_Per_tipo']!=2) {
-            // do something when exist
-            return redirect()->to('/unlogged');
+        $S_Per_cod = $session->get('Per_tipo');
+        switch ($S_Per_cod) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                return redirect()->to('/unlogged');
+                break;
         }
         echo view('template\header');
         echo view('template\navbar', $usuario);
         echo view('USUARIO\IngresoPaciente');
-        echo view('template\footer');   
+        echo view('template\footer');
         echo view('template\background');
     }
 
@@ -39,10 +44,15 @@ class FormaControlador extends Controller
         $session = session();
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
-        $verify = $session->get('isLoggedIn');
-        if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=1 || $usuario['S_Per_tipo']!=2) {
-            // do something when exist
-            return redirect()->to('/unlogged');
+        $S_Per_cod = $session->get('Per_tipo');
+        switch ($S_Per_cod) {
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                return redirect()->to('/unlogged');
+                break;
         }
         $db = \Config\Database::connect();
         $builder = new T_Paciente($db);
@@ -97,7 +107,7 @@ class FormaControlador extends Controller
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
         $verify = $session->get('isLoggedIn');
-        if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=2) {
+        if ($verify == null || $verify == false || $usuario['S_Per_tipo'] != 2) {
             // do something when exist
             return redirect()->to('/unlogged');
         }
@@ -136,7 +146,7 @@ class FormaControlador extends Controller
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
         $verify = $session->get('isLoggedIn');
-        if ($verify == null || $verify == false || $usuario['S_Per_tipo']!=2) {
+        if ($verify == null || $verify == false || $usuario['S_Per_tipo'] != 2) {
             // do something when exist
             return redirect()->to('/unlogged');
         }
