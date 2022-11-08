@@ -24,7 +24,7 @@ class T_Cuenta extends Model
     protected $validationRules    = [
         'nom_cuenta'   =>  'required|min_length[15]|string',
         'pas_cuenta'  =>  'required|min_length[15]|string',
-        'Per_cod'   => 'required|matches[personal.Per_cod]'
+        'Per_cod'   => 'required'
     ];
     protected $validationMessages = [
         'nom_cuenta' => [
@@ -36,6 +36,9 @@ class T_Cuenta extends Model
             'required' => 'Se requiere una contraseña',
             'min_length' => 'La contraseña de la cuenta tiene que tener mínimo 15 carácteres',
             'string' => 'Tiene que contener carácteres alfabéticos'
+        ],
+        'Per_cod' => [
+            'required' => 'Se necesita establecer un código de personal.'
         ]
     ];
     protected $skipValidation     = false;

@@ -60,6 +60,7 @@ class AccountData extends Controller
         }
         $userModel = new T_Cuenta();
         $user = $userModel->find($usuario['cod_cuenta']);
+        $usuario['firstlogin_cuenta'] = $user['firstlogin_cuenta'];
         if ($user) {
             $OldPass = $this->request->getVar('OldPass');
             $NewPass = $this->request->getVar('NewPass');
@@ -67,16 +68,32 @@ class AccountData extends Controller
             $pass = $user['pas_cuenta'];
             $authenticatePassword = password_verify($OldPass, $pass);
             if ($authenticatePassword) {
-                if ($NewPass == $Confirmed) {
-                    $changePass = password_hash($Confirmed, PASSWORD_DEFAULT);
-                    $userModel->updatePass($user['cod_cuenta'], $changePass);
-                    return redirect()->to('/details');
+                if ($OldPass == $NewPass || $OldPass == $Confirmed) {
+                    $data['errors'] = ['La primera contraseña y la nueva contraseña no puede ser la misma.'];
+                    return view('template\header') .
+                        view('template\navbar', $usuario) .
+                        view('template\errors', $data) .
+                        view('template\changepass', $usuario) .
+                        view('template\footer') .
+                        view('template\background');
+                } else {
+                    if ($NewPass == $Confirmed) {
+                        $changePass = password_hash($Confirmed, PASSWORD_DEFAULT);
+                        $userModel->updatePass($user['cod_cuenta'], $changePass);
+                        return redirect()->to('/details');
+                    } else {
+                        $data['errors'] = ['La nueva contraseña y confirmación de ella no son las mismas'];
+                        return view('template\header') .
+                            view('template\navbar', $usuario) .
+                            view('template\errors', $data) .
+                            view('template\changepass', $usuario) .
+                            view('template\footer') .
+                            view('template\background');
+                    }
                 }
             } else {
                 return redirect()->to('/changepass');
             }
-        } else {
-            return redirect()->to('/changepass');
         }
     }
     public function unlogged()

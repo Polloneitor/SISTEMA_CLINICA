@@ -77,25 +77,14 @@ class SignupController extends Controller
             };
         }
         if ($this->validate($rules)) {
-            $autoincrement = NULL;
             $db = \Config\Database::connect();
-            $table = new T_Cuenta($db);
-            $cuentas = $table->findAll();
-            if (empty($cuentas)) {
-                $autoincrement = 0;
-            } else {
-                $cuenta =  $table->last_record();
-                $array = json_decode(json_encode($cuenta), true);
-                $tamanio = $array['cod_cuenta'];
-                $autoincrement = $tamanio;
-            }
             $data = [
-                'cod_cuenta'     => 1 + $autoincrement,
                 'nom_cuenta'     => $this->request->getVar('nom_cuenta'),
                 'pas_cuenta'     => password_hash('Test', PASSWORD_DEFAULT),
                 'Per_cod'        => $this->request->getVar('Per_cod'),
                 'firstlogin_cuenta' => 0
             ];
+            
             $builder = $db->table('cuenta');
             $builder->insert($data);
             return redirect()->to('/signin');

@@ -16,6 +16,7 @@
                 <?php if (isset($validation)) : ?>
                     <div class="alert alert-warning">
                         <?= $validation->listErrors() ?>
+                        <span class="close">&times;</span>
                     </div>
                 <?php endif; ?>
                 <form action="<?php base_url(); ?>/SISTEMA_CLINICA/SignupController/store" method="post">
@@ -34,5 +35,16 @@
         </div>
     </div>
 </body>
+<script>
+    // Get all elements with class="close"
+var closebtns = document.getElementsByClassName("close");
+var i;
 
+// Loop through the elements, and hide the parent, when clicked on
+for (i = 0; i < closebtns.length; i++) {
+  closebtns[i].addEventListener("click", function() {
+    this.parentElement.style.display = 'none';
+  });
+}
+</script>
 </html>
