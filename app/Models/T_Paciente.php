@@ -29,22 +29,22 @@ class T_Paciente extends Model
     ];
     protected $validationMessages = [
         'Pac_rut' => [
-            'required'  => 'Este campo requiere el número RUT de la cédula de identificación',
-            'is_unique' => 'Este campo requiere ser único por paciente',
-            'exact_lnegth' => 'Este campo requiere de un RUT válido'
+            'required'  => 'Este campo requiere el número RUT de la cédula de identificación.',
+            'is_unique' => 'Este campo requiere ser único por paciente.',
+            'exact_length' => 'Este campo requiere de un RUT válido.',
         ],
         'Pac_nom' => [
-            'required'      => 'Este campo requiere de un nombre para identificar en la base de datos',
-            'max_length'    => 'Este campo debe ser máximo 30 cáracteres',
-            'string'        =>  'Este campo debe constar de letras, no números o cáracteres especiales'
+            'required'      => 'Este campo requiere de un nombre para identificar en la base de datos.',
+            'max_length'    => 'Este campo debe ser máximo 30 cáracteres.',
+            'string'        =>  'Este campo debe constar de letras, no números o cáracteres especiales.'
         ],
         'Pac_edad' => [
-            'required'  => 'Este campo requiere de una edad obligatoria',
-            'numeric'   => 'Este campo debe consistir de solo números'
+            'required'  => 'Este campo requiere de una edad obligatoria.',
+            'numeric'   => 'Este campo debe consistir de solo números.'
         ],
         'Pac_gen'   => [
-            'required'      => 'Se necesita especificar un género',
-            'exact_length'  => 'Usar una sola letra para este campo'
+            'required'      => 'Se necesita especificar un género.',
+            'exact_length'  => 'Usar una sola letra para este campo.'
         ]
     ];
     protected $skipValidation     = false;
