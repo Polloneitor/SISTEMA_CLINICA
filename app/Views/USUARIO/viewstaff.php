@@ -21,7 +21,7 @@
 </style>
 
 <body>
-  <div class="container w-70 h-70" style="margin-top:1%;background: rgba(0, 133, 255, 0.65);">
+  <div class="container" style="margin-top:1%;background: rgba(0, 133, 255, 0.65);">
     <table id="tabla" class="table table-bordered" style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
       <thead>
         <tr>
@@ -32,6 +32,8 @@
           <th scope="col" style="background-color:#F3F3F3;">Especialidad</th>
           <?php if ($S_Per_tipo == 2) : ?>
             <th scope="col" style="background-color: #F3F3F3;">Modificar</th>
+          <?php endif ?>
+          <?php if ($S_Per_cod == 100) : ?>
             <th scope="col" style="background-color: #F3F3F3;">Borrar</th>
           <?php endif ?>
         </tr>
@@ -50,8 +52,10 @@
                 endif; ?></td>
             <td><?php echo $item['Per_espec']; ?></td>
             <?php if ($S_Per_tipo == 2) : ?>
-              <td><a href="<?php echo base_url() . '/VerStaff/editar/' . $item['Per_cod'] ?>">Modificar</a></td>
-              <td><a href="<?php echo base_url() . '/VerStaff/eliminar/' . $item['Per_cod'] ?>">Borrar</a></td>
+              <td><a href="<?php echo base_url() . '/VerStaff/editar/question/' . $item['Per_cod'] ?>">Modificar</a></td>
+            <?php endif ?>
+            <?php if ($S_Per_cod == 100) : ?>
+              <td><a href="<?php echo base_url() . '/VerStaff/eliminar/question/' . $item['Per_cod'] ?>">Borrar</a></td>
             <?php endif ?>
           </tr>
 
@@ -64,9 +68,15 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"></script>
   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+  <script src="//cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+  <script src="//cdn.datatables.net/buttons/1.5.6/js/buttons.bootstrap4.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#tabla').DataTable({
+        scrollY: 200,
+        deferRender: true,
+        scroller: true,
         "language": {
           "aria": {
             "sortAscending": ": orden ascendente",

@@ -24,23 +24,23 @@
   <div class="container" style="background: rgba(0, 133, 255, 0.65);">
     <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
       <h1>Ingresar Paciente</h1>
-      <form action="<?php echo base_url() . '/VerPacientes/editar/post'?>" method="post">
+      <form action="<?php echo base_url() . '/VerPacientes/editar/post' ?>" method="post">
         <div class='form-group'>
           <label>Rut</label>
-          <input type="text" id="disabledInput" disabled value="<?php echo $data['Pac_rut']?>" name="disabled" class='form-control'>
-          <input name="Pac_rut" type="hidden" value="<?php echo $data['Pac_rut']?>">
+          <input type="text" id="disabledInput" disabled value="<?php echo $data['Pac_rut'] ?>" name="disabled" class='form-control'>
+          <input name="Pac_rut" type="hidden" value="<?php echo $data['Pac_rut'] ?>">
         </div>
         <div class="row mb-4">
           <div class="col">
             <div class='form-group'>
               <label>Nombre</label>
-              <input type="text" value="<?php echo $data['Pac_nom']?>"  name="Pac_nom" class='form-control'>
+              <input type="text" value="<?php echo $data['Pac_nom'] ?>" name="Pac_nom" class='form-control'>
             </div>
           </div>
           <div class="col">
             <div class='form-group'>
               <label>Edad</label>
-              <input type="text" value="<?php echo $data['Pac_edad']?>" name="Pac_edad" class='form-control'>
+              <input type="text" value="<?php echo $data['Pac_edad'] ?>" name="Pac_edad" class='form-control'>
             </div>
           </div>
           <div class="col">
@@ -48,10 +48,27 @@
               <label>Género</label>
               <div class="form-group">
                 <select class="form-control form-control-sm" name="Pac_gen">
-                  <option selected>Elegir Género</option>
-                  <option value="M">M</option>
-                  <option value="F">F</option>
-                  <option value="O">O</option>
+                  <?php if ($data['Pac_gen'] == 'M') : ?>
+                    <option>Elegir Género</option>
+                    <option selected value="M">M</option>
+                    <option value="F">F</option>
+                    <option value="O">O</option>
+                  <?php elseif ($data['Pac_gen'] == 'F') : ?>
+                    <option>Elegir Género</option>
+                    <option value="M">M</option>
+                    <option selected value="F">F</option>
+                    <option value="O">O</option>
+                  <?php elseif ($data['Pac_gen'] == 'O') : ?>
+                    <option>Elegir Género</option>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                    <option selected value="O">O</option>
+                  <?php else : ?>
+                    <option selected>Elegir Género</option>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                    <option value="O">O</option>
+                  <?php endif ?>
                 </select>
               </div>
             </div>

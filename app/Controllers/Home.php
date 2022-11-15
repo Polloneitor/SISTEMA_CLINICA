@@ -35,6 +35,7 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta']  = $session->get('nom_cuenta');
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');
+      $usuario['S_Per_cod']  = $session->get('Per_cod');
       $verify = $session->get('isLoggedIn');
       if ($verify == null || $verify == false) {
          // do something when exist
@@ -51,11 +52,14 @@ class Home extends BaseController
             session()->setFlashdata('alert-class', 'alert-danger');
       }
       $db = \Config\Database::connect();
-      $MiObjeto = new T_Personal($db);
-      $personal =  $MiObjeto->findAll();
-      //print_r($personal);
+      $builder = $db->table('personal');
+      $listado = $builder->select()
+         ->where('Per_cod !=', 100)
+         ->where('Per_cod !=', $usuario['S_Per_cod'])
+         ->get()->getResultArray();
+      //print_r($listado);
 
-      $data['listaPersonal'] = $personal;
+      $data['listaPersonal'] = $listado;
       echo view('template\header');
       echo view('template\navbar', $usuario);
       echo view('USUARIO\viewstaff', $data, $usuario);
@@ -106,6 +110,24 @@ class Home extends BaseController
       echo view('template\footer');
       echo view('template\background');
    }
+   public function PerDelQuestion($Per_cod = NULL)
+   {
+      $session = session();
+      $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
+      $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
+      $S_Per_cod  = $session->get('Per_cod');
+      $prior = [1, 2];
+      if (in_array($S_Per_cod, $prior)) {
+         // do something when exist
+         return redirect()->to('/unlogged');
+      }
+      $data['target'] = $Per_cod;
+      echo view('template\header');
+      echo view('template\navbar', $usuario);
+      echo view('template\PerQuestionDelete', $data);
+      echo view('template\footer');
+      echo view('template\background');
+   }
    public function per_delete($Per_cod = NULL)
    {
 
@@ -124,13 +146,13 @@ class Home extends BaseController
 
       ## Check record
       if ($personal->find($Per_cod)) {
-         if ($Per_cod == $cod) {
+         if ($Per_cod == $cod || $Per_cod <= 100) {
             return redirect()->to('/index');
          } else {
             ## Delete record
             $cuenta = new T_Cuenta();
             $resultado = $cuenta->buscarCuenta($Per_cod);
-            if($resultado != NULL){
+            if ($resultado != NULL) {
                $cuenta->borrarCuenta($Per_cod);
             }
             $personal->delete($Per_cod);
@@ -144,7 +166,24 @@ class Home extends BaseController
       }
       return redirect()->to('/VerStaff');
    }
-
+   public function PacDelQuestion($Pac_rut = NULL)
+   {
+      $session = session();
+      $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
+      $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
+      $S_Per_cod  = $session->get('Per_cod');
+      $prior = [1, 2];
+      if (in_array($S_Per_cod, $prior)) {
+         // do something when exist
+         return redirect()->to('/unlogged');
+      }
+      $data['target'] = $Pac_rut;
+      echo view('template\header');
+      echo view('template\navbar', $usuario);
+      echo view('template\PacQuestionDelete', $data);
+      echo view('template\footer');
+      echo view('template\background');
+   }
    public function pac_delete($Pac_rut = NULL)
    {
       $session = session();
@@ -174,7 +213,24 @@ class Home extends BaseController
 
       return redirect()->to('/VerPacientes');
    }
-
+   public function perModQuestion($Per_cod = NULL)
+   {
+      $session = session();
+      $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
+      $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
+      $S_Per_cod  = $session->get('Per_cod');
+      $prior = [1, 2];
+      if (in_array($S_Per_cod, $prior)) {
+         // do something when exist
+         return redirect()->to('/unlogged');
+      }
+      $data['target'] = $Per_cod;
+      echo view('template\header');
+      echo view('template\navbar', $usuario);
+      echo view('template\PerQuestionModify', $data);
+      echo view('template\footer');
+      echo view('template\background');
+   }
    public function per_mod($Per_cod = NULL)
    {
       $session = session();
@@ -262,7 +318,24 @@ class Home extends BaseController
             view('template\background');
       }
    }
-
+   public function PacModQuestion($Pac_rut = NULL)
+   {
+      $session = session();
+      $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
+      $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
+      $S_Per_cod  = $session->get('Per_cod');
+      $prior = [1, 2];
+      if (in_array($S_Per_cod, $prior)) {
+         // do something when exist
+         return redirect()->to('/unlogged');
+      }
+      $data['target'] = $Pac_rut;
+      echo view('template\header');
+      echo view('template\navbar', $usuario);
+      echo view('template\PacQuestionModify', $data);
+      echo view('template\footer');
+      echo view('template\background');
+   }
    public function pac_mod($Pac_rut = 0)
    {
       $session = session();

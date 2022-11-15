@@ -20,7 +20,7 @@
 </style>
 
 <body>
-  <div class="container w-70 h-70" style="margin-top:1%;background: rgba(0, 133, 255, 0.65);">
+  <div class="container" style="margin-top:1%;background: rgba(0, 133, 255, 0.65);">
     <table id="tabla" class="table table-bordered" style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
       <thead>
         <tr>
@@ -41,8 +41,8 @@
               <td><?php echo $item['Pac_edad']; ?></td>
               <td><?php echo $item['Pac_gen']; ?></td>
               <td><?php echo $item['Pac_rut'];  ?></td>
-              <td><a href="<?php echo base_url() . '/VerPacientes/editar/' . $item['Pac_rut'] ?>">Modificar</a></td>
-              <td><a href="<?php echo base_url() . '/VerPacientes/eliminar/' . $item['Pac_rut'] ?>">Borrar</a></td>
+              <td><a href="<?php echo base_url() . '/VerPacientes/editar/question/' . $item['Pac_rut'] ?>">Modificar</a></td>
+              <td><a href="<?php echo base_url() . '/VerPacientes/eliminar/question/' . $item['Pac_rut'] ?>">Borrar</a></td>
             <?php else : ?>
               <td><?php echo $item['Pac_nom']; ?></td>
               <td><?php echo $item['Pac_edad']; ?></td>
@@ -60,9 +60,15 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css"></script>
   <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+  <script src="//cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+  <script src="//cdn.datatables.net/buttons/1.5.6/js/dataTables.buttons.min.js"></script>
+  <script src="//cdn.datatables.net/buttons/1.5.6/js/buttons.bootstrap4.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function() {
       $('#tabla').DataTable({
+        scrollY: 200,
+        deferRender: true,
+        scroller: true,
         "language": {
           "aria": {
             "sortAscending": ": orden ascendente",

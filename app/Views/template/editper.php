@@ -24,19 +24,19 @@
   <div class="container" style="background: rgba(0, 133, 255, 0.65);">
     <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
       <h1>Ingresar Personal</h1>
-      <form action="<?php echo base_url() . '/VerStaff/editar/post'?>" method="post">
+      <form action="<?php echo base_url() . '/VerStaff/editar/post' ?>" method="post">
         <div class="row mb-4">
           <div class="col">
             <div class='form-group'>
               <label>Nombre</label>
-              <input type="text" name="Per_nom" class='form-control' value = <?php ECHO $data['Per_nom']?>>
-              <input name="Per_cod" type="hidden" value="<?php echo $data['Per_cod']?>">
+              <input type="text" name="Per_nom" class='form-control' value=<?php echo $data['Per_nom'] ?>>
+              <input name="Per_cod" type="hidden" value="<?php echo $data['Per_cod'] ?>">
             </div>
           </div>
           <div class="col">
             <div class='form-group'>
               <label>Edad</label>
-              <input type="text" name="Per_edad" class='form-control' value = <?php ECHO $data['Per_edad']?>>
+              <input type="text" name="Per_edad" class='form-control' value=<?php echo $data['Per_edad'] ?>>
             </div>
           </div>
         </div>
@@ -46,10 +46,27 @@
               <label>Género</label>
               <div class="form-group">
                 <select class="form-control form-control-sm" name="Per_gen">
-                  <option selected>Elegir Género</option>
-                  <option value="M">M</option>
-                  <option value="F">F</option>
-                  <option value="O">O</option>
+                  <?php if ($data['Per_gen'] == 'M') : ?>
+                    <option>Elegir Género</option>
+                    <option selected value="M">M</option>
+                    <option value="F">F</option>
+                    <option value="O">O</option>
+                  <?php elseif ($data['Per_gen'] == 'F') : ?>
+                    <option>Elegir Género</option>
+                    <option value="M">M</option>
+                    <option selected value="F">F</option>
+                    <option value="O">O</option>
+                  <?php elseif ($data['Per_gen'] == 'O') : ?>
+                    <option>Elegir Género</option>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                    <option selected value="O">O</option>
+                  <?php else : ?>
+                    <option selected>Elegir Género</option>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                    <option value="O">O</option>
+                  <?php endif ?>
                 </select>
               </div>
             </div>
@@ -58,10 +75,14 @@
             <div class='form-group'>
               <label>Tipo</label>
               <select class="form-control form-control-sm" name="Per_tipo" id="Per_tipo">
-                <option selected>Elegir Tipo de Personal</option>
+                <option>Elegir Tipo de Personal</option>
                 <?php foreach ($listaPersonal as $item) : ?>
                   <td>
-                    <option value="<?php echo $item['tipo_cod']; ?>"><?php echo $item['tipo_nom']; ?></option>
+                    <?php if ($data['Per_tipo'] == $item['tipo_cod']) : ?>
+                      <option selected value="<?php echo $item['tipo_cod']; ?>"><?php echo $item['tipo_nom']; ?></option>
+                    <?php else : ?>
+                      <option value="<?php echo $item['tipo_cod']; ?>"><?php echo $item['tipo_nom']; ?></option>
+                    <?php endif ?>
                   </td>
                 <?php endforeach; ?>
               </select>

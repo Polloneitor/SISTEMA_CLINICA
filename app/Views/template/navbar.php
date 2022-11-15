@@ -48,9 +48,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url() ?>/signup" tabindex="-1" aria-disabled="true">Crear Cuenta</a>
                         </li>
-                        <!--<li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="<?php echo base_url() ?>/DiagramaGraph/initChart" tabindex="-1" aria-disabled="true">Diagrama de Datos</a>
-                        </li>-->
+                        </li>
                     <?php endif ?>
                     <li class="nav-item">
                         <a class="nav-link" href="<?php echo base_url() ?>/details" tabindex="-1" aria-disabled="true">Datos de Cuenta</a>
