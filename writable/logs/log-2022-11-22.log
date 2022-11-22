@@ -141,3 +141,60 @@ hello: 250-smtp.googlemail.com at your service, [181.73.172.21]
 Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
 535 5.7.8  https://support.google.com/mail/?p=BadCredentials q5-20020a056808200500b003549dde122fsm5715188oiw.5 - gsmtp
 
+ERROR - 2022-11-22 12:30:05 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`clinica`.`personal`, CONSTRAINT `FK_personal_tipos` FOREIGN KEY (`Per_tipo`) REFERENCES `tipo_personal` (`tipo_cod`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\MySQLi\Connection.php(292): mysqli->query('UPDATE `persona...', 0)
+#1 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `persona...')
+#2 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `persona...')
+#3 C:\xampp\htdocs\SISTEMA_CLINICA\system\Database\BaseBuilder.php(2078): CodeIgniter\Database\BaseConnection->query('UPDATE `persona...', Array, false)
+#4 C:\xampp\htdocs\SISTEMA_CLINICA\app\Models\T_Personal.php(52): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\SISTEMA_CLINICA\app\Controllers\Home.php(299): App\Models\T_Personal->updatedata(Array, '121')
+#6 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(904): App\Controllers\Home->per_post()
+#7 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\SISTEMA_CLINICA\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\SISTEMA_CLINICA\index.php(68): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-22 12:31:59 --> Undefined array key "Per_tipo"
+in APPPATH\Views\template\editper.php on line 81.
+ 1 APPPATH\Views\template\editper.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_tipo"', 'APPPATH\\Views\\template\\editper.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\editper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\editper', [], true)
+ 5 APPPATH\Controllers\Home.php(317): view('template\\editper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_post()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 12:32:31 --> Undefined array key "Per_tipo"
+in APPPATH\Views\template\editper.php on line 81.
+ 1 APPPATH\Views\template\editper.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_tipo"', 'APPPATH\\Views\\template\\editper.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\editper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\editper', [], true)
+ 5 APPPATH\Controllers\Home.php(317): view('template\\editper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_post()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 12:33:26 --> Undefined array key "Per_tipo"
+in APPPATH\Views\template\editper.php on line 81.
+ 1 APPPATH\Views\template\editper.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_tipo"', 'APPPATH\\Views\\template\\editper.php', 81)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\editper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\editper', [], true)
+ 5 APPPATH\Controllers\Home.php(317): view('template\\editper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_post()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 12:35:44 --> Undefined array key "Per_espec"
+in APPPATH\Views\template\editper.php on line 94.
+ 1 APPPATH\Views\template\editper.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_espec"', 'APPPATH\\Views\\template\\editper.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\editper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\editper', [], true)
+ 5 APPPATH\Controllers\Home.php(318): view('template\\editper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_post()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
