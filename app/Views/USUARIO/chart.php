@@ -47,7 +47,7 @@
 				options: {
 					hoverBorderColor:'#000000',
 					animation: {
-						duration: 2500,
+						duration: 1500,
 						easing: 'easeInExpo'
 					},
 					responsive: false,

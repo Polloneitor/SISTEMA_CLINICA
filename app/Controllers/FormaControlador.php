@@ -140,6 +140,28 @@ class FormaControlador extends Controller
             return redirect()->to('/infoPer');
         }
     }
+    public function QRinfo($Per_cod = NULL)
+    {
+        $session = session();
+        $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
+        $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
+        $verify = $session->get('isLoggedIn');
+        if ($verify == null || $verify == false || $usuario['S_Per_tipo'] != 2) {
+            // do something when exist
+            return redirect()->to('/unlogged');
+        }
+        $db = \Config\Database::connect();
+        $MiObjeto = new T_Personal($db);     
+        $data =  $MiObjeto->find($Per_cod);
+    
+        echo view('template\header');
+        echo view('template\navbar', $usuario);
+        echo view('template\newpersonal', $data);
+        echo view('template\footer');
+        echo view('template\background');
+
+    }
+
     public function info()
     {
         $session = session();
@@ -158,7 +180,7 @@ class FormaControlador extends Controller
 
         echo view('template\header');
         echo view('template\navbar', $usuario);
-        echo view('template\newpersonal', $data);
+        echo view('template\QrTest', $data);
         echo view('template\footer');
         echo view('template\background');
     }

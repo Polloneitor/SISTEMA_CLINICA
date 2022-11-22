@@ -43,6 +43,7 @@ $routes->add('/VerStaff', 'Home::VerStaff');
 $routes->add('/IngresarStaff', 'FormaControlador::InPer');
 $routes->add('/inStaff', 'FormaControlador::insertarPersonal');
 $routes->get('/infoPer', 'FormaControlador::info');
+$routes->get('/infoPer/QR/(:num)', 'FormaControlador::QRinfo/$1');
 $routes->add('/VerPacientes', 'Home::VerPacientes');
 $routes->add('/IngresarPaciente', 'FormaControlador::InPac');
 $routes->add('/inPaciente', 'FormaControlador::insertarPaciente');
@@ -73,6 +74,8 @@ $routes->add('VerStaff/editar/post','Home::per_post');
 $routes->get('VerStaff/editar/proceso/(:num)','Home::per_modify/$1');
 $routes->setDefaultController('DiagramaGraph');
 $routes->match(['get','post'],'/DiagramaGraph/initChart','DiagramaGraph::initChart');
+$routes->get('/emailsend', 'SendMail::index');
+$routes->match(['get', 'post'], 'SendMail/sendMail', 'SendMail::sendMail');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -33,15 +33,15 @@ class DiagramaGraph extends Controller
             switch ($x) {
                 case 0:
                     $data['SALUD'] = $query[$x];
-                    print_r($data['SALUD']);
+                    //print_r($data['SALUD']);
                     break;
                 case 1:
                     $data['TECNICO'] = $query[$x];
-                    print_r($data['TECNICO']);
+                    //print_r($data['TECNICO']);
                     break;
                 case 2:
                     $data['LIMPIEZA'] = $query[$x];
-                    print_r($data['LIMPIEZA']);
+                    //print_r($data['LIMPIEZA']);
                     break;
             }
         }

@@ -280,6 +280,7 @@ class Home extends BaseController
          'Per_nom' => $this->request->getVar('Per_nom'),
          'Per_edad' => $this->request->getVar('Per_edad'),
          'Per_gen' => $this->request->getVar('Per_gen'),
+         'Per_tipo'  => $this->request->getVar('Per_tipo'),
          'Per_espec' => $this->request->getVar('Per_espec')
       ];
       $genero = ["M", "F", "O"];

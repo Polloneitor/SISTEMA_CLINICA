@@ -78,6 +78,13 @@
             <a href="https://www.robotitus.com/esta-bacteria-se-esta-volviendo-tan-resistente-a-los-antibioticos-que-no-podremos-detenerla" class="btn btn-primary">Ir</a>
           </div>
         </div>
+        <div class="box w-100 h-50 bg-light">
+          <div class="box-body">
+            <h5 class="card-tittle">Test: enviar mail</h5>
+            <p class="card-text"></p>
+            <a href="<?php echo base_url()?>/emailsend" class="btn btn-primary">Ir</a>
+          </div>
+        </div>
       </div>
     </div>
 

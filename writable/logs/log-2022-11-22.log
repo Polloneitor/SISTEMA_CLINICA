@@ -1,0 +1,128 @@
+CRITICAL - 2022-11-22 06:26:21 --> Invalid file: form_view.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('form_view.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('form_view', [], true)
+ 3 APPPATH\Controllers\SendMail.php(9): view('form_view')
+ 4 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\SendMail->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SendMail))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-22 06:27:44 --> Email: Unable to send email using PHP SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2022-11-22 06:27:44 --> 220 smtp.googlemail.com ESMTP a23-20020aca1a17000000b00359a9663053sm5283390oia.4 - gsmtp
+
+hello: 250-smtp.googlemail.com at your service, [181.73.172.21]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a23-20020aca1a17000000b00359a9663053sm5283390oia.4 - gsmtp
+
+CRITICAL - 2022-11-22 07:16:18 --> Undefined array key "Per_espec"
+in APPPATH\Views\template\editper.php on line 94.
+ 1 APPPATH\Views\template\editper.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_espec"', 'APPPATH\\Views\\template\\editper.php', 94)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\editper.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\editper', [], true)
+ 5 APPPATH\Controllers\Home.php(258): view('template\\editper', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->per_mod('116')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:36:40 --> Undefined variable $Per_cod
+in APPPATH\Views\template\QrTest.php on line 20.
+ 1 APPPATH\Views\template\QrTest.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_cod', 'APPPATH\\Views\\template\\QrTest.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\QrTest.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\QrTest', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(160): view('template\\QrTest', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->QRinfo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:37:15 --> Undefined variable $array
+in APPPATH\Controllers\FormaControlador.php on line 157.
+ 1 APPPATH\Controllers\FormaControlador.php(157): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $array', 'APPPATH\\Controllers\\FormaControlador.php', 157)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->QRinfo()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:38:40 --> Undefined variable $Per_cod
+in APPPATH\Views\template\QrTest.php on line 20.
+ 1 APPPATH\Views\template\QrTest.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_cod', 'APPPATH\\Views\\template\\QrTest.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\QrTest.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\QrTest', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(160): view('template\\QrTest', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->QRinfo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:41:47 --> Undefined variable $Per_cod
+in APPPATH\Views\template\QrTest.php on line 20.
+ 1 APPPATH\Views\template\QrTest.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_cod', 'APPPATH\\Views\\template\\QrTest.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\QrTest.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\QrTest', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(160): view('template\\QrTest', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->QRinfo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:42:11 --> Undefined variable $Per_cod
+in APPPATH\Views\template\QrTest.php on line 20.
+ 1 APPPATH\Views\template\QrTest.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_cod', 'APPPATH\\Views\\template\\QrTest.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\QrTest.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\QrTest', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(161): view('template\\QrTest', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->QRinfo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:42:22 --> syntax error, unexpected identifier "print_r", expecting "function" or "const"
+in APPPATH\Controllers\FormaControlador.php on line 159.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\FormaControlador.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\FormaControlador')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\FormaControlador')
+ 4 SYSTEMPATH\CodeIgniter.php(854): class_exists('\\App\\Controllers\\FormaControlador', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:42:28 --> Undefined variable $Per_cod
+in APPPATH\Views\template\QrTest.php on line 20.
+ 1 APPPATH\Views\template\QrTest.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_cod', 'APPPATH\\Views\\template\\QrTest.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\QrTest.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\QrTest', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(162): view('template\\QrTest', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->QRinfo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:42:54 --> Undefined variable $Per_cod
+in APPPATH\Views\template\QrTest.php on line 20.
+ 1 APPPATH\Views\template\QrTest.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_cod', 'APPPATH\\Views\\template\\QrTest.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\QrTest.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\QrTest', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(162): view('template\\QrTest', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->QRinfo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-22 07:43:54 --> Undefined variable $Per_cod
+in APPPATH\Views\template\QrTest.php on line 20.
+ 1 APPPATH\Views\template\QrTest.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_cod', 'APPPATH\\Views\\template\\QrTest.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\QrTest.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\QrTest', [], true)
+ 5 APPPATH\Controllers\FormaControlador.php(162): view('template\\QrTest', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->QRinfo()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
