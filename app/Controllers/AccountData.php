@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\T_Cuenta;
+use App\Models\T_Personal;
 
 class AccountData extends Controller
 {
@@ -14,14 +15,19 @@ class AccountData extends Controller
         $usuario['S_Per_tipo']  =   $session->get('Per_tipo');     // Si Usuario tiene privilegio
         $usuario['Per_cod']     =   $session->get('Per_cod');
         $usuario['cod_cuenta']  =   $session->get('cod_cuenta');
+        $usuario['file']  =   $session->get('file');
         $verify = $session->get('isLoggedIn');
         if ($verify == null || $verify == false) {
             // do something when exist
             return redirect()->to('/unlogged');
         }
+        $userModel = new T_Personal();
+        $user = $userModel->find($usuario['Per_cod']);
+        $data = array_merge($usuario, $user);
+
         echo view('template\header');
         echo view('template\navbar', $usuario);
-        echo view('template\cuenta', $usuario);
+        echo view('template\cuenta', $data);
         echo view('template\footer');
         echo view('template\background');
     }
@@ -99,5 +105,55 @@ class AccountData extends Controller
     public function unlogged()
     {
         echo view('template\non-login');
+    }
+
+    public function upload()
+    {
+        $session = session();
+        $usuario['nom_cuenta']  =   $session->get('nom_cuenta');   // Si Usuario está conectado
+        $usuario['S_Per_tipo']  =   $session->get('Per_tipo');     // Si Usuario tiene privilegio
+        $usuario['Per_cod']     =   $session->get('Per_cod');
+        $usuario['cod_cuenta']  =   $session->get('cod_cuenta');
+        $usuario['file']  =   $session->get('file');
+        $verify = $session->get('isLoggedIn');
+        if ($verify == null || $verify == false) {
+            // do something when exist
+            return redirect()->to('/unlogged');
+        }
+        if ($usuario['Per_cod'] != NULL) {
+            helper(['form', 'url']);
+
+            $database = \Config\Database::connect();
+            $builder = $database->table('cuenta');
+            $validateImage = $this->validate([
+                'file' => [
+                    'uploaded[file]',
+                    'mime_in[file, image/png, image/jpg,image/jpeg, image/gif]',
+                    'max_size[file, 4096]',
+                ],
+            ]);
+
+            $response = [
+                'success' => false,
+                'data' => '',
+                'msg' => "Imagen no pudo haber sido subida"
+            ];
+            if ($validateImage) {
+                $imageFile = $this->request->getFile('file');
+                $imageFile->move(WRITEPATH . 'uploads');
+                $data = [
+                    'Per_cod' => $usuario['Per_cod'],
+                    'img_name' => $imageFile->getClientName(),
+                    'file'  => $imageFile->getClientMimeType()
+                ];
+                $save = $builder->insert($data);
+                $response = [
+                    'success' => true,
+                    'data' => $save,
+                    'msg' => "Imagen ha sido subida."
+                ];
+            }
+            return $this->response->setJSON($response);
+        }
     }
 }

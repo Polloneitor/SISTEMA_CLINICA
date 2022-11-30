@@ -6,9 +6,6 @@ use App\Models\T_Cuenta;
 use App\Models\T_Paciente;      //Variable: $MiObjeto = new T_Paciente($db);
 use App\Models\T_Personal;      //Variable: $MiObjeto = new T_Personal($db);
 use App\Models\T_TipoPer;
-use App\Models\T_Turno;         //Variable: $MiObjeto = new T_Turno($db);
-use App\Models\T_TurnTipo;      //Variable: $MiObjeto = new T_TurnTipo($db);
-
 class Home extends BaseController
 {
 
@@ -93,23 +90,7 @@ class Home extends BaseController
       echo view('template\footer');
       echo view('template\background');
    }
-   //  Turno no es tomado en la base de datos, revisar tabla turno XXX
-   //  PD: Se está ocupando tipo turno  XXX
-   //  Está ya solucionado!
-   public function ControlarTurno()
-   {
-      $db = \Config\Database::connect();
-      $MiObjeto = new T_Turno($db);
-      $turnos =  $MiObjeto->findAll();
-      //print_r($turnos);
-
-      $data['listaTurnos'] = $turnos;
-      echo view('template\header');
-      echo view('template\navbar');
-      echo view('USUARIO\index', $data);
-      echo view('template\footer');
-      echo view('template\background');
-   }
+   
    public function PerDelQuestion($Per_cod = NULL)
    {
       $session = session();

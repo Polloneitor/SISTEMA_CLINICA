@@ -10,12 +10,15 @@
 <section class="vh-50">
     <div class="container py-5 h-100">
         <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col col-lg-6 mb-4 mb-lg-0">
+            <div class="col col-lg-10 mb-4 mb-lg-0">
                 <div class="card mb-3" style="border-radius: .5rem;">
                     <div class="row g-0">
                         <div class="col-md-4 gradient-custom text-center text-white" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
-                            <img src="<?php echo base_url()?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;" />
-                            <i class="far fa-edit mb-5"></i>
+                            <?php if ($file == NULL) : ?>
+                                <img src="<?php echo base_url() ?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;">
+                            <?php else : ?>
+                                <img src="<?php echo base_url() ?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;">
+                            <?php endif ?>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body p-4">
@@ -23,8 +26,12 @@
                                 <hr class="mt-0 mb-4">
                                 <div class="row pt-1">
                                     <div class="col-6 mb-3">
-                                        <h6>Código de Cuenta</h6>
-                                        <p class="text-muted"><?php echo $cod_cuenta ?></p>
+                                        <h6>Correo Electrónico</h6>
+                                        <?php if ($Per_email == NULL) : ?>
+                                            <p class="text-muted">Haga click para registrar correo. </p>
+                                        <?php else : ?>
+                                            <p class="text-muted"><?php echo $Per_email ?></p>
+                                        <?php endif ?>
                                     </div>
                                     <div class="col-6 mb-3">
                                         <h6>Código Personal</h6>
@@ -52,9 +59,16 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-start">
-                                    <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
-                                    <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
-                                    <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
+                                    <?php if ($S_Per_tipo == 1) : ?>
+                                        <div>Pacientes Atendidos: <?php if ($Per_actions == NULL || $Per_actions == 0) echo 0;
+                                                                    else echo $Per_actions; ?></div>
+                                    <?php elseif ($S_Per_tipo == 2) : ?>
+                                        <div>Interacciones con el sistema efectuadas: <?php if ($Per_actions == NULL || $Per_actions == 0) echo 0;
+                                                                                        else echo $Per_actions; ?></div>
+                                    <?php elseif ($S_Per_tipo == 3) : ?>
+                                        <div>Habitaciones Limpiadas: <?php if ($Per_actions == NULL || $Per_actions == 0) echo 0;
+                                                                        else echo $Per_actions; ?></div>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <a style="float:right;"href="<?php echo base_url() ?>/changepass" tabindex="-1" aria-disabled="true"> <button type="button" name="login" id="login" class="btn btn-primary btn-lg">Cambiar Contraseña</button></a>
+        <a style="float:right;" href="<?php echo base_url() ?>/changepass" tabindex="-1" aria-disabled="true"> <button type="button" name="login" id="login" class="btn btn-primary btn-lg">Cambiar Contraseña</button></a>
     </div>
 </section>
 </container>

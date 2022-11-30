@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title id="Description">QRcode basic demo.</title>
-	<link rel="stylesheet" href="../../../jqwidgets/styles/jqx.base.css" type="text/css" />
+	<link rel="stylesheet" href="<?php echo base_url()?>/public/QR/jqwidgets/styles/jqx.base.css" type="text/css" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 minimum-scale=1" />
 	<script type="text/javascript" src="<?php echo base_url()?>/public/QR/jqwidgets/jqxcore.js"></script>
