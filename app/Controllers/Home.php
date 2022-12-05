@@ -18,7 +18,7 @@ class Home extends BaseController
       $usuario['S_Per_tipo']   = $session->get('Per_tipo');
       echo view('template\header');
       echo view('template\navbar', $usuario);
-      echo view('USUARIO\index');
+      echo view('USUARIO\index',$usuario);
       echo view('template\footer');
       echo view('template\background');
    }

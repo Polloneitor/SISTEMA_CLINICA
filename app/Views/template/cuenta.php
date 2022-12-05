@@ -15,9 +15,9 @@
                     <div class="row g-0">
                         <div class="col-md-4 gradient-custom text-center text-white" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
                             <?php if ($file == NULL) : ?>
-                                <img src="<?php echo base_url() ?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;">
+                                <a href="<?php echo base_url() ?>/uploadimage" tabindex="-1" aria-disabled="true"><img src="<?php echo base_url() ?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;"></a>
                             <?php else : ?>
-                                <img src="<?php echo base_url() ?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;">
+                                <a href="<?php echo base_url() ?>/uploadimage" tabindex="-1" aria-disabled="true"><img src="<?php echo base_url() ?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;"></a>
                             <?php endif ?>
                         </div>
                         <div class="col-md-8">
@@ -28,9 +28,9 @@
                                     <div class="col-6 mb-3">
                                         <h6>Correo Electrónico</h6>
                                         <?php if ($Per_email == NULL) : ?>
-                                            <p class="text-muted">Haga click para registrar correo. </p>
+                                            <a href="<?php echo base_url() ?>/changeemail" tabindex="-1" aria-disabled="true"><p class="text-muted">Haga click para registrar correo. </p></a>
                                         <?php else : ?>
-                                            <p class="text-muted"><?php echo $Per_email ?></p>
+                                            <a href="<?php echo base_url() ?>/editemail" tabindex="-1" aria-disabled="true"><p class="text-muted"><?php echo $Per_email ?></p></a>
                                         <?php endif ?>
                                     </div>
                                     <div class="col-6 mb-3">
@@ -60,14 +60,14 @@
                                 </div>
                                 <div class="d-flex justify-content-start">
                                     <?php if ($S_Per_tipo == 1) : ?>
-                                        <div>Pacientes Atendidos: <?php if ($Per_actions == NULL || $Per_actions == 0) echo 0;
-                                                                    else echo $Per_actions; ?></div>
+                                        <div>Pacientes Atendidos: <?php if ($Op_queue == NULL || $Op_queue == 0) echo 0;
+                                                                    else echo $Op_queue; ?></div>
                                     <?php elseif ($S_Per_tipo == 2) : ?>
-                                        <div>Interacciones con el sistema efectuadas: <?php if ($Per_actions == NULL || $Per_actions == 0) echo 0;
-                                                                                        else echo $Per_actions; ?></div>
+                                        <div>Interacciones con el sistema efectuadas: <?php if ($Op_queue == NULL || $Op_queue == 0) echo 0;
+                                                                                        else echo $Op_queue; ?></div>
                                     <?php elseif ($S_Per_tipo == 3) : ?>
-                                        <div>Habitaciones Limpiadas: <?php if ($Per_actions == NULL || $Per_actions == 0) echo 0;
-                                                                        else echo $Per_actions; ?></div>
+                                        <div>Habitaciones Limpiadas: <?php if ($Op_queue == NULL || $Op_queue == 0) echo 0;
+                                                                        else echo $Op_queue; ?></div>
                                     <?php endif; ?>
                                 </div>
                             </div>

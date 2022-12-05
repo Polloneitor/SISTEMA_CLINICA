@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\T_Cuenta;
+use App\Models\T_Operacion;
 use App\Models\T_Personal;
 
 class AccountData extends Controller
@@ -23,7 +24,14 @@ class AccountData extends Controller
         }
         $userModel = new T_Personal();
         $user = $userModel->find($usuario['Per_cod']);
-        $data = array_merge($usuario, $user);
+        $operacion = new T_Operacion();
+        $consulta = $operacion
+            ->where('Per_cod', $usuario['Per_cod'])
+            ->where('Per_tipo', $usuario['S_Per_tipo'])
+            ->countAllResults();
+        $array['Op_queue'] = $consulta;
+        $temp = array_merge($user, $array);
+        $data = array_merge($usuario, $temp);
 
         echo view('template\header');
         echo view('template\navbar', $usuario);
@@ -100,6 +108,34 @@ class AccountData extends Controller
             } else {
                 return redirect()->to('/changepass');
             }
+        }
+    }
+    public function changeEmail()
+    {
+        $session = session();
+        $usuario['nom_cuenta']  =   $session->get('nom_cuenta');   // Si Usuario está conectado
+        $usuario['S_Per_tipo']  = $session->get('Per_tipo');
+        $usuario['cod_cuenta']  =   $session->get('cod_cuenta');
+
+        $verify = $session->get('isLoggedIn');
+        if ($verify == null || $verify == false) {
+            // do something when exist
+            return redirect()->to('/unlogged');
+        }
+        $userModel = new T_Cuenta();
+        $user = $userModel->find($usuario['cod_cuenta']);
+        if($user['Per_email'] == NULL){
+            return view('template\header') .
+            view('template\navbar', $usuario) .
+            view('template\email', $user) .
+            view('template\footer') .
+            view('template\background');}
+        else{
+            return view('template\header') .
+            view('template\navbar', $usuario) .
+            view('template\editemail', $user) .
+            view('template\footer') .
+            view('template\background');
         }
     }
     public function unlogged()

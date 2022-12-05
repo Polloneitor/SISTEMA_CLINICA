@@ -31,6 +31,19 @@
 
 <body>
   <div class="container w-50  justify-content-center align-items-center">
+    <?php if($S_Per_tipo != NULL):?>
+    <div class="col-xs-1-12">
+      <div class="row">
+        <div class="box w-100 h-50 bg-light">
+          <div class="box-body">
+            <h5 class="card-tittle">Registro de Operaciones</h5>
+            <p class="card-text">Siendo, Médico, Técnico o Trabajador de Aseo, registre cuando se estime conveniente.</p>
+            <a href="<?php echo base_url() ?>/emailsend" class="btn btn-primary">Ir</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <?php endif ?>
     <div class="col-xs-1-12">
       <div class="row">
         <div class="box w-40 h-50 bg-light">
@@ -76,13 +89,6 @@
             <h5 class="card-tittle">Artículo de investigación</h5>
             <p class="card-text">Haga click en el boton para visitar.</p>
             <a href="https://www.robotitus.com/esta-bacteria-se-esta-volviendo-tan-resistente-a-los-antibioticos-que-no-podremos-detenerla" class="btn btn-primary">Ir</a>
-          </div>
-        </div>
-        <div class="box w-100 h-50 bg-light">
-          <div class="box-body">
-            <h5 class="card-tittle">Test: enviar mail</h5>
-            <p class="card-text"></p>
-            <a href="<?php echo base_url()?>/emailsend" class="btn btn-primary">Ir</a>
           </div>
         </div>
       </div>
