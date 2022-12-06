@@ -58,6 +58,11 @@ $routes->get('/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/unlogged', 'AccountData::unlogged');
 $routes->get('/details', 'AccountData::index');
+$routes->get('/changeemail', 'AccountData::changeEmail');
+$routes->get('/editemail', 'AccountData::changeEmail');
+$routes->get('/editingMail', 'AccountData::changeEmailPost');
+$routes->get('/uploadimage', 'AccountData::upload');
+$routes->get('/preupload', 'AccountData::preupload');
 $routes->get('/firstlog', 'AccountData::pass_view');
 $routes->get('/changepass', 'AccountData::pass_view');
 $routes->get('VerPacientes/eliminar/(:num)','Home::pac_delete/$1');
@@ -72,10 +77,13 @@ $routes->get('VerStaff/editar/(:num)','Home::per_mod/$1');
 $routes->get('VerStaff/editar/question/(:num)','Home::PerModQuestion/$1');
 $routes->add('VerStaff/editar/post','Home::per_post');
 $routes->get('VerStaff/editar/proceso/(:num)','Home::per_modify/$1');
-$routes->setDefaultController('DiagramaGraph');
 $routes->match(['get','post'],'/DiagramaGraph/initChart','DiagramaGraph::initChart');
 $routes->get('/emailsend', 'SendMail::index');
 $routes->match(['get', 'post'], 'SendMail/sendMail', 'SendMail::sendMail');
+$routes->get('/commitOp', 'Home::operation');
+$routes->get('/commitOp/Send', 'Home::operationSend');
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

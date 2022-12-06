@@ -1,0 +1,259 @@
+CRITICAL - 2022-12-06 12:01:50 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:02:43 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:02:46 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:02:48 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:05:05 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:05:13 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:05:17 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:07:43 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:11:19 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:13:25 --> Undefined array key "Op_detalle"
+in APPPATH\Controllers\Home.php on line 482.
+ 1 APPPATH\Controllers\Home.php(482): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Op_detalle"', 'APPPATH\\Controllers\\Home.php', 482)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\Home->operationSend()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:13:58 --> Undefined array key "Per_email"
+in APPPATH\Controllers\AccountData.php on line 139.
+ 1 APPPATH\Controllers\AccountData.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_email"', 'APPPATH\\Controllers\\AccountData.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:16:17 --> Undefined array key "Per_email"
+in APPPATH\Controllers\AccountData.php on line 139.
+ 1 APPPATH\Controllers\AccountData.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_email"', 'APPPATH\\Controllers\\AccountData.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:16:18 --> Undefined array key "Per_email"
+in APPPATH\Controllers\AccountData.php on line 139.
+ 1 APPPATH\Controllers\AccountData.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_email"', 'APPPATH\\Controllers\\AccountData.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:16:21 --> Undefined array key "Per_email"
+in APPPATH\Controllers\AccountData.php on line 139.
+ 1 APPPATH\Controllers\AccountData.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_email"', 'APPPATH\\Controllers\\AccountData.php', 139)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:18:27 --> Undefined array key "Per_cod"
+in APPPATH\Controllers\AccountData.php on line 141.
+ 1 APPPATH\Controllers\AccountData.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Per_cod"', 'APPPATH\\Controllers\\AccountData.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:18:58 --> Undefined variable $data
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(145): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:19:41 --> Undefined variable $data
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(145): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:19:42 --> Undefined variable $data
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(145): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:20:20 --> Undefined variable $data
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(145): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:20:20 --> Undefined variable $data
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(145): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:21:00 --> Undefined variable $data
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(145): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:21:07 --> Undefined variable $Per_nom
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_nom', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(145): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:21:08 --> Undefined variable $Per_nom
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_nom', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(145): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:21:28 --> Undefined variable $Per_nom
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_nom', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(146): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:22:07 --> Undefined variable $Per_nom
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_nom', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(147): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:22:56 --> Undefined variable $Per_nom
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Per_nom', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(148): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:23:06 --> Undefined variable $data
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(148): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:23:24 --> Undefined variable $data
+in APPPATH\Views\template\email.php on line 31.
+ 1 APPPATH\Views\template\email.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\template\\email.php', 31)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\email.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\email', [], true)
+ 5 APPPATH\Controllers\AccountData.php(149): view('template\\email', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmail()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-06 12:35:07 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\template\errors.php on line 39.
+ 1 APPPATH\Views\template\errors.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'APPPATH\\Views\\template\\errors.php', 39)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\errors.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\errors', [], true)
+ 5 APPPATH\Controllers\AccountData.php(182): view('template\\errors', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->changeEmailPost()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

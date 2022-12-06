@@ -65,6 +65,7 @@ class AccountData extends Controller
         $session = session();
         $usuario['nom_cuenta']  =   $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');
+        $usuario['Per_cod']  = $session->get('Per_cod');
         $usuario['cod_cuenta']  =   $session->get('cod_cuenta');
 
         $verify = $session->get('isLoggedIn');
@@ -94,6 +95,17 @@ class AccountData extends Controller
                     if ($NewPass == $Confirmed) {
                         $changePass = password_hash($Confirmed, PASSWORD_DEFAULT);
                         $userModel->updatePass($user['cod_cuenta'], $changePass);
+                        $db = \Config\Database::connect();
+                        $personal = new T_Personal($db);
+                        $select = $personal->find_email($usuario['Per_cod']);
+                        if ($select != NULL || $select != '') {
+                            $email = \Config\Services::email();
+                            $email->setTo($select['Per_email']);
+                            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Confirm Registration');
+
+                            $email->setSubject('Se ha cambiado su contraseña');
+                            $email->setMessage('Test');
+                        }
                         return redirect()->to('/details');
                     } else {
                         $data['errors'] = ['La nueva contraseña y confirmación de ella no son las mismas'];
@@ -116,26 +128,69 @@ class AccountData extends Controller
         $usuario['nom_cuenta']  =   $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');
         $usuario['cod_cuenta']  =   $session->get('cod_cuenta');
-
+        $usuario['Per_cod'] = $session->get('Per_cod');
         $verify = $session->get('isLoggedIn');
         if ($verify == null || $verify == false) {
             // do something when exist
             return redirect()->to('/unlogged');
         }
-        $userModel = new T_Cuenta();
+        $db = \Config\Database::connect();
+        $userModel = new T_Cuenta($db);
         $user = $userModel->find($usuario['cod_cuenta']);
-        if($user['Per_email'] == NULL){
+        $personal = new T_Personal($db);
+        $select = $personal->find($usuario['Per_cod']);
+        $data = array_merge($user, $select);
+        if ($select != NULL || $select != '') {
             return view('template\header') .
-            view('template\navbar', $usuario) .
-            view('template\email', $user) .
-            view('template\footer') .
-            view('template\background');}
-        else{
+                view('template\navbar', $usuario) .
+                view('template\email', $data) .
+                view('template\footer') .
+                view('template\background');
+        } else {
             return view('template\header') .
-            view('template\navbar', $usuario) .
-            view('template\editemail', $user) .
-            view('template\footer') .
-            view('template\background');
+                view('template\navbar', $usuario) .
+                view('template\editemail', $data) .
+                view('template\footer') .
+                view('template\background');
+        }
+    }
+
+    public function changeEmailPost()
+    {
+        $session = session();
+        $usuario['nom_cuenta']  =   $session->get('nom_cuenta');   // Si Usuario está conectado
+        $usuario['S_Per_tipo']  = $session->get('Per_tipo');
+        $usuario['cod_cuenta']  =   $session->get('cod_cuenta');
+        $usuario['Per_cod'] = $session->get('Per_cod');
+        $verify = $session->get('isLoggedIn');
+        if ($verify == null || $verify == false) {
+            // do something when exist
+            return redirect()->to('/unlogged');
+        }
+        $email = $this->request->getVar('Per_email');
+        if ($email == NULL || $email == '') {
+            $db = \Config\Database::connect();
+            $userModel = new T_Cuenta($db);
+            $user = $userModel->find($usuario['cod_cuenta']);
+            $personal = new T_Personal($db);
+            $select = $personal->find($usuario['Per_cod']);
+            $data = array_merge($user, $select);
+            $errors['errors'] = 'Se debe rellenar campo';
+            if ($select != NULL || $select != '') {
+                return view('template\header') .
+                    view('template\navbar', $usuario) .
+                    view('template\errors', $errors) .
+                    view('template\email', $data) .
+                    view('template\footer') .
+                    view('template\background');
+            } else {
+                return view('template\header') .
+                    view('template\navbar', $usuario) .
+                    view('template\errors', $errors) .
+                    view('template\editemail', $data) .
+                    view('template\footer') .
+                    view('template\background');
+            }
         }
     }
     public function unlogged()
@@ -143,6 +198,25 @@ class AccountData extends Controller
         echo view('template\non-login');
     }
 
+    public function preupload()
+    {
+        $session = session();
+        $usuario['nom_cuenta']  =   $session->get('nom_cuenta');   // Si Usuario está conectado
+        $usuario['S_Per_tipo']  =   $session->get('Per_tipo');     // Si Usuario tiene privilegio
+        $usuario['Per_cod']     =   $session->get('Per_cod');
+        $usuario['cod_cuenta']  =   $session->get('cod_cuenta');
+        $usuario['file']  =   $session->get('file');
+        $verify = $session->get('isLoggedIn');
+        if ($verify == null || $verify == false) {
+            // do something when exist
+            return redirect()->to('/unlogged');
+        }
+        return view('template\header') .
+            view('template\navbar', $usuario) .
+            view('template\uploadImage') .
+            view('template\footer') .
+            view('template\background');
+    }
     public function upload()
     {
         $session = session();
@@ -156,7 +230,7 @@ class AccountData extends Controller
             // do something when exist
             return redirect()->to('/unlogged');
         }
-        if ($usuario['Per_cod'] != NULL) {
+        if ($usuario['cod_cuenta'] != NULL) {
             helper(['form', 'url']);
 
             $database = \Config\Database::connect();
@@ -178,11 +252,10 @@ class AccountData extends Controller
                 $imageFile = $this->request->getFile('file');
                 $imageFile->move(WRITEPATH . 'uploads');
                 $data = [
-                    'Per_cod' => $usuario['Per_cod'],
                     'img_name' => $imageFile->getClientName(),
                     'file'  => $imageFile->getClientMimeType()
                 ];
-                $save = $builder->insert($data);
+                $save = $builder->update($usuario['cod_cuenta'], $data);
                 $response = [
                     'success' => true,
                     'data' => $save,

@@ -24,14 +24,14 @@
     <div class="container" style="background: rgba(0, 133, 255, 0.65);">
         <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
             <h1>Ingresar Personal</h1>
-            <form action="<?php echo base_url() . '/changeEmail' ?>" method="post">
+            <form action="<?php echo base_url()?>/editingMail" method="post">
                 <div class="row mb-4">
                     <div class="col">
                         <div class='form-group'>
-                            <label>Personal: <?php echo $data['Per_nom'] ?>, registre su correo</label>
-                            <input name="Per_email" type="text" value="<?php if ($data['Per_email'] != NULL) {
-                                                                                echo $data['Per_email'];
-                                                                            }; ?>">
+                            <label>Personal: <?php echo $Per_nom ?>, registre su correo</label>
+                            <input class='form-control' name="Per_email" type="text" value="<?php if ($Per_email != NULL) {
+                                                                                                echo $Per_email;
+                                                                                            }; ?>">
                         </div>
                     </div>
                     <div class='form-group'>

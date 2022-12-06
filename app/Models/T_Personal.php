@@ -66,4 +66,10 @@ class T_Personal extends Model
         $result = $query->getFirstRow();
         return $result;
     }
+    public function find_email($id)
+    {
+        $query = $this->db->query("SELECT Per_email FROM personal WHERE Per_cod = $id");
+        $result = $query->getFirstRow();
+        return $result;
+    }
 }

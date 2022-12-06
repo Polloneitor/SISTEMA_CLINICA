@@ -3,9 +3,11 @@
 namespace App\Controllers;
 
 use App\Models\T_Cuenta;
+use App\Models\T_Operacion;
 use App\Models\T_Paciente;      //Variable: $MiObjeto = new T_Paciente($db);
 use App\Models\T_Personal;      //Variable: $MiObjeto = new T_Personal($db);
 use App\Models\T_TipoPer;
+
 class Home extends BaseController
 {
 
@@ -18,7 +20,7 @@ class Home extends BaseController
       $usuario['S_Per_tipo']   = $session->get('Per_tipo');
       echo view('template\header');
       echo view('template\navbar', $usuario);
-      echo view('USUARIO\index',$usuario);
+      echo view('USUARIO\index', $usuario);
       echo view('template\footer');
       echo view('template\background');
    }
@@ -90,7 +92,7 @@ class Home extends BaseController
       echo view('template\footer');
       echo view('template\background');
    }
-   
+
    public function PerDelQuestion($Per_cod = NULL)
    {
       $session = session();
@@ -278,6 +280,16 @@ class Home extends BaseController
 
       if ($lista == NULL) {
          $personal->updatedata($data, $id);
+         $select = $personal->find($id);
+         if ($select['Per_email'] != NULL || $select['Per_email'] != '') {
+            $email = \Config\Services::email();
+            $email->setTo($select['Per_email']);
+            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Confirm Registration');
+
+            $email->setSubject('Se ha modificado su cuenta.');
+            $email->setMessage('Test');
+         }
+
          return redirect()->to('/VerStaff');
       } else {
          $db = \Config\Database::connect();
@@ -414,6 +426,83 @@ class Home extends BaseController
       if ($verify == null || $verify == false) {
          // do something when exist
          return redirect()->to('/unlogged');
+      }
+   }
+
+   public function operation()
+   {
+      $session = session();
+      $usuario['nom_cuenta']  = $session->get('nom_cuenta');
+      $usuario['S_Per_tipo']  = $session->get('Per_tipo');
+      $verify = $session->get('isLoggedIn');
+      if ($verify == null || $verify == false) {
+         // do something when exist
+         return redirect()->to('/unlogged');
+      }
+      if ($usuario['S_Per_tipo'] == 1) {
+         $db = \Config\Database::connect();
+         $MiObjeto = new T_Paciente($db);
+         $pacientes =  $MiObjeto->findAll();
+         $data['listaPacientes'] = $pacientes;
+      } else {
+         $data['listaPacientes'] = 'NULL';
+      }
+      return view('template\header') .
+         view('template\navbar', $usuario) .
+         view('USUARIO\commitOp', $data) .
+         view('template\footer') .
+         view('template\background');
+   }
+
+   public function operationSend()
+   {
+      $session = session();
+      $usuario['nom_cuenta']  = $session->get('nom_cuenta');
+      $usuario['S_Per_tipo']  = $session->get('Per_tipo');
+      $usuario['Per_cod']  = $session->get('Per_cod');
+      $verify = $session->get('isLoggedIn');
+      if ($verify == null || $verify == false) {
+         // do something when exist
+         return redirect()->to('/unlogged');
+      }
+      $db = \Config\Database::connect();
+      $op = new T_Operacion($db);
+      if ($usuario['S_Per_tipo'] == 1) {
+         $db = \Config\Database::connect();
+         $MiObjeto = new T_Paciente($db);
+         $pacientes =  $MiObjeto->findAll();
+         $data['listaPacientes'] = $pacientes;
+      } else {
+         $data['listaPacientes'] = 'NULL';
+      }
+      $input = [
+         'Op_detalle'   => $this->request->getVar('Op_detalle')
+      ];
+      if ($usuario['S_Per_tipo'] == 2 || $usuario['S_Per_tipo'] == 3) {
+         if ($data['Op_detalle'] == NULL || $data['Op_detalle'] == '') {
+            $errors['errors'] = 'Se necesita especificar.';
+            return view('template\header') .
+               view('template\navbar', $usuario) .
+               view('template\errors', $errors) .
+               view('USUARIO\commitOp', $data) .
+               view('template\footer') .
+               view('template\background');
+         } else {
+            if ($this->request->getVar('Pac_nom') != NULL) {
+               $op->insert($usuario['S_Per_tipo'], $usuario['Per_cod'], $input);
+               return redirect()->to('/index');
+            } else {
+               $errors['errors'] = 'Se necesita seleccionar un paciente.';
+               return view('template\header') .
+                  view('template\navbar', $usuario) .
+                  view('template\errors', $errors) .
+                  view('USUARIO\commitOp', $data) .
+                  view('template\footer') .
+                  view('template\background');
+            }
+         }
+      } else {
+         return redirect()->to('/index');
       }
    }
 }

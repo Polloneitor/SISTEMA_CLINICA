@@ -23,7 +23,7 @@
                     class="form-control form-control-lg"  accept="image/*">
             </div>
             <div class="d-grid">
-               <button type="submit" class="btn btn-danger uploadBtn">Upload</button>
+               <button type="submit" class="btn btn-danger uploadBtn">Subir</button>
             </div>
         </form>
     </div>
@@ -41,17 +41,17 @@
         }
         $(document).ready(function () {
             $('#upload_image_form').on('submit', function (e) {
-                $('.uploadBtn').html('Uploading ...');
+                $('.uploadBtn').html('Subiendo ...');
                 $('.uploadBtn').prop('Disabled');
                 e.preventDefault();
                 if ($('#file').val() == '') {
                     alert("Choose File");
-                    $('.uploadBtn').html('Upload');
+                    $('.uploadBtn').html('Subir');
                     $('.uploadBtn').prop('enabled');
                     document.getElementById("upload_image_form").reset();
                 } else {
                     $.ajax({
-                        url: "<?php echo base_url(); ?>/uploadimage",
+                        url: "<?php echo base_url(); ?>/AccountData/upload",
                         method: "POST",
                         data: new FormData(this),
                         processData: false,
@@ -72,7 +72,7 @@
                                 $('#alertMsg').html('');
                                 $('#alertMessage').hide();
                             }, 4000);
-                            $('.uploadBtn').html('Upload');
+                            $('.uploadBtn').html('Subir');
                             $('.uploadBtn').prop('Enabled');
                             document.getElementById("upload_image_form").reset();
                         }

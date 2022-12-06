@@ -38,7 +38,7 @@
           <div class="box-body">
             <h5 class="card-tittle">Registro de Operaciones</h5>
             <p class="card-text">Siendo, Médico, Técnico o Trabajador de Aseo, registre cuando se estime conveniente.</p>
-            <a href="<?php echo base_url() ?>/emailsend" class="btn btn-primary">Ir</a>
+            <a href="<?php echo base_url() ?>/commitOp" class="btn btn-primary">Ir</a>
           </div>
         </div>
       </div>
