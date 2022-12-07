@@ -417,18 +417,7 @@ class Home extends BaseController
             view('template\background');
       }
    }
-   public function verify()
-   {
-      $session = session();
-      $usuario['nom_cuenta']  = $session->get('nom_cuenta');
-      $usuario['S_Per_tipo']  = $session->get('Per_tipo');
-      $verify = $session->get('isLoggedIn');
-      if ($verify == null || $verify == false) {
-         // do something when exist
-         return redirect()->to('/unlogged');
-      }
-   }
-
+   
    public function operation()
    {
       $session = session();
@@ -505,4 +494,9 @@ class Home extends BaseController
          return redirect()->to('/index');
       }
    }
+   
+   public function test(){
+      return view('USUARIO\index');
+   }
+
 }

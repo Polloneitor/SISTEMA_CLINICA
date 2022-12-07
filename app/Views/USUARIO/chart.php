@@ -11,9 +11,16 @@
 <body>
 
 	<body>
+		<h1 style="text-align:center;">Cantidad de Personal por Área Laboral: </h1>
 		<div style="background-color:antiquewhite;margin-top:3%;margin-left:32%;width:455px">
 			<div>
 				<canvas id="myChart" width="450" height="400"></canvas>
+			</div>
+		</div>
+		<h1 style="text-align:center;">Cantidad de Operaciones por Área Laboral:</h1>
+		<div style="background-color:antiquewhite;margin-top:3%;margin-left:32%;width:455px">
+			<div>
+				<canvas id="myChart2" width="450" height="400"></canvas>
 			</div>
 		</div>
 
@@ -37,15 +44,47 @@
 						data: [<?php foreach ($SALUD as $data) {
 									echo $data;
 								} ?>, <?php foreach ($TECNICO as $data) {
+											echo $data;
+										} ?>, <?php foreach ($LIMPIEZA as $data) {
 													echo $data;
-												} ?>, <?php foreach ($LIMPIEZA as $data) {
-															echo $data;
-														} ?>],
+												} ?>],
 						backgroundColor: ['#FF2828', '#9BD0F5', '#6CFF00']
 					}]
 				},
 				options: {
-					hoverBorderColor:'#000000',
+					hoverBorderColor: '#000000',
+					animation: {
+						duration: 1500,
+						easing: 'easeInExpo'
+					},
+					responsive: false,
+					scales: {
+						y: {
+							beginAtZero: false
+						},
+						x: {
+							beginAtZero: false
+						}
+					},
+				}
+			});
+		</script>
+
+		<script>
+			const ctx2 = document.getElementById('myChart2');
+
+			new Chart(ctx2, {
+				type: 'pie',
+				data: {
+					labels: ['SALUD', 'TECNICO', 'LIMPIEZA'],
+					datasets: [{
+						label: 'Cantidad de Personal por área',
+						data: [<?php echo $SumSalud[0]['Op_queue'] ?>, <?php echo $SumTecnico[0]['Op_queue'] ?>, <?php echo $SumLimpieza[0]['Op_queue'] ?>],
+						backgroundColor: ['#FF2828', '#9BD0F5', '#6CFF00']
+					}]
+				},
+				options: {
+					hoverBorderColor: '#000000',
 					animation: {
 						duration: 1500,
 						easing: 'easeInExpo'

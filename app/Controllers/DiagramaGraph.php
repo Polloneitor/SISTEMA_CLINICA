@@ -45,8 +45,25 @@ class DiagramaGraph extends Controller
                     break;
             }
         }
+        $Salud = $db->table('operacion');
+        $Salud->selectCount("Op_queue");
+        $Salud->where("Per_tipo =", 1);
+        $SumSalud = $Salud->get()->getResultArray();
 
+        $data['SumSalud'] =  $SumSalud;
 
+        $Tecnico = $db->table('operacion');
+        $Tecnico->selectCount("Op_queue");
+        $Tecnico->where("Per_tipo =", 2);
+        $SumTecnico = $Tecnico->get()->getResultArray();
+        
+        $data['SumTecnico'] =  $SumTecnico;
+        $Limpieza = $db->table('operacion');
+        $Limpieza->selectCount("Op_queue");
+        $Limpieza->where("Per_tipo =", 3);
+        $SumLimpieza = $Limpieza->get()->getResultArray();
+
+        $data['SumLimpieza'] =  $SumLimpieza;
 
         echo view('template\header');
         echo view('template\navbar', $usuario);

@@ -10,7 +10,7 @@
 <body>
     <div class="container" style="background: rgba(0, 133, 255, 0.65);">
         <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
-            <form action="<?php echo base_url() ?>/commitOp/Send" method="post">
+            <form action="<?php echo base_url() ?>/VerStaff" method="post">
                 <?php if ($S_Per_tipo == 1) : ?>
                     <h1>Atención Médica.</h1>
                     <div class='form-group'>

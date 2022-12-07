@@ -100,7 +100,7 @@ class AccountData extends Controller
                         $select = $personal->find_email($usuario['Per_cod']);
                         if ($select != NULL || $select != '') {
                             $email = \Config\Services::email();
-                            $email->setTo($select['Per_email']);
+                            $email->setTo($select);
                             $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Confirm Registration');
 
                             $email->setSubject('Se ha cambiado su contraseña');
@@ -167,8 +167,8 @@ class AccountData extends Controller
             // do something when exist
             return redirect()->to('/unlogged');
         }
-        $email = $this->request->getVar('Per_email');
-        if ($email == NULL || $email == '') {
+        $emailVar = $this->request->getVar('Per_email');
+        if ($emailVar == NULL || $emailVar == '') {
             $db = \Config\Database::connect();
             $userModel = new T_Cuenta($db);
             $user = $userModel->find($usuario['cod_cuenta']);
@@ -191,11 +191,18 @@ class AccountData extends Controller
                     view('template\footer') .
                     view('template\background');
             }
+        } else {
+            $db = \Config\Database::connect();
+            $personal = new T_Personal($db);
+            $select = $personal->find_email($usuario['Per_cod']);
+            $select->update($usuario['Per_cod'],$emailVar);
+            $email = \Config\Services::email();
+            $email->setTo($emailVar);
+            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Confirm Registration');
+
+            $email->setSubject('Se ha vinculado su correo a la clinica');
+            $email->setMessage('Test');
         }
-    }
-    public function unlogged()
-    {
-        echo view('template\non-login');
     }
 
     public function preupload()
