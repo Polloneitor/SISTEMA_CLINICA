@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 
-class DiagramaGraph extends Controller
+class DiagramaGraph extends BaseController
 {
     public function index()
     {

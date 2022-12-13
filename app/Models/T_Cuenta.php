@@ -14,7 +14,7 @@ class T_Cuenta extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['nom_cuenta,pas_cuenta,Per_cod,firstlogin_cuenta'];
+    protected $allowedFields = ['nom_cuenta','pas_cuenta','Per_cod','firstlogin_cuenta','img_name','file'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

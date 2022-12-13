@@ -6,7 +6,7 @@ use App\Models\T_Cuenta;
 use App\Models\T_Personal;
 use CodeIgniter\Controller;
 
-class SigninController extends Controller
+class SigninController extends BaseController
 {
     public function index()
     {

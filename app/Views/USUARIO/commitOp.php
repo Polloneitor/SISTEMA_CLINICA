@@ -10,13 +10,13 @@
 <body>
     <div class="container" style="background: rgba(0, 133, 255, 0.65);">
         <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
-            <form action="<?php echo base_url() ?>/VerStaff" method="post">
+            <form action="<?php echo base_url() ?>/commitOp/Send" method="post">
                 <?php if ($S_Per_tipo == 1) : ?>
                     <h1>Atención Médica.</h1>
                     <div class='form-group'>
                         <label>Pacientes Registrados</label>
-                        <select class="form-control form-control-sm" name="Pac_no" id="Per_tipo">
-                            <option selected>Eligir Paciente</option>
+                        <select class="form-control form-control-sm" name="Pac_nom" id="Pac_nom">
+                            <option selected value="">Eligir Paciente</option>
                             <?php foreach ($listaPacientes as $item) : ?>
                                 <td>
                                     <option value="<?php echo $item['Pac_nom']; ?>"><?php echo $item['Pac_nom']; ?></option>

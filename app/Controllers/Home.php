@@ -8,6 +8,7 @@ use App\Models\T_Paciente;      //Variable: $MiObjeto = new T_Paciente($db);
 use App\Models\T_Personal;      //Variable: $MiObjeto = new T_Personal($db);
 use App\Models\T_TipoPer;
 
+
 class Home extends BaseController
 {
 
@@ -250,6 +251,7 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
+      $usuario['Per_cod']  = $session->get('Per_cod');
       $verify = $session->get('isLoggedIn');
       if ($verify == null || $verify == false || $usuario['S_Per_tipo'] != 2) {
          // do something when exist
@@ -280,14 +282,57 @@ class Home extends BaseController
 
       if ($lista == NULL) {
          $personal->updatedata($data, $id);
+         $db = \Config\Database::connect();
+         $op = new T_Operacion($db);
+         $dataTemp = [
+            'Per_tipo' => $usuario['S_Per_tipo'],
+            'Per_cod'  => $usuario['Per_cod'],
+            'Op_detalle'  => 'Se ingresó un paciente nuevo.'
+         ];
+         $op->insert($dataTemp);
          $select = $personal->find($id);
          if ($select['Per_email'] != NULL || $select['Per_email'] != '') {
+
+            switch ($data['Per_tipo']) {
+               case 1:
+                  $definicion = 'Salud';
+                  break;
+               case 2:
+                  $definicion = 'Técnico';
+                  break;
+               case 3:
+                  $definicion = 'Limpieza';
+                  break;
+            }
             $email = \Config\Services::email();
             $email->setTo($select['Per_email']);
-            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Confirm Registration');
+            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
 
-            $email->setSubject('Se ha modificado su cuenta.');
-            $email->setMessage('Test');
+            $email->setSubject('Cambios de datos en el Sistema Clinico.');
+            if ($data['Per_espec'] != NULL) {
+               $email->setMessage('Se ha actualizado sus datos personales 
+               para su empleo.
+               Nombre:' . $data['Per_nom'] . "" . '
+               Edad:' . $data['Per_edad'] . "" . '
+               Género:' . $data['Per_gen'] . "" . '
+               Tipo:' . $definicion . "" . '
+               Especialidad:' . $data['Per_espec']);
+            } else {
+               $email->setMessage('Se ha actualizado sus datos personales 
+               para su empleo.   
+               Nombre:' . $data['Per_nom'] . "" . '
+               Edad:' . $data['Per_edad'] . "" . '
+               Género:' . $data['Per_gen'] . "" . '
+               Tipo:' . $definicion);
+            }
+            if ($email->send()) {
+               return redirect()->to('/VerStaff');
+            } else {
+               $data = $email->printDebugger(['headers']);
+               print_r($data);
+               sleep(10);
+               return redirect()->to('/index');
+            }
          }
 
          return redirect()->to('/VerStaff');
@@ -366,6 +411,7 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
+      $usuario['Per_cod']  = $session->get('Per_cod');
       $S_Per_cod = $session->get('Per_tipo');
       switch ($S_Per_cod) {
          case 1:
@@ -399,6 +445,14 @@ class Home extends BaseController
 
       if ($lista == NULL) {
          $paciente->updatedata($data, $id);
+         $db = \Config\Database::connect();
+         $op = new T_Operacion($db);
+         $dataTemp = [
+            'Per_tipo' => $usuario['S_Per_tipo'],
+            'Per_cod'  => $usuario['Per_cod'],
+            'Op_detalle'  => 'Se ingresó un paciente nuevo.'
+         ];
+         $op->insert($dataTemp);
          return redirect()->to('/VerPacientes');
       } else {
          $data = [
@@ -417,7 +471,7 @@ class Home extends BaseController
             view('template\background');
       }
    }
-   
+
    public function operation()
    {
       $session = session();
@@ -456,20 +510,42 @@ class Home extends BaseController
       }
       $db = \Config\Database::connect();
       $op = new T_Operacion($db);
+      $input = [
+         'Op_detalle'   => $this->request->getVar('Op_detalle')
+      ];
       if ($usuario['S_Per_tipo'] == 1) {
          $db = \Config\Database::connect();
          $MiObjeto = new T_Paciente($db);
          $pacientes =  $MiObjeto->findAll();
          $data['listaPacientes'] = $pacientes;
+         if ($this->request->getVar('Pac_nom') != NULL) {
+            $pac = $this->request->getVar('Pac_nom');
+            $dataTemp = [
+               'Per_tipo' => $usuario['S_Per_tipo'],
+               'Per_cod'  => $usuario['Per_cod'],
+               'Op_detalle'  => 'Se atendió a paciente:' . $pac
+            ];
+            if ($input['Op_detalle'] != NULL) {
+               $dataTemp['Op_detalle'] = 'Se atendió a paciente:' . $pac . '' . $input['Op_detalle'];
+            };
+            //print_r($dataTemp);
+            $op->insert($dataTemp);
+            return redirect()->to('/index');
+         } else {
+            $errors['errors'] = ['Se necesita seleccionar un paciente.'];
+            return view('template\header') .
+               view('template\navbar', $usuario) .
+               view('template\errors', $errors) .
+               view('USUARIO\commitOp', $data) .
+               view('template\footer') .
+               view('template\background');
+         }
       } else {
          $data['listaPacientes'] = 'NULL';
       }
-      $input = [
-         'Op_detalle'   => $this->request->getVar('Op_detalle')
-      ];
       if ($usuario['S_Per_tipo'] == 2 || $usuario['S_Per_tipo'] == 3) {
-         if ($data['Op_detalle'] == NULL || $data['Op_detalle'] == '') {
-            $errors['errors'] = 'Se necesita especificar.';
+         if ($input['Op_detalle'] == NULL || $input['Op_detalle'] == '') {
+            $errors['errors'] = ['Se necesita especificar.'];
             return view('template\header') .
                view('template\navbar', $usuario) .
                view('template\errors', $errors) .
@@ -477,26 +553,24 @@ class Home extends BaseController
                view('template\footer') .
                view('template\background');
          } else {
-            if ($this->request->getVar('Pac_nom') != NULL) {
-               $op->insert($usuario['S_Per_tipo'], $usuario['Per_cod'], $input);
+            if ($usuario['S_Per_tipo'] == 2 || $usuario['S_Per_tipo'] == 3) {
+               $dataTemp = [
+                  'Per_tipo' => $usuario['S_Per_tipo'],
+                  'Per_cod'  => $usuario['Per_cod'],
+                  'Op_detalle'  => $input['Op_detalle'],
+               ];
+               //print_r($dataTemp);
+               $op->insert($dataTemp);
                return redirect()->to('/index');
-            } else {
-               $errors['errors'] = 'Se necesita seleccionar un paciente.';
-               return view('template\header') .
-                  view('template\navbar', $usuario) .
-                  view('template\errors', $errors) .
-                  view('USUARIO\commitOp', $data) .
-                  view('template\footer') .
-                  view('template\background');
             }
          }
       } else {
          return redirect()->to('/index');
       }
    }
-   
-   public function test(){
+
+   public function test()
+   {
       return view('USUARIO\index');
    }
-
 }

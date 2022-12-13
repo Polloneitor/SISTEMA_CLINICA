@@ -5,9 +5,10 @@ namespace App\Controllers;
 use App\Models\T_Paciente;
 use App\Models\T_TipoPer;
 use App\Models\T_Personal;
+use App\Models\T_Operacion;
 use CodeIgniter\Controller;
 
-class FormaControlador extends Controller
+class FormaControlador extends BaseController
 {
 
     public function __construct()
@@ -45,6 +46,7 @@ class FormaControlador extends Controller
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
         $S_Per_cod = $session->get('Per_tipo');
+        $usuario['Per_cod']  = $session->get('Per_cod');
         switch ($S_Per_cod) {
             case 1:
                 break;
@@ -71,7 +73,14 @@ class FormaControlador extends Controller
             echo view('template\footer');
             echo view('template\background');
         } else {
-
+            $db = \Config\Database::connect();
+            $op = new T_Operacion($db);
+            $dataTemp = [
+                'Per_tipo' => $usuario['S_Per_tipo'],
+                'Per_cod'  => $usuario['Per_cod'],
+                'Op_detalle'  => 'Se ingresó un paciente nuevo.'
+             ];
+            $op->insert($dataTemp);
             $session->setFlashdata("success", "Data saved successfully");
 
             return redirect()->to('/index');
@@ -106,6 +115,7 @@ class FormaControlador extends Controller
         $session = session();
         $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
+        $usuario['Per_cod']  = $session->get('Per_cod');
         $verify = $session->get('isLoggedIn');
         if ($verify == null || $verify == false || $usuario['S_Per_tipo'] != 2) {
             // do something when exist
@@ -123,7 +133,8 @@ class FormaControlador extends Controller
             'Per_edad'  => $this->request->getVar('Per_edad'),
             'Per_gen'   => $this->request->getVar('Per_gen'),
             'Per_tipo'  => $this->request->getVar('Per_tipo'),
-            'Per_espec' => $this->request->getVar('Per_espec')
+            'Per_espec' => $this->request->getVar('Per_espec'),
+            'Per_email' => $this->request->getVar('Per_email')
         ];
         if ($builder->insert($data) === false) {
 
@@ -135,8 +146,31 @@ class FormaControlador extends Controller
             echo view('template\background');
         } else {
 
+            $db = \Config\Database::connect();
+            $op = new T_Operacion($db);
+            $dataTemp = [
+                'Per_tipo' => $usuario['S_Per_tipo'],
+                'Per_cod'  => $usuario['Per_cod'],
+                'Op_detalle'  => 'Se ingresó un personal nuevo.'
+             ];
+            $op->insert($dataTemp);
             $session->setFlashdata("success", "Data saved successfully");
+            $email = \Config\Services::email();
+            $email->setTo($data['Per_email']);
+            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
 
+            $email->setSubject('Bienvenido al Sistema Clinico.');
+            $email->setMessage('Se ha registrado datos personales 
+                                para su nuevo empleo, se le hará saber cuando
+                                estará habilitado en el sistema en este correo.');
+            if ($email->send()) {
+                return redirect()->to('/infoPer');
+            } else {
+                $data = $email->printDebugger(['headers']);
+                print_r($data);
+                sleep(10);
+                return redirect()->to('/index');
+            }
             return redirect()->to('/infoPer');
         }
     }
@@ -151,15 +185,14 @@ class FormaControlador extends Controller
             return redirect()->to('/unlogged');
         }
         $db = \Config\Database::connect();
-        $MiObjeto = new T_Personal($db);     
+        $MiObjeto = new T_Personal($db);
         $data =  $MiObjeto->find($Per_cod);
-    
+
         echo view('template\header');
         echo view('template\navbar', $usuario);
         echo view('template\newpersonal', $data);
         echo view('template\footer');
         echo view('template\background');
-
     }
 
     public function info()

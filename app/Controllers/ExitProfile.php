@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 
-class ExitProfile extends Controller
+class ExitProfile extends BaseController
 {
     public function index()
     {

@@ -24,7 +24,7 @@
   <?php endif ?>
   <div class="container" style="background: rgba(0, 133, 255, 0.65);">
     <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
-      <form action="/SISTEMA_CLINICA/AccountData/changepass" method="post" style="padding:5%">
+      <form action="<?php echo base_url()?>/changepass" method="post" style="padding:5%">
         <div class="row">
           <div class='form-group'>
             <label>Contraseña Original</label>

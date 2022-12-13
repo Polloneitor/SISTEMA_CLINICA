@@ -6,7 +6,7 @@ use CodeIgniter\Controller;
 use App\Models\T_Cuenta;
 use App\Models\T_Personal;
 
-class SignupController extends Controller
+class SignupController extends BaseController
 {
     public function index()
 
@@ -84,10 +84,25 @@ class SignupController extends Controller
                 'Per_cod'        => $this->request->getVar('Per_cod'),
                 'firstlogin_cuenta' => 0
             ];
-            
+
             $builder = $db->table('cuenta');
             $builder->insert($data);
-            return redirect()->to('/signin');
+            $result = $MiObjeto->find($data['Per_cod']);
+            $email = \Config\Services::email();
+            $email->setTo($result['Per_email']);
+            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
+
+            $email->setSubject('¡Cuenta habilitada!');
+            $email->setMessage('Se ha habilitado su cuenta en el sistema clinico. 
+                                Contraseña default es: Test');
+            if ($email->send()) {
+                return redirect()->to('/signin');
+            } else {
+                $data = $email->printDebugger(['headers']);
+                print_r($data);
+                sleep(10);
+                return redirect()->to('/index');
+            }
         } else {
             $data['nom_cuenta']  =   $session->get('nom_cuenta');   // Si Usuario está conectado
             $data['S_Per_tipo']  = $session->get('Per_tipo');

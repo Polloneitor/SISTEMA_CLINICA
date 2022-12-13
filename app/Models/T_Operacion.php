@@ -14,7 +14,7 @@ class T_Operacion extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['Per_tipo,Per_cod'];
+    protected $allowedFields = ['Per_tipo','Per_cod','Op_detalle'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';

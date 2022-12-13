@@ -15,9 +15,9 @@
                     <div class="row g-0">
                         <div class="col-md-4 gradient-custom text-center text-white" style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
                             <?php if ($file == NULL) : ?>
-                                <a href="<?php echo base_url() ?>/preupload" tabindex="-1" aria-disabled="true"><img src="<?php echo base_url() ?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;"></a>
+                                <a href="<?php echo base_url() ?>/preupload" tabindex="-1" aria-disabled="true"><img src="<?php echo base_url() ?>/public/images/default.png" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;"></a>
                             <?php else : ?>
-                                <a href="<?php echo base_url() ?>/preupload" tabindex="-1" aria-disabled="true"><img src="<?php echo base_url() ?>/public/images/chayanne.jpeg" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;"></a>
+                                <a href="<?php echo base_url() ?>/preupload" tabindex="-1" aria-disabled="true"><img src="<?php echo base_url().$file ?>" alt="Avatar" class="img-fluid my-5" style="width: 100%;margin:10%;"></a>
                             <?php endif ?>
                         </div>
                         <div class="col-md-8">
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </div>
-        <a style="float:right;" href="<?php echo base_url() ?>/changepass" tabindex="-1" aria-disabled="true"> <button type="button" name="login" id="login" class="btn btn-primary btn-lg">Cambiar Contraseña</button></a>
+        <a style="float:right;" href="<?php echo base_url() ?>/passview" tabindex="-1" aria-disabled="true"> <button type="button" name="login" id="login" class="btn btn-primary btn-lg">Cambiar Contraseña</button></a>
     </div>
 </section>
 </container>

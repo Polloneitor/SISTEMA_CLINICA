@@ -14,7 +14,7 @@ class T_Personal extends Model
     protected $returnType     = 'array';
     protected $useSoftDeletes = false;
 
-    protected $allowedFields = ['Per_nom', 'Per_edad', 'Per_gen', 'Per_tipo', 'Per_espec','Per_email'];
+    protected $allowedFields = ['Per_nom', 'Per_edad', 'Per_gen', 'Per_tipo', 'Per_espec', 'Per_email'];
 
     protected $useTimestamps = false;
     protected $createdField  = 'created_at';
@@ -25,7 +25,8 @@ class T_Personal extends Model
         'Per_nom'   =>  'required|max_length[30]|string',
         'Per_edad'  =>  'required|numeric|greater_than[17]',
         'Per_gen'   =>  'required|exact_length[1]',
-        'Per_tipo'  =>  'required'
+        'Per_tipo'  =>  'required',
+        'Per_email'  =>  'required'
     ];
     protected $validationMessages = [
         'Per_nom' => [
@@ -44,13 +45,17 @@ class T_Personal extends Model
         ],
         'Per_tipo' => [
             'required' => 'Se requiere saber el tipo de ocupación que empleará el personal'
+        ],
+        'Per_email' => [
+            'required' => 'Se requiere un correo eléctronico.'
         ]
     ];
     protected $skipValidation     = false;
 
-    function updatedata($data, $id){
+    function updatedata($data, $id)
+    {
         $this->db->table('personal')->set($data)->where('Per_cod', $id)->update();
-     }
+    }
 
     public function tipoPersonal()
     {
@@ -70,6 +75,7 @@ class T_Personal extends Model
     {
         $query = $this->db->query("SELECT Per_email FROM personal WHERE Per_cod = $id");
         $result = $query->getFirstRow();
-        return $result;
+        $return = json_decode(json_encode($result), true);
+        return $return;
     }
 }

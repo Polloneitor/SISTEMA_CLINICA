@@ -6,8 +6,9 @@ use CodeIgniter\Controller;
 use App\Models\T_Cuenta;
 use App\Models\T_Operacion;
 use App\Models\T_Personal;
+use CodeIgniter\Files\File;
 
-class AccountData extends Controller
+class AccountData extends BaseController
 {
     public function index()
     {
@@ -16,11 +17,17 @@ class AccountData extends Controller
         $usuario['S_Per_tipo']  =   $session->get('Per_tipo');     // Si Usuario tiene privilegio
         $usuario['Per_cod']     =   $session->get('Per_cod');
         $usuario['cod_cuenta']  =   $session->get('cod_cuenta');
-        $usuario['file']  =   $session->get('file');
         $verify = $session->get('isLoggedIn');
         if ($verify == null || $verify == false) {
             // do something when exist
             return redirect()->to('/unlogged');
+        }
+        $account = new T_Cuenta();
+        $result = $account->find($usuario['cod_cuenta']);
+        if ($result == NULL) {
+            $file['file'] = NULL;
+        } else {
+            $file['file'] = $result['file'];
         }
         $userModel = new T_Personal();
         $user = $userModel->find($usuario['Per_cod']);
@@ -32,7 +39,7 @@ class AccountData extends Controller
         $array['Op_queue'] = $consulta;
         $temp = array_merge($user, $array);
         $data = array_merge($usuario, $temp);
-
+        $data = array_merge($data, $file);
         echo view('template\header');
         echo view('template\navbar', $usuario);
         echo view('template\cuenta', $data);
@@ -101,10 +108,18 @@ class AccountData extends Controller
                         if ($select != NULL || $select != '') {
                             $email = \Config\Services::email();
                             $email->setTo($select);
-                            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Confirm Registration');
-
-                            $email->setSubject('Se ha cambiado su contraseña');
-                            $email->setMessage('Test');
+                            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
+                
+                            $email->setSubject('Se ha modificado su contraseña exitosamente.');
+                            $email->setMessage('Acaba de modificar su contraseña.');
+                            if ($email->send()) {
+                                return redirect()->to('/details');
+                            } else {
+                                $data = $email->printDebugger(['headers']);
+                                print_r($data);
+                                sleep(10);
+                                return redirect()->to('/infoPer');
+                            }
                         }
                         return redirect()->to('/details');
                     } else {
@@ -193,15 +208,23 @@ class AccountData extends Controller
             }
         } else {
             $db = \Config\Database::connect();
-            $personal = new T_Personal($db);
-            $select = $personal->find_email($usuario['Per_cod']);
-            $select->update($usuario['Per_cod'],$emailVar);
+            $builder = new T_Personal($db);
+            $builder->set('Per_email', $emailVar)->where('Per_cod', $usuario['Per_cod']);
+            $builder->update();
             $email = \Config\Services::email();
             $email->setTo($emailVar);
-            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Confirm Registration');
+            $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
 
             $email->setSubject('Se ha vinculado su correo a la clinica');
-            $email->setMessage('Test');
+            $email->setMessage('Email se ha vinculado.');
+            if ($email->send()) {
+                return redirect()->to('/index');
+            } else {
+                $data = $email->printDebugger(['headers']);
+                print_r($data);
+                sleep(10);
+                return redirect()->to('/infoPer');
+            }
         }
     }
 
@@ -218,9 +241,10 @@ class AccountData extends Controller
             // do something when exist
             return redirect()->to('/unlogged');
         }
+        $data = ['errors' => []];
         return view('template\header') .
             view('template\navbar', $usuario) .
-            view('template\uploadImage') .
+            view('template\uploadImage', $data) .
             view('template\footer') .
             view('template\background');
     }
@@ -237,39 +261,37 @@ class AccountData extends Controller
             // do something when exist
             return redirect()->to('/unlogged');
         }
-        if ($usuario['cod_cuenta'] != NULL) {
-            helper(['form', 'url']);
 
-            $database = \Config\Database::connect();
-            $builder = $database->table('cuenta');
-            $validateImage = $this->validate([
-                'file' => [
-                    'uploaded[file]',
-                    'mime_in[file, image/png, image/jpg,image/jpeg, image/gif]',
-                    'max_size[file, 4096]',
-                ],
-            ]);
 
-            $response = [
-                'success' => false,
-                'data' => '',
-                'msg' => "Imagen no pudo haber sido subida"
-            ];
-            if ($validateImage) {
-                $imageFile = $this->request->getFile('file');
-                $imageFile->move(WRITEPATH . 'uploads');
-                $data = [
-                    'img_name' => $imageFile->getClientName(),
-                    'file'  => $imageFile->getClientMimeType()
-                ];
-                $save = $builder->update($usuario['cod_cuenta'], $data);
-                $response = [
-                    'success' => true,
-                    'data' => $save,
-                    'msg' => "Imagen ha sido subida."
-                ];
-            }
-            return $this->response->setJSON($response);
+        $validationRule = [
+            'userfile' => [
+                'label' => 'Image File',
+                'rules' => 'uploaded[userfile]'
+                    . '|is_image[userfile]'
+                    . '|mime_in[userfile,image/jpg,image/jpeg,image/gif,image/png,image/webp]'
+            ],
+        ];
+        if (!$this->validate($validationRule)) {
+            $data = ['errors' => $this->validator->getErrors()];
+
+            return view('template\uploadImage', $data);
         }
+
+        $img = $this->request->getFile('userfile');
+        if (!$img->hasMoved()) {
+            $path = "C:/xampp/htdocs/SISTEMA_CLINICA/public/images/usersImgs/";
+            $newName = $img->getRandomName();
+            $filepath = '/public/images/usersImgs/'.$newName;
+            $img->move($path, $newName);
+
+            $db = \Config\Database::connect();
+            $builder = new T_Cuenta($db);
+            $builder->set('file', $filepath)->where('Per_cod', $usuario['Per_cod']);
+            $builder->update();
+            return redirect()->to('/details');
+        }
+        $data = ['errors' => ['The file has already been moved.']];
+
+        return view('template\uploadImage', $data);
     }
 }

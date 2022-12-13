@@ -50,7 +50,6 @@ $routes->add('/inPaciente', 'FormaControlador::insertarPaciente');
 $routes->add('/imagen', 'public\images');
 $routes->get('/contact-form', 'Forma::index');
 $routes->match(['get', 'post'], 'FormaControlador/store', 'FormaControlador::store');
-//$routes->get('/', 'SignupController::index');
 $routes->get('/signup', 'SignupController::index');
 $routes->match(['get', 'post'], 'SignupController/store', 'SignupController::store');
 $routes->match(['get', 'post'], 'SigninController/loginAuth', 'SigninController::loginAuth');
@@ -58,13 +57,14 @@ $routes->get('/signin', 'SigninController::index');
 $routes->get('/profile', 'ProfileController::index',['filter' => 'authGuard']);
 $routes->get('/unlogged', 'AccountData::unlogged');
 $routes->get('/details', 'AccountData::index');
-$routes->get('/changeemail', 'AccountData::changeEmail');
-$routes->get('/editemail', 'AccountData::changeEmail');
-$routes->get('/editingMail', 'AccountData::changeEmailPost');
-$routes->get('/uploadimage', 'AccountData::upload');
+$routes->add('/changeemail', 'AccountData::changeEmail');
+$routes->add('/editemail', 'AccountData::changeEmail');
+$routes->add('/editingMail', 'AccountData::changeEmailPost');
+$routes->add('/uploadimage', 'AccountData::upload');
 $routes->get('/preupload', 'AccountData::preupload');
 $routes->get('/firstlog', 'AccountData::pass_view');
-$routes->get('/changepass', 'AccountData::pass_view');
+$routes->get('/passview', 'AccountData::pass_view');
+$routes->add('/changepass', 'AccountData::changepass');
 $routes->get('VerPacientes/eliminar/(:num)','Home::pac_delete/$1');
 $routes->get('VerPacientes/eliminar/question/(:num)','Home::PacDelQuestion/$1');
 $routes->get('VerPacientes/editar/(:num)','Home::pac_mod/$1');
@@ -80,8 +80,10 @@ $routes->get('VerStaff/editar/proceso/(:num)','Home::per_modify/$1');
 $routes->match(['get','post'],'/DiagramaGraph/initChart','DiagramaGraph::initChart');
 $routes->get('/emailsend', 'SendMail::index');
 $routes->match(['get', 'post'], 'SendMail/sendMail', 'SendMail::sendMail');
-$routes->get('/commitOp', 'Home::operation');
-$routes->get('/commitOp/Send', 'Home::operationSend');
+$routes->add('/commitOp', 'Home::operation');
+$routes->add('/commitOp/Send', 'Home::operationSend');
+$routes->get('/upload', 'AccountData::preupload');          // Add this line.
+$routes->post('/upload/upload', 'AccountData::upload'); // Add this line.
 
 
 /*

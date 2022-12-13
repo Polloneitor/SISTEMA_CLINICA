@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\FormModel;
 use CodeIgniter\Controller;
 
-class SendMail extends Controller
+class SendMail extends BaseController
 {
     public function index()
     {
