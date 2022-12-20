@@ -39,7 +39,7 @@
                     <div class='form-group'>
                         <label>Especificar Ala en la cual trabajó.</label>
                         <select class="form-control form-control-sm" name="Op_detalle">
-                            <option selected>Elegir Ala.</option>
+                            <option value="" selected>Elegir Ala.</option>
                             <option value="Ala A">Ala A</option>
                             <option value="Ala B">Ala B</option>
                             <option value="Ala C">Ala C</option>

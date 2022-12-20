@@ -67,6 +67,11 @@ class AccountData extends BaseController
         echo view('template\background');
     }
 
+    public function unlogged()
+    {
+        return view('template\non-login');
+    }
+
     public function changepass()
     {
         $session = session();

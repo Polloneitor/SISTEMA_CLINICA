@@ -71,7 +71,7 @@ class FormaControlador extends BaseController
             echo view('template\errors', ['errors' => $builder->errors()]);
             echo view('USUARIO\IngresoPaciente');
             echo view('template\footer');
-            echo view('template\background');
+            echo view('template\background2');
         } else {
             $db = \Config\Database::connect();
             $op = new T_Operacion($db);
@@ -143,7 +143,7 @@ class FormaControlador extends BaseController
             echo view('template\errors', ['errors' => $builder->errors()]);
             echo view('USUARIO\IngresoPersonal', $listado);
             echo view('template\footer');
-            echo view('template\background');
+            echo view('template\background2');
         } else {
 
             $db = \Config\Database::connect();

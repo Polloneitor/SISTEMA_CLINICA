@@ -413,7 +413,7 @@ class Home extends BaseController
             view('template\errors', $errors) .
             view('template\editper', $data) .
             view('template\footer') .
-            view('template\background');
+            view('template\background2');
       }
    }
    public function PacModQuestion($Pac_rut = NULL)
@@ -525,7 +525,7 @@ class Home extends BaseController
             view('template\errors', $errors) .
             view('template\editpac', $data) .
             view('template\footer') .
-            view('template\background');
+            view('template\background2');
       }
    }
 
@@ -595,7 +595,7 @@ class Home extends BaseController
                view('template\errors', $errors) .
                view('USUARIO\commitOp', $data) .
                view('template\footer') .
-               view('template\background');
+               view('template\background2');
          }
       } else {
          $data['listaPacientes'] = 'NULL';
@@ -608,7 +608,8 @@ class Home extends BaseController
                view('template\errors', $errors) .
                view('USUARIO\commitOp', $data) .
                view('template\footer') .
-               view('template\background');
+               view('template\background2');
+         
          } else {
             if ($usuario['S_Per_tipo'] == 2 || $usuario['S_Per_tipo'] == 3) {
                $dataTemp = [
