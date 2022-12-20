@@ -89,13 +89,19 @@
             </div>
           </div>
         </div>
-        <div id="container" class='form-group'>
+        <div id="container" class='form-group' style="margin-top:-4%;margin-bottom:15%">
           <label id="text-especialidad">Especialidad</label>
           <input type="text" name="Per_espec" value="<?php echo $data['Per_espec'];?>"id="Per_espec" class='form-control'>
         </div>
-        <div class='form-group' style="margin-top:-7%;margin-bottom:-5%">
+        <?php if($data['Per_espec'] != NULL):?>
+          <div class='form-group' style="margin-top:-5%;margin-bottom:-5%">
           <input type="submit" name="ingreso" value=Ingresar class='btn btn-primary' style="margin-top:-8%">
         </div>
+        <?php else:?>
+          <div class='form-group' style="margin-top:-7%;margin-bottom:-5%">
+          <input type="submit" name="ingreso" value=Ingresar class='btn btn-primary' style="margin-top:-8%">
+        </div>
+        <?php endif;?>
       </form>
     </div>
   </div>
