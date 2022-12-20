@@ -18,7 +18,7 @@ class DiagramaGraph extends BaseController
         $usuario['nom_cuenta']  = $session->get('nom_cuenta');
         $usuario['S_Per_tipo']  = $session->get('Per_tipo');
         $verify = $session->get('isLoggedIn');
-        if ($verify == null || $verify == false) {
+        if ($verify == null || $verify == false || $usuario['S_Per_tipo'] != 2) {
             // do something when exist
             return redirect()->to('/unlogged');
         }

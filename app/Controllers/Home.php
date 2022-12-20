@@ -101,7 +101,7 @@ class Home extends BaseController
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
       $S_Per_cod  = $session->get('Per_cod');
       $prior = [1, 2];
-      if (in_array($S_Per_cod, $prior)) {
+      if ($usuario['S_Per_tipo']!=2) {
          // do something when exist
          return redirect()->to('/unlogged');
       }
@@ -120,7 +120,7 @@ class Home extends BaseController
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
       $S_Per_cod  = $session->get('Per_cod');
       $prior = [1, 2];
-      if (in_array($S_Per_cod, $prior)) {
+      if ($usuario['S_Per_tipo']!=2) {
          // do something when exist
          return redirect()->to('/unlogged');
       }
@@ -157,7 +157,7 @@ class Home extends BaseController
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
       $S_Per_cod  = $session->get('Per_cod');
       $prior = [1, 2];
-      if (in_array($S_Per_cod, $prior)) {
+      if ($usuario['S_Per_tipo']!=2) {
          // do something when exist
          return redirect()->to('/unlogged');
       }
@@ -176,7 +176,7 @@ class Home extends BaseController
       $S_Per_cod = $session->get('Per_tipo');
       switch ($S_Per_cod) {
          case 1:
-            break;
+            return redirect()->to('/unlogged');
          case 2:
             break;
          case 3:
@@ -202,9 +202,7 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
-      $S_Per_cod  = $session->get('Per_cod');
-      $prior = [1, 2];
-      if (in_array($S_Per_cod, $prior)) {
+      if ($usuario['S_Per_tipo']!=2) {
          // do something when exist
          return redirect()->to('/unlogged');
       }
@@ -421,9 +419,7 @@ class Home extends BaseController
       $session = session();
       $usuario['nom_cuenta'] = $session->get('nom_cuenta');   // Si Usuario está conectado
       $usuario['S_Per_tipo']  = $session->get('Per_tipo');     // Si Usuario tiene privilegio
-      $S_Per_cod  = $session->get('Per_cod');
-      $prior = [1, 2];
-      if (in_array($S_Per_cod, $prior)) {
+      if ($usuario['S_Per_tipo']!=2) {
          // do something when exist
          return redirect()->to('/unlogged');
       }
@@ -442,7 +438,7 @@ class Home extends BaseController
       $S_Per_cod = $session->get('Per_tipo');
       switch ($S_Per_cod) {
          case 1:
-            break;
+            return redirect()->to('/unlogged');
          case 2:
             break;
          case 3:
@@ -472,7 +468,7 @@ class Home extends BaseController
       $S_Per_cod = $session->get('Per_tipo');
       switch ($S_Per_cod) {
          case 1:
-            break;
+            return redirect()->to('/unlogged');
          case 2:
             break;
          case 3:
