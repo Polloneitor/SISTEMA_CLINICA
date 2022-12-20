@@ -1,0 +1,40 @@
+CRITICAL - 2022-12-20 09:17:27 --> Undefined variable $account
+in APPPATH\Views\template\uploadImage.php on line 17.
+ 1 APPPATH\Views\template\uploadImage.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $account', 'APPPATH\\Views\\template\\uploadImage.php', 17)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\uploadImage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\uploadImage', [], true)
+ 5 APPPATH\Controllers\AccountData.php(247): view('template\\uploadImage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->preupload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:17:58 --> Array to string conversion
+in APPPATH\Views\template\uploadImage.php on line 28.
+ 1 APPPATH\Views\template\uploadImage.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\template\\uploadImage.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\uploadImage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\uploadImage', [], true)
+ 5 APPPATH\Controllers\AccountData.php(247): view('template\\uploadImage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->preupload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 09:18:55 --> Array to string conversion
+in APPPATH\Views\template\uploadImage.php on line 28.
+ 1 APPPATH\Views\template\uploadImage.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\template\\uploadImage.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\template\\uploadImage.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('template\\uploadImage', [], true)
+ 5 APPPATH\Controllers\AccountData.php(247): view('template\\uploadImage', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\AccountData->preupload()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AccountData))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-12-20 11:42:46 --> Undefined array key "Pac_nom"
+in APPPATH\Controllers\FormaControlador.php on line 174.
+ 1 APPPATH\Controllers\FormaControlador.php(174): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Pac_nom"', 'APPPATH\\Controllers\\FormaControlador.php', 174)
+ 2 SYSTEMPATH\CodeIgniter.php(904): App\Controllers\FormaControlador->insertarPersonal()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\FormaControlador))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(68): CodeIgniter\CodeIgniter->run()

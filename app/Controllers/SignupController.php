@@ -93,8 +93,34 @@ class SignupController extends BaseController
             $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
 
             $email->setSubject('¡Cuenta habilitada!');
-            $email->setMessage('Se ha habilitado su cuenta en el sistema clinico. 
-                                Contraseña default es: Test');
+            $email->setMessage(
+                "<!DOCTYPE html>" .
+                    "<html lang='es'>" .
+                    "<head>" .
+                    "<meta charset='utf-8'>" .
+                    "</head>" .
+                    "<body style='background-color: white '>" .
+                    "<table style='max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;'>" .
+                    "<td style='background-image: url(https://media.istockphoto.com/id/954802966/photo/healthcare-photos.jpg?s=612x612&w=0&k=20&c=DlouWo1_kZGmDwylkTElgkQUMWhFAy62D8BoyGiZX_0=);background-repeat: no-repeat;background-size: 100% 100%;'>" .
+                    "<div style='color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif;'>" .
+                    "<h2 style='color: #e67e22; margin: 0 0 7px;text-align:center'>Bienvenido al Sistema Clinico</h2>" .
+                    "<p style='margin: 2px; font-size: 15px'>" .
+                    "<br><h2 style='color:rgba(0, 20, 62, 0.938);text-align:justify'>¡Bienvenido a nuestro equipo!</h2>" .
+                    "<div style='width: 100%;margin:20px 0; display: inline-block;text-align: justify'>" .
+                    "<br><h2 style='color:rgba(0, 20, 62, 0.938)'>Se ha habilitado su cuenta en el sistema clinico.</h2>" .
+                    "<br><h2 style='color:rgba(0, 20, 62, 0.938)'>Su nombre de cuenta es: ".$data['nom_cuenta']."</h2>".
+                    "<h2 style='color:rgba(0, 20, 62, 0.938)'>Su contraseña por default es: Test</h2>".
+                    "</div>" .
+                    "<div style='width: 100%; text-align: center'>" .
+                    "<br><h2 style='color:rgba(44, 74, 139, 0.938);text-align:justify;text-shadow: 1px 1px 2px black;'>Atte. Directiva.</h2>" .
+                    "</div>" .
+                    "</div>" .
+                    "</td>" .
+                    "</tr>" .
+                    "</table>" .
+                    "</body>" .
+                    "</html>"
+            );
             if ($email->send()) {
                 return redirect()->to('/signin');
             } else {

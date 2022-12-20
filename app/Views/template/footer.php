@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
+
 </head>
 <style>
   #footer {
@@ -13,7 +13,7 @@
     height: 150px;
     float: left;
     margin-top: 9.5%;
-    background: #2065BF;
+    background: #3281E8;
     background-blend-mode: lighten;
   }
 
@@ -44,5 +44,4 @@
     </div>
   </footer>
 </body>
-
 </html>

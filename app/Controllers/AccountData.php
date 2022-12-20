@@ -89,7 +89,25 @@ class AccountData extends BaseController
             $Confirmed = $this->request->getVar('ConfirmNewPass');
             $pass = $user['pas_cuenta'];
             $authenticatePassword = password_verify($OldPass, $pass);
+            if($pass == '' || $pass == NULL){
+                $data['errors'] = ['Los campos no pueden estar vacios'];
+                    return view('template\header') .
+                        view('template\navbar', $usuario) .
+                        view('template\errors', $data) .
+                        view('template\changepass', $usuario) .
+                        view('template\footer') .
+                        view('template\background');
+            }
             if ($authenticatePassword) {
+                if($OldPass == '' || $OldPass == NULL || $NewPass == '' || $NewPass == NULL ){
+                    $data['errors'] = ['Los campos no pueden estar vacios'];
+                    return view('template\header') .
+                        view('template\navbar', $usuario) .
+                        view('template\errors', $data) .
+                        view('template\changepass', $usuario) .
+                        view('template\footer') .
+                        view('template\background');
+                }
                 if ($OldPass == $NewPass || $OldPass == $Confirmed) {
                     $data['errors'] = ['La primera contraseña y la nueva contraseña no puede ser la misma.'];
                     return view('template\header') .
@@ -110,8 +128,36 @@ class AccountData extends BaseController
                             $email->setTo($select);
                             $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
                 
-                            $email->setSubject('Se ha modificado su contraseña exitosamente.');
-                            $email->setMessage('Acaba de modificar su contraseña.');
+                            $email->setSubject('Usuario '.$usuario['nom_cuenta'].'. Se ha modificado su contraseña exitosamente.');
+                            $email->setMessage("<!DOCTYPE html>".
+                            "<html lang='es'>".
+                            "<head>".
+                            "<meta charset='utf-8'>".
+                            "</head>".
+                            "<body style='background-color: black '>".
+                            "<table style='max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;'>".
+                            "<tr>".
+                            "<td style='padding: 0'>".
+                            "</td>".
+                            "</tr>".
+                            "<tr>".
+                            "<td style='background-image: url(https://t4.ftcdn.net/jpg/03/56/12/91/360_F_356129114_WIk3aWBzvIBlMH9lMcsGVsW5KgXrWoTs.jpg);background-repeat: no-repeat;background-size: 100% 100%;'>".
+                            "<div style='color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif'>".
+                            "<h2 style='color: #ff7701; margin: 0 0 7px;text-align:center;text-shadow: 1px 1px 2px black;'>Sistema Clinico</h2>".
+                            "<p style='margin: 2px; font-size: 15px'>".
+                            "<br><h2 style='color:rgba(5, 84, 255, 0.938);;text-shadow: 1px 1px 2px black;text-align:justify'>Datos de su cuenta han sido aplicadas.</h2>".
+                            "<div style='width: 100%;margin:20px 0; display: inline-block;text-align: justify'>".
+                            "<br><h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Su contraseña ha sido recientemente cambiada. ¡Siga protegiendo ante ladrones!</h2>".
+                            "</div>".
+                            "<div style='width: 100%; text-align: center'>".
+                            "<br><h2 style='color:rgba(44, 74, 139, 0.938);text-align:justify;text-shadow: 1px 1px 2px black;'>Atte. Directiva.</h2>" .
+                            "</div>".
+                            "</div>".
+                            "</td>".
+                            "</tr>".
+                            "</table>".
+                            "</body>".
+                            "</html>");
                             if ($email->send()) {
                                 return redirect()->to('/details');
                             } else {
@@ -133,7 +179,13 @@ class AccountData extends BaseController
                     }
                 }
             } else {
-                return redirect()->to('/changepass');
+                $data['errors'] = ['Contraseña Original Errónea.'];
+                        return view('template\header') .
+                            view('template\navbar', $usuario) .
+                            view('template\errors', $data) .
+                            view('template\changepass', $usuario) .
+                            view('template\footer') .
+                            view('template\background');
             }
         }
     }
@@ -155,7 +207,7 @@ class AccountData extends BaseController
         $personal = new T_Personal($db);
         $select = $personal->find($usuario['Per_cod']);
         $data = array_merge($user, $select);
-        if ($select != NULL || $select != '') {
+        if ($select == NULL || $select == '') {
             return view('template\header') .
                 view('template\navbar', $usuario) .
                 view('template\email', $data) .
@@ -216,7 +268,34 @@ class AccountData extends BaseController
             $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
 
             $email->setSubject('Se ha vinculado su correo a la clinica');
-            $email->setMessage('Email se ha vinculado.');
+            $email->setMessage("<!DOCTYPE html>".
+            "<html lang='es'>".
+            "<head>".
+            "<meta charset='utf-8'>".
+            "</head>".
+            "<body style='background-color: black '>".
+            "<table style='max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;'>".
+            "<tr>".
+            "<td style='padding: 0'>".
+            "</td>".
+            "</tr>".
+            "<tr>".
+            "<td style='background-image: url(https://www.certus.edu.pe/blog/wp-content/uploads/2020/08/que-es-como-hacer-networking-certus.jpg);background-repeat: no-repeat;background-size: 100% 100%;'>".
+            "<div style='color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif'>".
+            "<h2 style='color: #ff7701; margin: 0 0 7px;text-align:center;text-shadow: 1px 1px 2px black;'>Sistema Clinico</h2>".
+            "<p style='margin: 2px; font-size: 15px'>".
+            "<br><h2 style='color:rgba(5, 84, 255, 0.938);;text-shadow: 1px 1px 2px black;text-align:justify'>Cambios han sido aplicados correctamente</h2>".
+            "<div style='width: 100%;margin:20px 0; display: inline-block;text-align: justify'>".
+            "<br><h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Su correo ha sido vinculado y enlazado con nuestros sistemas.</h2>".
+            "</div>".
+            "<div style='width: 100%; text-align: center'>".
+            "</div>".
+            "</div>".
+            "</td>".
+            "</tr>".
+            "</table>".
+            "</body>".
+            "</html>");
             if ($email->send()) {
                 return redirect()->to('/index');
             } else {

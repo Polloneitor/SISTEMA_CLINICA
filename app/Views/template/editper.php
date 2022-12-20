@@ -21,8 +21,8 @@
 </style>
 
 <body>
-  <div class="container" style="background: rgba(0, 133, 255, 0.65);">
-    <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
+  <div class="container" style="background: rgba(0, 133, 255, 0.65);border-style: outset; border-width:8px;margin-top:2.5%;">
+    <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 25px;margin-bottom:2.5%;">
       <h1>Ingresar Personal</h1>
       <form action="<?php echo base_url() . '/VerStaff/editar/post' ?>" method="post">
         <div class="row mb-4">
@@ -93,8 +93,8 @@
           <label id="text-especialidad">Especialidad</label>
           <input type="text" name="Per_espec" value="<?php echo $data['Per_espec'];?>"id="Per_espec" class='form-control'>
         </div>
-        <div class='form-group'>
-          <input type="submit" name="ingreso" value=Ingresar class='btn btn-primary'>
+        <div class='form-group' style="margin-top:-7%;margin-bottom:-5%">
+          <input type="submit" name="ingreso" value=Ingresar class='btn btn-primary' style="margin-top:-8%">
         </div>
       </form>
     </div>

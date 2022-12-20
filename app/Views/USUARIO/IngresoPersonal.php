@@ -21,8 +21,8 @@
 </style>
 
 <body>
-  <div class="container" style="background: rgba(0, 133, 255, 0.65);">
-    <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
+  <div class="container" style="background: rgba(0, 133, 255, 0.65);border-style: outset; border-width:8px;margin-top:2.5%;">
+    <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px; ">
       <h1>Ingresar Personal</h1>
       <form action='<?php echo base_url() ?>/inStaff' method="post">
         <div class="row mb-4">
@@ -115,5 +115,4 @@
 
 
 </body>
-
 </html>

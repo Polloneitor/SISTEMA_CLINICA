@@ -21,7 +21,7 @@
 </style>
 
 <body>
-  <div class="container" style="background: rgba(0, 133, 255, 0.65);">
+  <div class="container" style="background: rgba(0, 133, 255, 0.65);border-style: outset; border-width:8px;margin-top:2.5%;">
     <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
       <h1>Ingresar Paciente</h1>
       <form action='<?php echo base_url() ?>/inPaciente' method="post">

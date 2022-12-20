@@ -79,7 +79,7 @@ class FormaControlador extends BaseController
                 'Per_tipo' => $usuario['S_Per_tipo'],
                 'Per_cod'  => $usuario['Per_cod'],
                 'Op_detalle'  => 'Se ingresó un paciente nuevo.'
-             ];
+            ];
             $op->insert($dataTemp);
             $session->setFlashdata("success", "Data saved successfully");
 
@@ -152,7 +152,7 @@ class FormaControlador extends BaseController
                 'Per_tipo' => $usuario['S_Per_tipo'],
                 'Per_cod'  => $usuario['Per_cod'],
                 'Op_detalle'  => 'Se ingresó un personal nuevo.'
-             ];
+            ];
             $op->insert($dataTemp);
             $session->setFlashdata("success", "Data saved successfully");
             $email = \Config\Services::email();
@@ -160,9 +160,35 @@ class FormaControlador extends BaseController
             $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
 
             $email->setSubject('Bienvenido al Sistema Clinico.');
-            $email->setMessage('Se ha registrado datos personales 
-                                para su nuevo empleo, se le hará saber cuando
-                                estará habilitado en el sistema en este correo.');
+            $email->setMessage(
+                "<!DOCTYPE html>" .
+                    "<html lang='es'>" .
+                    "<head>" .
+                    "<meta charset='utf-8'>" .
+                    "</head>" .
+                    "<body style='background-color: white '>" .
+                    "<table style='max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;'>" .
+                    "<tr>" .
+                    "<td style='background-image: url(https://media.gettyimages.com/id/941762276/es/foto/m%C3%A9dicos-en-cl%C3%ADnica.jpg?s=612x612&w=gi&k=20&c=DjFQTj_f26yucvPJSx6fEzNXvpm6PK4xyWDiHBYD6nE=);background-repeat: no-repeat;background-size: 100% 100%;'>" .
+                    "<div style='color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif;text-shadow: 1px 1px 2px black;'>" .
+                    "<h2 style='color: #e67e22; margin: 0 0 7px;text-align:center'>Bienvenido al Sistema Clinico, ".$data['Per_nom']."</h2>" .
+                    "<p style='margin: 2px; font-size: 15px'>" .
+                    "<br><h2 style='color:rgba(44, 74, 139, 0.938);text-align:justify;text-shadow: 1px 1px 2px black;'>Pronto será incorporado de nuestro equipo.</h2>" .
+                    "<div style='width: 100%;margin:20px 0; display: inline-block;text-align: justify;text-shadow: 1px 1px 2px black;'>" .
+                    "<br><h2 style='color:rgba(44, 74, 139, 0.938)'>Se ha registrado datos personales 
+                    para su nuevo empleo, se le hará saber cuando
+                    estará habilitado en el sistema en este correo.</h2>" .
+                    "</div>" .
+                    "<div style='width: 100%; text-align: center'>" .
+                    "<br><h2 style='color:rgba(44, 74, 139, 0.938);text-align:justify;text-shadow: 1px 1px 2px black;'>Atte. Directiva.</h2>" .
+                    "</div>" .
+                    "</div>" .
+                    "</td>" .
+                    "</tr>" .
+                    "</table>" .
+                    "</body>" .
+                    "</html>"
+            );
             if ($email->send()) {
                 return redirect()->to('/infoPer');
             } else {

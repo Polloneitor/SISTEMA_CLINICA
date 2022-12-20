@@ -21,8 +21,8 @@
 </style>
 
 <body>
-  <div class="container" style="background: rgba(0, 133, 255, 0.65);">
-    <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 20px;">
+<div class="container" style="background: rgba(0, 133, 255, 0.65);border-style: outset; border-width:8px;margin-top:2.5%;">
+    <div style="width: 75%;margin-left:auto;margin-right:auto;margin-top: 25px;margin-bottom:2.5%;">
       <h1>Ingresar Paciente</h1>
       <form action="<?php echo base_url() . '/VerPacientes/editar/post' ?>" method="post">
         <div class='form-group'>
@@ -75,7 +75,7 @@
           </div>
         </div>
         <div class='form-group'>
-          <input type="submit" name="ingreso" value=Editar class='btn btn-primary'>
+          <input type="submit" name="ingreso" value=Editar class='btn btn-primary' style="margin-top:-5%">
         </div>
       </form>
     </div>

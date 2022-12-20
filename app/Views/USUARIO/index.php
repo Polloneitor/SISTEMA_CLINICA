@@ -34,7 +34,7 @@
     <?php if($S_Per_tipo != NULL):?>
     <div class="col-xs-1-12">
       <div class="row">
-        <div class="box w-100 h-50 bg-light">
+        <div class="box h-50 bg-light" style="width: 85%;">
           <div class="box-body">
             <h5 class="card-tittle">Registro de Operaciones</h5>
             <p class="card-text">Siendo, Médico, Técnico o Trabajador de Aseo, registre cuando se estime conveniente.</p>
@@ -46,7 +46,7 @@
     <?php endif ?>
     <div class="col-xs-1-12">
       <div class="row">
-        <div class="box w-40 h-50 bg-light">
+        <div class="box h-50 bg-light" style="width: 40%;">
           <div class="card-img-top w-50 h-50">
             <img class="card-img-top w-50 h-50" src="<?php echo base_url() ?>/public/images/hz.png" alt="Card image cap">
           </div>
@@ -57,7 +57,7 @@
             <a href="https://hardzone.es/" class="btn btn-primary">Ir</a>
           </div>
         </div>
-        <div class="box w-40 h-50 bg-light">
+        <div class="box h-50 bg-light" style="width: 40%;">
           <div class="card-img-top w-50 h-50">
             <img class="card-img-top w-50 h-50" src="<?php echo base_url() ?>/public/images/xataa.jfif" alt="Card image cap">
           </div>
@@ -71,7 +71,7 @@
     </div>
     <div class="col-xs-1-12">
       <div class="row">
-        <div class="box w-40 h-50 bg-light">
+        <div class="box h-50 bg-light" style="width: 40%;">
           <div class="card-img-top w-50 h-50">
             <img class="card-img-top w-50 h-50" src="<?php echo base_url() ?>/public/images/Robot.png" alt="Card image cap">
           </div>
@@ -81,7 +81,7 @@
             <a href="https://www.robotitus.com/hallan-mas-evidencia-de-como-dos-virus-se-unen-para-causar-alzheimer" class="btn btn-primary">Ir</a>
           </div>
         </div>
-        <div class="box w-40 h-50 bg-light">
+        <div class="box h-50 bg-light" style="width: 40%;">
           <div class="card-img-top w-50 h-50">
             <img class="card-img-top w-50 h-50" src="<?php echo base_url() ?>/public/images/Robot.png" alt="card image cap">
           </div>
@@ -93,8 +93,6 @@
         </div>
       </div>
     </div>
-
-
   </div>
 
 

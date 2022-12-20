@@ -308,22 +308,79 @@ class Home extends BaseController
             $email->setTo($select['Per_email']);
             $email->setFrom('diego.aguilar@alumnos.upla.cl', 'Sistema Clinica');
 
-            $email->setSubject('Cambios de datos en el Sistema Clinico.');
+            $email->setSubject('Personal'.$data['Per_nom'].'. Cambios de sus datos se han aplicado en el Sistema Clinico.');
             if ($data['Per_espec'] != NULL) {
-               $email->setMessage('Se ha actualizado sus datos personales 
-               para su empleo.
-               Nombre:' . $data['Per_nom'] . "" . '
-               Edad:' . $data['Per_edad'] . "" . '
-               Género:' . $data['Per_gen'] . "" . '
-               Tipo:' . $definicion . "" . '
-               Especialidad:' . $data['Per_espec']);
+               $email->setMessage("<!DOCTYPE html>".
+               "<html lang='es'>".
+               "<head>".
+               "<meta charset='utf-8'>".
+               "</head>".
+               "<body style='background-color: black '>".
+               "<table style='max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;'>".
+               "<tr>".
+               "<td style='padding: 0'>".
+               "</td>".
+               "</tr>".
+               "<tr>".
+               "<td style='background-image: url(https://www.shutterstock.com/image-photo/social-networking-concept-260nw-360705110.jpg);background-repeat: no-repeat;background-size: 100% 100%;'>".
+               "<div style='color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif'>".
+               "<h2 style='color: #ff7701; margin: 0 0 7px;text-align:center;text-shadow: 1px 1px 2px black;'>Sistema Clinico</h2>".
+               "<p style='margin: 2px; font-size: 15px'>".
+               "<br><h2 style='color:rgba(5, 84, 255, 0.938);;text-shadow: 1px 1px 2px black;text-align:justify'>Se han actualizado los datos de su cuenta.</h2>".
+               "<div style='width: 100%;margin:20px 0; display: inline-block;text-align: justify'>".
+               "<br>
+               <div style='margin:auto;border-style:outset;border-width:5px;background-color: white;'>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Datos:</h2>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Nombre: ".$data['Per_nom']."</h2>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Género: ".$data['Per_gen']."</h2>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Edad: ".$data['Per_edad']."</h2>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Tipo: ".$data['Per_tipo']."</h2>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Especialidad: ".$data['Per_espec']."</h2>".
+               "</div>".
+               "</div>".
+               "<div style='width: 100%; text-align: center'>".
+               "</div>".
+               "</div>".
+               "</td>".
+               "</tr>".
+               "</table>".
+               "</body>".
+               "</html>");
             } else {
-               $email->setMessage('Se ha actualizado sus datos personales 
-               para su empleo.   
-               Nombre:' . $data['Per_nom'] . "" . '
-               Edad:' . $data['Per_edad'] . "" . '
-               Género:' . $data['Per_gen'] . "" . '
-               Tipo:' . $definicion);
+               $email->setMessage("<!DOCTYPE html>".
+               "<html lang='es'>".
+               "<head>".
+               "<meta charset='utf-8'>".
+               "</head>".
+               "<body style='background-color: black '>".
+               "<table style='max-width: 600px; padding: 10px; margin:0 auto; border-collapse: collapse;'>".
+               "<tr>".
+               "<td style='padding: 0'>".
+               "</td>".
+               "</tr>".
+               "<tr>".
+               "<td style='background-image: url(https://www.shutterstock.com/image-photo/social-networking-concept-260nw-360705110.jpg);background-repeat: no-repeat;background-size: 100% 100%;'>".
+               "<div style='color: #34495e; margin: 4% 10% 2%; text-align: justify;font-family: sans-serif'>".
+               "<h2 style='color: #ff7701; margin: 0 0 7px;text-align:center;text-shadow: 1px 1px 2px black;'>Sistema Clinico</h2>".
+               "<p style='margin: 2px; font-size: 15px'>".
+               "<br><h2 style='color:rgba(5, 84, 255, 0.938);;text-shadow: 1px 1px 2px black;text-align:justify'>Se han actualizado los datos de su cuenta.</h2>".
+               "<div style='width: 100%;margin:20px 0; display: inline-block;text-align: justify'>".
+               "<br>
+               <div style='margin:auto;border-style:outset;border-width:5px;background-color: white;'>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Datos:</h2>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Nombre: ".$data['Per_nom']."</h2>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Género: ".$data['Per_gen']."</h2>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Edad: ".$data['Per_edad']."</h2>".
+               "<h2 style='color:rgba(5, 84, 255, 0.938);text-shadow: 1px 1px 2px black;'>Tipo: ".$data['Per_tipo']."</h2>".               "</div>".
+               "</div>".
+               "<div style='width: 100%; text-align: center'>".
+               "</div>".
+               "</div>".
+               "</td>".
+               "</tr>".
+               "</table>".
+               "</body>".
+               "</html>");
             }
             if ($email->send()) {
                return redirect()->to('/VerStaff');
@@ -523,10 +580,10 @@ class Home extends BaseController
             $dataTemp = [
                'Per_tipo' => $usuario['S_Per_tipo'],
                'Per_cod'  => $usuario['Per_cod'],
-               'Op_detalle'  => 'Se atendió a paciente:' . $pac
+               'Op_detalle'  => 'Se atendió a paciente: ' . $pac
             ];
             if ($input['Op_detalle'] != NULL) {
-               $dataTemp['Op_detalle'] = 'Se atendió a paciente:' . $pac . '' . $input['Op_detalle'];
+               $dataTemp['Op_detalle'] = 'Se atendió a paciente: ' . $pac . ' DETALLE: ' . $input['Op_detalle'];
             };
             //print_r($dataTemp);
             $op->insert($dataTemp);
