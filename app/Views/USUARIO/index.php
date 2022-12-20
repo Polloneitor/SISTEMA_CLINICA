@@ -54,7 +54,7 @@
           <div class="box-body">
             <h5 class="card-title">Hardzone.com</h5>
             <p class="card-text">Haga click en el boton para visitar.</p>
-            <a href="https://hardzone.es/" class="btn btn-primary">Ir</a>
+            <a href="https://hardzone.es/" target="_blank" class="btn btn-primary">Ir</a>
           </div>
         </div>
         <div class="box h-50 bg-light" style="width: 40%;">
@@ -64,7 +64,7 @@
           <div class="box-body ">
             <h5 class="card-tittle">Xataka.com</h5>
             <p class="card-text">Haga click en el boton para visitar.</p>
-            <a href="https://www.xataka.com/tablets/lenovo-tab-p11-p11-pro-caracteristicas-precio-especificaciones" class="btn btn-primary">Ir</a>
+            <a href="https://www.xataka.com/tablets/lenovo-tab-p11-p11-pro-caracteristicas-precio-especificaciones" target="_blank" class="btn btn-primary">Ir</a>
           </div>
         </div>
       </div>
@@ -78,7 +78,7 @@
           <div class="box-body">
             <h5 class="card-title">Artículo de Alzheimer</h5>
             <p class="card-text">Haga click en el boton para visitar.</p>
-            <a href="https://www.robotitus.com/hallan-mas-evidencia-de-como-dos-virus-se-unen-para-causar-alzheimer" class="btn btn-primary">Ir</a>
+            <a href="https://www.robotitus.com/hallan-mas-evidencia-de-como-dos-virus-se-unen-para-causar-alzheimer" target="_blank" class="btn btn-primary">Ir</a>
           </div>
         </div>
         <div class="box h-50 bg-light" style="width: 40%;">
@@ -88,7 +88,7 @@
           <div class="box-body">
             <h5 class="card-tittle">Artículo de investigación</h5>
             <p class="card-text">Haga click en el boton para visitar.</p>
-            <a href="https://www.robotitus.com/esta-bacteria-se-esta-volviendo-tan-resistente-a-los-antibioticos-que-no-podremos-detenerla" class="btn btn-primary">Ir</a>
+            <a href="https://www.robotitus.com/esta-bacteria-se-esta-volviendo-tan-resistente-a-los-antibioticos-que-no-podremos-detenerla"  target="_blank" class="btn btn-primary">Ir</a>
           </div>
         </div>
       </div>
