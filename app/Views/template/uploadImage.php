@@ -42,9 +42,6 @@
       <img src="<?php echo base_url() ?>/public/images/question.png" style="width:200px;height:200px;margin-left:-35%">
     </div>
     <div class="container" style="width:50%">
-      <?php foreach ($errors as $error) : ?>
-        <li><?= esc($error) ?></li>
-      <?php endforeach ?>
       <?= form_open_multipart('/upload/upload') ?>
       <div class="row" style="margin-left:-13.5%;margin-top:5%">
         <div class="col" style="margin-right:8%;margin-left:-3%">

@@ -356,9 +356,14 @@ class AccountData extends BaseController
             ],
         ];
         if (!$this->validate($validationRule)) {
-            $data = ['errors' => $this->validator->getErrors()];
+            $data = ['errors' => ['No ha subido un archivo.']];
 
-            return view('template\uploadImage', $data);
+            return view('template\header') .
+            view('template\navbar', $usuario) .
+            view('template\errors',$data).
+            view('template\uploadImage', $data) .
+            view('template\footer') .
+            view('template\background2');
         }
 
         $img = $this->request->getFile('userfile');
@@ -376,6 +381,11 @@ class AccountData extends BaseController
         }
         $data = ['errors' => ['The file has already been moved.']];
 
-        return view('template\uploadImage', $data);
+        return view('template\header') .
+            view('template\navbar', $usuario) .
+            view('template\errors',$data).
+            view('template\uploadImage', $data) .
+            view('template\footer') .
+            view('template\background2');
     }
 }
