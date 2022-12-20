@@ -212,13 +212,13 @@ class AccountData extends BaseController
                 view('template\navbar', $usuario) .
                 view('template\email', $data) .
                 view('template\footer') .
-                view('template\background');
+                view('template\background2');
         } else {
             return view('template\header') .
                 view('template\navbar', $usuario) .
                 view('template\editemail', $data) .
                 view('template\footer') .
-                view('template\background');
+                view('template\background2');
         }
     }
 
@@ -242,8 +242,8 @@ class AccountData extends BaseController
             $personal = new T_Personal($db);
             $select = $personal->find($usuario['Per_cod']);
             $data = array_merge($user, $select);
-            $errors['errors'] = 'Se debe rellenar campo';
-            if ($select != NULL || $select != '') {
+            $errors['errors'] = ['Se debe rellenar el campo.'];
+            if ($select == NULL || $select == '') {
                 return view('template\header') .
                     view('template\navbar', $usuario) .
                     view('template\errors', $errors) .
